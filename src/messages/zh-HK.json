@@ -1,0 +1,235 @@
+{
+  "Root": {
+    "Hero": {
+      "Every Tuesday & Thursday": "每星期都結交新朋友",
+      "Meet new friends": "擴寬社交圈只需",
+      "Uniqueness": "美食, 美酒, 真誠的對話",
+      "Connect with": "Serene演算法幫您配對四位個性、興趣和志向相似的人相遇。",
+      "Step out comfort": "跳出Comfort Zone"
+    },
+     "Content": {
+      "about": {
+        "title": "關於Serene",
+        "description": "我們致力於透過真實的連結來激發快樂！我們的使命是創造一個充滿活力和包容的空間，讓人們在美味的餐點中享受歡笑、誠實和難忘的友誼。加入我們，享受有趣、真摯的對話和一點魔法！",
+        "establish": "創於",
+        "since": "2024",
+        "subSlogan": "友誼需面對面交流，才能真正萌芽！"
+      }
+    }
+  },
+  "Nav": {
+    "Book Your Seat": "立即體驗"
+  },
+  "Footer": {
+    "Social Media": "社交媒體",
+    "Legal": "政策及條款",
+    "Base in HK": "香港製造",
+    "Legals": {
+      "Privacy Policy": "隱私權政策",
+      "Terms & Conditions": "服務條款"
+    }
+  },
+  "RestaurantSelection": {
+    "Title": "<strong>餐廳網絡</strong>",
+    "We handpick restaurants": "精選頂級餐廳及特別菜單<br></br>保證您能享受最優質的體驗。",
+    "More partnerships": "我們正在醞釀更多美味的合作夥伴關係...敬請期待！",
+    "Cta": "立即體驗"
+  },
+  "Carousel": {
+    "Title": "建立持久的友誼",
+    "Cta": "填寫性格測驗"
+  },
+  "FAQ": {
+    "Title": "常見問題",
+    "Cta": "仲有疑問?"
+  },
+  "WinesPage": {
+    "Title": "我們的葡萄酒清單",
+    "Subtitle": "我們精心挑選每一瓶優質葡萄酒，以確保為每位 Serene 的客人提供最佳的美食和葡萄酒搭配。"
+  },
+  "HowItWorks": {
+    "Title": "如何參加?",
+    "Subtitle": "識新朋友好簡單!<br></br> 我哋幫您安排好哂，你準備好未?",
+    "Cta": "立即體驗",
+    "Step 1 Title": "進行性格測試",
+    "Step 2 Title": "性格匹配",
+    "Step 3 Title": "確認您的座位",
+    "Step 4 Title": "享受美食、品味美酒與交流",
+    "Step 1 Description": "完成性格測試的問題，幫助我們了解您個性的問題。",
+    "Step 2 Description": "我們將為您匹配 4 位陌生人進行晚餐。",
+    "Step 3 Description": "Serene 與城中最好的餐廳合作，為每次晚餐提供量身定制的菜單和精選的葡萄酒。",
+    "Step 4 Description": "在共享美好的餐飲時，人們更容易打開心扉，分享彼此的故事和感受。"
+  },
+  "OnboardingCompleted": {
+    "Title": "接下来是什么？",
+    "Paragraph0": "我们的演算法将根据您的回答，为您匹配4-5位志同道合的人参加即将举行的晚餐。",
+    "Paragraph1": "您将收到关于餐厅、菜单和购票链接的私信。",
+    "Foot": "关于更多详情，请关注我们的小红书！"
+  },
+  "OnboardingPage": {
+    "Movie": {
+      "Label": "What is your movie choice?",
+      "Options": {
+        "Cult Movie": "Cult Movie",
+        "Mainstream Blockbuster": "Mainstream Blockbuster"
+      }
+    },
+    "Fashion": {
+      "Label": "What is your fashion choice?",
+      "Options": {
+        "High Fashion": "High Fashion",
+        "Street Fashion": "Street Fashion"
+      }
+    },
+    "DateChoice": {
+      "Label": "What is your fashion choice?",
+      "Options": {
+        "Well-planned and Informed": "Well-planned and Informed",
+        "Spontaneous and Surprising": "Spontaneous and Surprising"
+      }
+    },
+    "PreferredLanguage": {
+      "Label": "Your preferred language for the dinner",
+      "Options": {
+        "English": "English",
+        "Mandarin": "Mandarin",
+        "Cantonese": "Cantonese"
+      }
+    },
+
+    "PreferredDinner": {
+      "Label": "Your preferred language for the dinner",
+      "Options": {
+        "Fusion": "Fusion",
+        "Traditional": "Traditional"
+      }
+    },
+
+    "PreferredFood": {
+      "Label": "Expected dinner menu options?",
+      "Options": {
+        "Meat": "Meat",
+        "Seafood": "Seafood",
+        "Vegetarian": "Vegetarian",
+        "Vegan": "Vegan",
+        "Dessert": "Dessert"
+      }
+    },
+
+    "Motto": {
+      "Label": "Your life motto"
+    },
+
+    "DefinitionOfSuccess": {
+      "Label": "Your definition of success"
+    },
+    "Instagram": {
+      "Label": "What is your instagram account name?"
+    },
+
+    "YearOfBirth": {
+      "Label": "What year were you born?"
+    },
+    "Industry": {
+      "Label": "What industry do you work in?",
+      "Options": {
+        "Technology": "Technology",
+        "Healthcare": "Healthcare",
+        "Retail": "Retail",
+        "Food & Beverage": "Food & Beverage",
+        "Arts": "Arts",
+        "Government": "Government",
+        "Finance": "Finance",
+        "Hospitality": "Hospitality",
+        "Professional Services": "Professional Services"
+      }
+    },
+    "Mbti": {
+      "Label": "What is your MBTI?"
+    },
+    "AstrologicalSign": {
+      "Label": "What is your zodiac sign?"
+    },
+    "Country": {
+      "Label": "Where are you from?"
+    },
+
+    "DefineYourself": {
+      "Label": "How do you define yourself?",
+      "Options": {
+        "Man": "Man",
+        "Woman": "Woman",
+        "Non-Binary": "Non-Binary"
+      }
+    },
+
+    "RelationshipStatus": {
+      "Label": "What is your relationship status?",
+      "Options": {
+        "Single": "Single",
+        "Married": "Married",
+        "In a relationship": "In a relationship",
+        "Complicated": "Complicated"
+      }
+    },
+
+    "Introvert": {
+      "Label": "Are you a/an:",
+      "Options": {
+        "Introvert": "Introvert",
+        "Somewhere in the middle": "Somewhere in the middle",
+        "Extrovert": "Extrovert"
+      }
+    },
+
+    "DecisionMaking": {
+      "Label": "What affect you more on decision making?",
+      "Options": {
+        "Emotions and Intuition": "Emotions and Intuition",
+        "Logic and Facts": "Logic and Facts"
+      }
+    },
+
+    "Funny": {
+      "Label": "I am a funny person",
+      "MinLabel": "Strongly Disagree",
+      "MaxLabel": "Strongly Agree"
+    },
+
+    "SolvingProblem": {
+      "Label": "I enjoy solving convoluted problem",
+      "MinLabel": "Strongly Disagree",
+      "MaxLabel": "Strongly Agree"
+    },
+
+    "SenseEmotions": {
+      "Label": "I can easily sense other people's emotions",
+      "MinLabel": "Strongly Disagree",
+      "MaxLabel": "Strongly Agree"
+    },
+
+    "LoveMyJob": {
+      "Label": "I love my job",
+      "MinLabel": "Strongly Disagree",
+      "MaxLabel": "Strongly Agree"
+    },
+
+    "Outdoor": {
+      "Label": "I am more of an _ person",
+      "MinLabel": "Indoor",
+      "MaxLabel": "Outdoor"
+    },
+
+    "Talker": {
+      "Label": "I am more of a",
+      "MinLabel": "Listener",
+      "MaxLabel": "Talker"
+    },
+
+    "MeetingNewPeople": {
+      "Label": "I enjoy meeting new people",
+      "MinLabel": "Strongly Disagree",
+      "MaxLabel": "Strongly Agree"
+    }
+  }
+}
