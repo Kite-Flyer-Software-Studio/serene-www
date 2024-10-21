@@ -14,6 +14,17 @@
         "establish": "創於",
         "since": "2024",
         "subSlogan": "友誼需面對面交流，才能真正萌芽！"
+      },
+      "partners": {
+        "title": "Our Network",
+        "seeAllPartners": "All Serene Partners",
+        "list": {
+          "restaurants": "Restaurants",
+          "wine&liquor": "Wine & Liquor",
+          "drinks&party": "Drinks & Party",
+          "networking": "Networking"
+        },
+        "slogan": "Coming together to get inspired, ignited, impressed, and influenced."
       }
     }
   },

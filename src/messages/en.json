@@ -1,19 +1,30 @@
 {
   "Root": {
-    "Hero": {
+    "hero": {
       "Every Tuesday & Thursday": "Moments when friendship is born",
       "Meet new friends": "Meet new friends over",
       "Uniqueness": "Good Food, Fine Wine, Genuine Convo",
       "Connect with": "Connect with new faces, all matched by personality algorithm.",
       "Step out comfort": "Step out of your comfort zone"
     },
-    "Content": {
+    "content": {
       "about": {
         "title": "About Serene",
         "description": "We are all about sparking joy through real connections! Our mission is to create a vibrant, inclusive space for laughter, honesty, and unforgettable friendships over delicious meals. Join us for fun, heartfelt conversations, and a sprinkle of magic!",
         "establish": "Established",
         "since": "In 2024",
         "subSlogan": "Friendship sparks to life when we come together and chat!"
+      },
+      "partners": {
+        "title": "Our Network",
+        "seeAllPartners": "All Serene Partners",
+        "list": {
+          "restaurants": "Restaurants",
+          "wine&liquor": "Wine & Liquor",
+          "drinks&party": "Drinks & Party",
+          "networking": "Networking"
+        },
+        "slogan": "Coming together to get inspired, ignited, impressed, and influenced."
       }
     }
   },

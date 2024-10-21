@@ -26,7 +26,7 @@ const IMAGES = [
 ]
 
 export default function Hero() {
-  const t = useTranslations('Root.Hero')
+  const t = useTranslations('Root.hero')
   const typeformWaitlistUrl = useTypeformWaitlistUrl()
 
   return (
@@ -76,7 +76,7 @@ export default function Hero() {
           </div>
           {/* End Home Section Text */}
           {/* Image */}
-          <div className="col-lg-6 d-flex align-flex-end wow fadeInUp">
+          <div className="col-lg-6 d-flex flex-row justify-content-end wow fadeInUp">
             <div className={css.polaroids}>
               {IMAGES.map(({ caption, image }, index) => {
                 return (

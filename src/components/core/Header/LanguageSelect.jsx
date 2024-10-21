@@ -19,7 +19,6 @@ export default function LanguageSelect() {
 
   const currentRelativePath = useMemo(() => {
     const splitPath = pathname.split('/')
-    console.log(splitPath, pathname)
 
     if (splitPath.length === 2) {
       return ''

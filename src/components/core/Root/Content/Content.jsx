@@ -1,18 +1,24 @@
 import React from "react";
 import Image from "next/image";
-import Service from "./Service";
+import Network from "./Network";
 import Marquee from "./Marquee";
 import Testimonials from "./Testimonials";
 import Link from "next/link";
 import Accordion from "./Accordion";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function Content({
   onePage = false,
   dark = false,
   eadge2 = false,
 }) {
-  const t = useTranslations('Root.Content')
+  const locale = useLocale()
+  const t = useTranslations('Root.content')
+
+  const localHref = React.useMemo(
+    () => (locale === 'en' ? '/zh-HK' : '/en'),
+    [locale],
+  )
 
   return (
     <>
@@ -39,7 +45,7 @@ export default function Content({
               {/* <Accordion /> */}
               {/* End Accordion */}
               <div
-                className="page-section scrollSpysection  pb-0"
+                className="page-section scrollSpysection pt-0 pb-0"
                 id="established"
               >
                 <div className="position-relative text-center pt-140 pt-sm-100 pb-140 pb-sm-100">
@@ -79,130 +85,58 @@ export default function Content({
         className={`page-section scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
         } `}
-        id="services"
+        id="partners"
       >
         <div className="container">
           <div className="mb-100 mb-md-40">
             <div className="row">
               <div className="col-sm-6">
                 <h2 className="section-caption mb-0 mb-xs-10 black">
-                  Services
+                  {t('partners.title')}
                 </h2>
               </div>
               <div className="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end">
-                {onePage ? (
-                  <>
-                    <a
-                      href="#portfolio"
-                      className="link-hover-anim align-middle"
-                      data-link-animate="y"
-                    >
-                      <span className="link-strong link-strong-unhovered">
-                        See projects{" "}
-                        <i
-                          className="icon-arrow-right2 size-14"
-                          aria-hidden="true"
-                        ></i>
-                      </span>
-                      <span
-                        className="link-strong link-strong-hovered"
-                        aria-hidden="true"
-                      >
-                        See projects{" "}
-                        <i
-                          className="icon-arrow-right2 size-14"
-                          aria-hidden="true"
-                        ></i>
-                      </span>
-                    </a>
-                  </>
-                ) : (
-                  <>
-                    <Link
-                      href={`/modern-services${dark ? "-dark" : ""}`}
-                      className="link-hover-anim align-middle"
-                      data-link-animate="y"
-                    >
-                      <span className="link-strong link-strong-unhovered">
-                        See all services{" "}
-                        <i
-                          className="icon-arrow-right2 size-14"
-                          aria-hidden="true"
-                        ></i>
-                      </span>
-                      <span
-                        className="link-strong link-strong-hovered"
-                        aria-hidden="true"
-                      >
-                        See all services{" "}
-                        <i
-                          className="icon-arrow-right2 size-14"
-                          aria-hidden="true"
-                        ></i>
-                      </span>
-                    </Link>
-                  </>
-                )}
+
+                <Link
+                  href={`${localHref}/network`}
+                  className="link-hover-anim align-middle"
+                  data-link-animate="y"
+                >
+                  <span className="link-strong link-strong-unhovered">
+                    {t('partners.seeAllPartners')}
+                    <i
+                      className="icon-arrow-right2 size-14"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                  <span
+                    className="link-strong link-strong-hovered"
+                    aria-hidden="true"
+                  >
+                    {t('partners.seeAllPartners')}
+                    <i
+                      className="icon-arrow-right2 size-14"
+                      aria-hidden="true"
+                    ></i>
+                  </span>
+                </Link>
               </div>
             </div>
             <hr
               className={` ${dark ? "white opacity-1" : "black"}  mt-3 mb-0`}
             />
           </div>
-          {/* Services Grid */}
-          <Service />
-          {/* End Services Grid */}
+          <Network />
           <div className="row">
             <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
               <hr
                 className={` ${dark ? "white opacity-1" : "black"}  mt-0 mb-20`}
               />
-
               <div className="row">
-                <div className="col-sm-6 col-md-7 text-center text-sm-start mb-xs-20">
+                <div className="col-sm-12 col-md-12 text-center text-sm-center mb-xs-20">
                   <p className="section-descr mb-0 black">
-                    We use the power of design to solve complex problems and
-                    cultivate business solutions.
+                    {t('partners.slogan')}
                   </p>
-                </div>
-                <div className="col-sm-6 col-md-5 text-center text-sm-end local-scroll">
-                  {onePage ? (
-                    <>
-                      <a
-                        href="#contact"
-                        className={`btn btn-mod ${
-                          dark ? "btn-border-w" : "btn-border"
-                        }  btn-medium btn-circle`}
-                        data-btn-animate="y"
-                      >
-                        <span className="btn-animate-y">
-                          <span className="btn-animate-y-1">
-                            Get a proposal
-                          </span>
-                          <span className="btn-animate-y-2" aria-hidden="true">
-                            Get a proposal
-                          </span>
-                        </span>
-                      </a>
-                    </>
-                  ) : (
-                    <>
-                      <Link
-                        href={`/modern-contact${dark ? "-dark" : ""}`}
-                        className="btn btn-mod btn-border btn-medium btn-circle"
-                        data-btn-animate="y"
-                      >
-                        <span className="btn-animate-y">
-                          <span className="btn-animate-y-1">
-                            Get a proposal
-                          </span>
-                          <span className="btn-animate-y-2" aria-hidden="true">
-                            Get a proposal
-                          </span>
-                        </span>
-                      </Link>
-                    </>
-                  )}
                 </div>
               </div>
             </div>
@@ -210,14 +144,14 @@ export default function Content({
         </div>
       </section>
       <div
-        className={`page-section overflow-hidden  ${
+        className={`overflow-hidden  ${
           dark ? "light-content" : ""
         } `}
       >
         <Marquee />
       </div>
       <section
-        className={`page-section pt-0 pb-0  ${
+        className={`page-section ${
           dark ? "bg-dark-1 light-content" : ""
         } `}
       >
