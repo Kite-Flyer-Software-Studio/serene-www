@@ -13,7 +13,15 @@
         "description": "我們致力於透過真實的連結來激發快樂！我們的使命是創造一個充滿活力和包容的空間，讓人們在美味的餐點中享受歡笑、誠實和難忘的友誼。加入我們，享受有趣、真摯的對話和一點魔法！",
         "establish": "創於",
         "since": "2024",
-        "subSlogan": "友誼需面對面交流，才能真正萌芽！"
+        "subSlogan": "友誼需面對面交流，才能真正萌芽！",
+        "ourStory": {
+          "title": "Our Story",
+          "description": "We felt a void—a lack of opportunity to socialize and connect with others. Inspired by this need, we envisioned an app called Serene, designed to help people forge new friendships over shared meals and fine wine. By incorporating a personality test, Serene aims to match like-minded individuals, fostering genuine connections that inspire and uplift. The goal is to create a vibrant community where people can grow together, share experiences, and influence one another positively. Through Serene, we hope to transform dining into a meaningful social experience for everyone."
+        },
+        "ourMission": {
+          "title": "Our Mission",
+          "description": "At Serene, our mission is to build a vibrant community where like-minded individuals can connect over good food and fine wine. We believe that meaningful relationships are essential to a fulfilling life, yet often feel like a desert in today’s fast-paced world. Whether you’re seeking friendship, networking opportunities, or even romance, Serene provides the perfect setting to meet new people. By fostering genuine connections in a relaxed atmosphere, we aim to transform dining into a delightful experience that enriches lives. Join us in creating a space where friendships blossom and opportunities abound, making every meal a chance for connection."
+        }
       },
       "partners": {
         "title": "Our Network",

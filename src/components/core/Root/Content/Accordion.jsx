@@ -1,11 +1,19 @@
 "use client";
-import { faqs3 } from "@/data/faqs";
+import { useTranslations } from "next-intl";
 import React, { useEffect, useRef, useState } from "react";
+
+const Lists = [
+  { title: 'ourStory.title', description: 'ourStory.description' },
+  { title: 'ourMission.title', description: 'ourMission.description' }
+]
 
 export default function Accordion() {
   const questionRefs = useRef([]);
   const answerRefs = useRef([]);
   const [currentIndex, setCurrentIndex] = useState(-1);
+
+  const t = useTranslations('Root.content.about')
+
   useEffect(() => {
     questionRefs.current.forEach((el) => {
       el.classList.remove("active");
@@ -25,9 +33,10 @@ export default function Accordion() {
       element.style.marginBottom = "1.55em";
     }
   }, [currentIndex]);
+
   return (
     <dl className="accordion-1 accordion-1-slick mb-100 mb-md-60">
-      {faqs3.map((elm, index) => (
+      {Lists.map((elm, index) => (
         <React.Fragment key={index}>
           <dt
             onClick={() => {
@@ -35,7 +44,7 @@ export default function Accordion() {
             }}
           >
             <a ref={(el) => (questionRefs.current[index] = el)}>
-              <span>{elm.question}</span>
+              <span>{t(elm.title)}</span>
               <i className="icon-plus" />
             </a>
           </dt>
@@ -44,7 +53,7 @@ export default function Accordion() {
             ref={(el) => (answerRefs.current[index] = el)}
             style={{ display: "block" }}
           >
-            {elm.answer}
+            {t(elm.description)}
           </dd>
         </React.Fragment>
       ))}

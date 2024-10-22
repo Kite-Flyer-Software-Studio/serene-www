@@ -13,7 +13,15 @@
         "description": "We are all about sparking joy through real connections! Our mission is to create a vibrant, inclusive space for laughter, honesty, and unforgettable friendships over delicious meals. Join us for fun, heartfelt conversations, and a sprinkle of magic!",
         "establish": "Established",
         "since": "In 2024",
-        "subSlogan": "Friendship sparks to life when we come together and chat!"
+        "subSlogan": "Friendship sparks to life when we come together and chat!",
+        "ourStory": {
+          "title": "Our Story",
+          "description": "We felt a void—a lack of opportunity to socialize and connect with others. Inspired by this need, we envisioned an app called Serene, designed to help people forge new friendships over shared meals and fine wine. By incorporating a personality test, Serene aims to match like-minded individuals, fostering genuine connections that inspire and uplift. The goal is to create a vibrant community where people can grow together, share experiences, and influence one another positively. Through Serene, we hope to transform dining into a meaningful social experience for everyone."
+        },
+        "ourMission": {
+          "title": "Our Mission",
+          "description": "At Serene, our mission is to build a vibrant community where like-minded individuals can connect over good food and fine wine. We believe that meaningful relationships are essential to a fulfilling life, yet often feel like a desert in today’s fast-paced world. Whether you’re seeking friendship, networking opportunities, or even romance, Serene provides the perfect setting to meet new people. By fostering genuine connections in a relaxed atmosphere, we aim to transform dining into a delightful experience that enriches lives. Join us in creating a space where friendships blossom and opportunities abound, making every meal a chance for connection."
+        }
       },
       "partners": {
         "title": "Our Network",
