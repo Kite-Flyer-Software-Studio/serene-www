@@ -5,40 +5,20 @@ import Image from "next/image";
 
 export const testimonials3 = [
   {
-    text: "Beautiful template, nice code and easy to customize. Optimization, structure and pages are very good for SEO basics.",
-    author: "Thomas Johnson",
-    role: "UI/UX designer",
-    imgSrc: "/assets/images/demo-gradient/user-1.jpg",
+    text: "Love the idea of meeting new friends based on personality and background, I enjoyed the night meeting 4 new faces.",
+    author: "Michael C.",
   },
   {
-    text: "This template is so beautiful and has such wonderful new options. It is updated often which gives me even more quality.",
-    author: "Alice Watson",
-    role: "3D artist",
-    imgSrc: "/assets/images/demo-gradient/user-2.jpg",
+    text: "I like the idea of prompt card, it facilitated the conversations. Feel like they are old friends instantly",
+    author: "Cyrus C.",
   },
   {
-    text: "A remarkable model, everything has been thought out with talent, the design, the responsiveness, the various adaptations.",
-    author: "Peter Braun",
-    role: "Business owner",
-    imgSrc: "/assets/images/demo-gradient/user-3.jpg",
+    text: "The restaurant was really nice, including the vibe, fusion tasting menu and the liquor. I will join again definitely",
+    author: "Emily H.",
   },
   {
-    text: "Beautiful template, nice code and easy to customize. Optimization, structure and pages are very good for SEO basics.",
-    author: "Thomas Johnson",
-    role: "UI/UX designer",
-    imgSrc: "/assets/images/demo-gradient/user-1.jpg",
-  },
-  {
-    text: "This template is so beautiful and has such wonderful new options. It is updated often which gives me even more quality.",
-    author: "Alice Watson",
-    role: "3D artist",
-    imgSrc: "/assets/images/demo-gradient/user-2.jpg",
-  },
-  {
-    text: "A remarkable model, everything has been thought out with talent, the design, the responsiveness, the various adaptations.",
-    author: "Peter Braun",
-    role: "Business owner",
-    imgSrc: "/assets/images/demo-gradient/user-3.jpg",
+    text: "This is my app for expanding my social circle in Hong Kong! New friends, delicious food, and great wine. $500 is a steal!",
+    author: "Irene T.",
   },
 ];
 
@@ -79,18 +59,8 @@ export default function Testimonials() {
                       </div>
                       <p>{elm.text}</p>
                       <footer className="ts2-author mt-50 mt-xs-30 clearfix">
-                        <div className="ts2-author-img float-start">
-                          <Image
-                            className="rounded-circle"
-                            width={44}
-                            height={44}
-                            src={elm.imgSrc}
-                            alt="Image description is here"
-                          />
-                        </div>
                         <div className="overflow-hidden">
                           {elm.author}
-                          <div className="small">{elm.role}</div>
                         </div>
                       </footer>
                     </blockquote>
