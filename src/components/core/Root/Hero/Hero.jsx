@@ -10,13 +10,11 @@ import GroupDinnerTwo from './images/group-5.jpg';
 import GroupDinnerThree from './images/group-four.jpg';
 
 import css from './style.module.css';
+import ParallaxContainer from '@/components/common/ParallaxContainer';
 
-const ParallaxContainer = dynamic(
-  () => import('@/components/common/ParallaxContainer'),
-  {
-    ssr: false, // Disable server-side rendering
-  }
-);
+// const ParallaxContainer = dynamic(
+//   () => import('@/components/common/ParallaxContainer'),
+// );
 
 const IMAGES = [
   {
@@ -39,7 +37,7 @@ export default function Hero() {
 
   return (
     <ParallaxContainer
-      className="page-section parallax-5 "
+      className="page-section parallax-5"
       style={{
         backgroundImage: 'url(/assets/images/serene/how-it-works-hero.svg)',
       }}
@@ -50,7 +48,7 @@ export default function Hero() {
         <div className="home-content text-start pb-md-20">
           <div className="row">
             {/* Home Section Text */}
-            <div className="col-lg-6 d-flex align-items-center mb-md-60 mb-sm-30 z-index-1">
+            <div className="col-lg-6 col-12 d-flex align-items-center mb-md-60 mb-sm-30 z-index-1">
               <div className="hs-title-overlap w-100 text-center text-lg-start">
                 <h2 className="section-descr-large mb-20 mb-sm-10 wow fadeInUp">
                   {t.rich('Every Tuesday & Thursday')}
@@ -104,7 +102,7 @@ export default function Hero() {
             </div>
             {/* End Home Section Text */}
             {/* Image */}
-            <div className="col-lg-6 d-flex flex-row justify-content-end wow fadeInUp">
+            <div className="col-lg-6 col-12 d-flex flex-row justify-content-end wow fadeInUp">
               <div className={css.polaroids}>
                 {IMAGES.map(({ caption, image }, index) => {
                   return (

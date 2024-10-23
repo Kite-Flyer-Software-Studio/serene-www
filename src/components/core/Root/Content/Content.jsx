@@ -96,7 +96,7 @@ export default function Content({
                   {t('partners.title')}
                 </h2>
               </div>
-              <div className="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end">
+              {/* <div className="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end">
                 <Link
                   href={`${localHref}/network`}
                   className="link-hover-anim align-middle"
@@ -120,7 +120,7 @@ export default function Content({
                     ></i>
                   </span>
                 </Link>
-              </div>
+              </div> */}
             </div>
             <hr
               className={` ${dark ? 'white opacity-1' : 'black'}  mt-3 mb-0`}

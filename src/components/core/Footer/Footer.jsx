@@ -44,7 +44,7 @@ export default function Footer() {
           <div className="row mt-n30">
             <div className="col-sm-4 mt-30"></div>
             <div className="col-sm-4 mt-30">
-              <h3 className="fw-title">Social Media</h3>
+              <h3 className="fw-title">{t('Social Media')}</h3>
               <ul className="fw-menu clearlist">
                 <FooterSocials />
               </ul>
@@ -71,7 +71,7 @@ export default function Footer() {
         <div className="col-md-7 offset-md-1 offset-lg-2 clearfix">
           {/* <b>{t('Base in HK')}</b> */}
           <div className="local-scroll float-end mt-n20 mt-sm-10">
-            <a href="#top" className="link-to-top">
+            <a href="#home" className="link-to-top">
               <i className="mi-arrow-up size-24" />
               <span className="visually-hidden">Scroll to top</span>
             </a>
