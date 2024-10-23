@@ -16,7 +16,7 @@ export default function Hero() {
     <ParallaxContainer
       className="page-section pt-90 pb-90 pb-xs-40 parallax-5 "
       style={{
-        backgroundImage: 'url(/assets/images/serene/how-it-works-hero.svg)',
+        backgroundImage: 'url(/assets/images/serene/how-it-works-hero-2.svg)',
       }}
       id="home"
     >
