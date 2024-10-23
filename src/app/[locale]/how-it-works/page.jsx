@@ -3,6 +3,11 @@ import Footer from '@/components/core/Footer/Footer';
 import Hero from '@/components/core/HowItWorks/Hero/Hero';
 import Content from '@/components/core/HowItWorks/Content/Content';
 
+export const metadata = {
+  title: 'How It Works | Serene.',
+  description: 'Meet the perfect strangers over food and wine!',
+};
+
 export default function HowItWorks() {
   return (
     <>
@@ -17,10 +22,7 @@ export default function HowItWorks() {
             <Hero />
           </main>
           <Content />
-          <footer
-            className="page-section footer pb-30"
-            style={{ backgroundColor: '#F5E7C6' }}
-          >
+          <footer className="page-section footer pb-30">
             <Footer />
           </footer>
         </div>

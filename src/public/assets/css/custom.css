@@ -91,3 +91,7 @@ a {
     /* transform: translate(-50%, -50%); */
   }
 }
+
+.bg-linen {
+  background-color: #faf3e1 !important;
+}

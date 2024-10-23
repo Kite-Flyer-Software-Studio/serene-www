@@ -43,7 +43,7 @@ export default function Hero() {
       }}
       id="home"
     >
-      <div className="container min-height-100vh d-flex align-items-start pb-100 pb-sm-120 position-relative">
+      <div className="container min-height-70vh d-flex align-items-start pb-100 pb-sm-120 position-relative">
         {/* Home Section Content */}
         <div className="home-content text-start pb-md-20">
           <div className="row">

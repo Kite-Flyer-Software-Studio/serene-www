@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export default function Marquee() {
   return (
@@ -16,14 +16,26 @@ export default function Marquee() {
       </div>
       <div className="marquee marquee-style-4 clearfix">
         <div className="marquee-track marquee-animation-2a float-end">
-          <div>Tailored Tasting Menu</div>
-          <div>Handpicked Wine</div>
-          <div aria-hidden="true">Like-minded Strangers</div>
-          <div aria-hidden="true">Unlimited Laughters</div>
-          <div aria-hidden="true">Tailored Tasting Menu</div>
-          <div aria-hidden="true">Handpicked Wine</div>
-          <div aria-hidden="true">Like-minded Strangers</div>
-          <div aria-hidden="true">Unlimited Laughters</div>
+          <div className="bg-linen">Tailored Tasting Menu</div>
+          <div className="bg-linen">Handpicked Wine</div>
+          <div aria-hidden="true" className="bg-linen">
+            Like-minded Strangers
+          </div>
+          <div aria-hidden="true" className="bg-linen">
+            Unlimited Laughters
+          </div>
+          <div aria-hidden="true" className="bg-linen">
+            Tailored Tasting Menu
+          </div>
+          <div aria-hidden="true" className="bg-linen">
+            Handpicked Wine
+          </div>
+          <div aria-hidden="true" className="bg-linen">
+            Like-minded Strangers
+          </div>
+          <div aria-hidden="true" className="bg-linen">
+            Unlimited Laughters
+          </div>
         </div>
       </div>
     </div>

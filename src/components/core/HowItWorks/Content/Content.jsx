@@ -62,21 +62,24 @@ export default function Content() {
   return (
     <>
       <section
-        className={`page-section  scrollSpysection`}
+        className="page-section  scrollSpysection bg-linen"
         id="services"
-        style={{ backgroundColor: '#FAF3E1' }}
       >
         <div className="container">
-          <div className="row mb-100 mb-sm-80">
+          <div className="row  mb-sm-80">
             <div className="col-sm-7 col-md-5">
-              <div className="circle overflow-hidden">
+              {/* <div className="circle overflow-hidden">
                 <Image
                   width={788}
                   height={280}
                   src="/assets/images/demo-strong/section-image-4.jpg"
                   alt="Image Description"
                 />
-              </div>
+              </div> */}
+              <p className="section-text mb-60 mb-md-40 mb-sm-30">
+                <span className="section-title-inline">How?</span>
+                {t('Subtitle')}
+              </p>
             </div>
           </div>
           {/* Features Grid */}
@@ -99,7 +102,7 @@ export default function Content() {
                           <path d={item.iconPath} />
                         </svg>
                       </div>
-                      <div className="features-1-title  mb-40">
+                      <div className="features-1-title mb-40">
                         <span>{item.title1}</span> <br />
                         <span className="font-alt">{item.title2}</span>
                       </div>
@@ -122,9 +125,9 @@ export default function Content() {
                 style={{ backgroundColor: '#FF6D1F' }}
               >
                 <span className="btn-animate-y">
-                  <span className="btn-animate-y-1">Book your seat now</span>
+                  <span className="btn-animate-y-1">{t('Cta')}</span>
                   <span className="btn-animate-y-2" aria-hidden="true">
-                    Book your seat now
+                    {t('Cta')}
                   </span>
                 </span>
               </Link>
