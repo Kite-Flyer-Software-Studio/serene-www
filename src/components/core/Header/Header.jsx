@@ -1,22 +1,23 @@
-"use client";
-import { toggleMobileMenu } from "@/utlis/toggleMobileMenu";
-import Nav from "./Nav";
-import Image from "next/image";
-import LanguageSelect from "./LanguageSelect";
-import useDetectUserEventNav from "@/hooks/useDetectUserEventNav";
-import useTypeformWaitlistUrl from "@/hooks/useTypeformWaitlistUrl";
-import { useTranslations } from "next-intl";
-import { LUMA_REGULAR_CALENDAR } from "@/constants";
+'use client';
+import { toggleMobileMenu } from '@/utlis/toggleMobileMenu';
+import Nav from './Nav';
+import Image from 'next/image';
+import LanguageSelect from './LanguageSelect';
+import useDetectUserEventNav from '@/hooks/useDetectUserEventNav';
+import useTypeformWaitlistUrl from '@/hooks/useTypeformWaitlistUrl';
+import { useTranslations } from 'next-intl';
+import { LUMA_REGULAR_CALENDAR } from '@/constants';
 
 const links = [
-  { href: "about", text: "About", dataBtnAnimate: "y" },
-  { href: LUMA_REGULAR_CALENDAR, text: "Dinners", dataBtnAnimate: "y" },
+  { href: 'about', text: 'About', dataBtnAnimate: 'y' },
+  { href: 'how-it-works', text: 'How it works', dataBtnAnimate: 'y' },
+  { href: LUMA_REGULAR_CALENDAR, text: 'Dinners', dataBtnAnimate: 'y' },
 ];
 
 export default function Header() {
-  useDetectUserEventNav()
-  const typeformWaitlistUrl = useTypeformWaitlistUrl()
-  const t = useTranslations('Nav')
+  useDetectUserEventNav();
+  const typeformWaitlistUrl = useTypeformWaitlistUrl();
+  const t = useTranslations('Nav');
 
   return (
     <div className="main-nav-sub full-wrapper">
@@ -52,7 +53,10 @@ export default function Header() {
           <LanguageSelect />
           {/* End Languages */}
           <li>
-            <a href={`${typeformWaitlistUrl}?utm_content=header`}className="opacity-1 no-hover">
+            <a
+              href={`${typeformWaitlistUrl}?utm_content=header`}
+              className="opacity-1 no-hover"
+            >
               <span
                 className="btn btn-mod btn-border btn-border-white btn-small btn-circle"
                 data-btn-animate="y"

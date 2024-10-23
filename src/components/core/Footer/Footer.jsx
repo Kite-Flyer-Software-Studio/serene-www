@@ -1,22 +1,22 @@
-import React from "react";
-import Image from "next/image";
-import FooterSocials from "./FooterSocials";
-import { useLocale, useTranslations } from "next-intl";
+import React from 'react';
+import Image from 'next/image';
+import FooterSocials from './FooterSocials';
+import { useLocale, useTranslations } from 'next-intl';
 
 export const footerLinks = [
-  { name: "Privacy Policy", path: "/privacy-policy.html" },
-  { name: "Terms & Conditions", path: "/terms.html" },
+  { name: 'Privacy Policy', path: '/privacy-policy.html' },
+  { name: 'Terms & Conditions', path: '/terms.html' },
 ];
 
 export default function Footer() {
-  const t = useTranslations('Footer')
+  const t = useTranslations('Footer');
 
-  const locale = useLocale()
+  const locale = useLocale();
 
   const localHref = React.useMemo(
     () => (locale === 'en' ? '/zh-HK' : '/en'),
-    [locale],
-  )
+    [locale]
+  );
 
   return (
     <div className="container">
@@ -35,14 +35,14 @@ export default function Footer() {
           </div>
           <div className="clearlinks">
             <strong>E.</strong>
-            <a href="mailto:contact@sereneexperience.com">contact@sereneexperience.com</a>
+            <a href="mailto:contact@sereneexperience.com">
+              contact@sereneexperience.com
+            </a>
           </div>
-
         </div>
-         <div className="col-md-7 offset-md-1 offset-lg-2">
+        <div className="col-md-7 offset-md-1 offset-lg-2">
           <div className="row mt-n30">
-            <div className="col-sm-4 mt-30">
-            </div>
+            <div className="col-sm-4 mt-30"></div>
             <div className="col-sm-4 mt-30">
               <h3 className="fw-title">Social Media</h3>
               <ul className="fw-menu clearlist">
@@ -54,7 +54,9 @@ export default function Footer() {
               <ul className="fw-menu clearlist">
                 {footerLinks.map((elm, i) => (
                   <li key={i}>
-                    <a href={`/${localHref}${elm.path}`}>{t(`Legals.${elm.name}`)}</a>
+                    <a href={`/${localHref}${elm.path}`}>
+                      {t(`Legals.${elm.name}`)}
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -67,7 +69,7 @@ export default function Footer() {
           <b>© {new Date().getFullYear()} All rights Reserved. Serene.</b>
         </div>
         <div className="col-md-7 offset-md-1 offset-lg-2 clearfix">
-          <b>{t('Base in HK')}</b>
+          {/* <b>{t('Base in HK')}</b> */}
           <div className="local-scroll float-end mt-n20 mt-sm-10">
             <a href="#top" className="link-to-top">
               <i className="mi-arrow-up size-24" />

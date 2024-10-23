@@ -1,47 +1,49 @@
-"use client";
+'use client';
 
-import addScrollspy from "@/utlis/addScrollSpy";
-import { init_classic_menu_resize } from "@/utlis/menuToggle";
-import { scrollToElement } from "@/utlis/scrollToElement";
-import { closeMobileMenu } from "@/utlis/toggleMobileMenu";
-import { useLocale } from "next-intl";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { useMemo, useLayoutEffect } from "react";
+import addScrollspy from '@/utlis/addScrollSpy';
+import { init_classic_menu_resize } from '@/utlis/menuToggle';
+import { scrollToElement } from '@/utlis/scrollToElement';
+import { closeMobileMenu } from '@/utlis/toggleMobileMenu';
+import { useLocale } from 'next-intl';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import { useMemo, useLayoutEffect } from 'react';
 
 export default function OnePageNav({ links, animateY = false }) {
   const pathname = usePathname();
-  const locale = useLocale()
+  const locale = useLocale();
 
   const localHref = useMemo(
-    () => (locale === 'en' ? '/zh-HK' : '/en'),
-    [locale],
-  )
+    () => (locale === 'en' ? '/en' : '/zh-HK'),
+    [locale]
+  );
 
   useLayoutEffect(() => {
     setTimeout(() => {
       scrollToElement();
     }, 1000);
     init_classic_menu_resize();
-    window.addEventListener("scroll", addScrollspy);
+    window.addEventListener('scroll', addScrollspy);
 
-    window.addEventListener("resize", init_classic_menu_resize);
+    window.addEventListener('resize', init_classic_menu_resize);
 
     return () => {
-      window.removeEventListener("scroll", addScrollspy);
-      window.removeEventListener("resize", init_classic_menu_resize);
+      window.removeEventListener('scroll', addScrollspy);
+      window.removeEventListener('resize', init_classic_menu_resize);
     };
   }, []);
 
   return (
     <>
       {links.map((link) => {
-        const externalUrl = link.href.indexOf('http') !== -1
+        const externalUrl = link.href.indexOf('http') !== -1;
         return (
           <li key={link.text}>
             <Link
-              className={!externalUrl && pathname.split("/").reverse()[0] == link.href ? 
-                "active" : ""
+              className={
+                !externalUrl && pathname.split('/').reverse()[0] == link.href
+                  ? 'active'
+                  : ''
               }
               href={externalUrl ? link.href : `${localHref}/${link.href}`}
               target={externalUrl ? '_blank' : '_self'}
@@ -58,7 +60,7 @@ export default function OnePageNav({ links, animateY = false }) {
               )}
             </Link>
           </li>
-        )
+        );
       })}
     </>
   );

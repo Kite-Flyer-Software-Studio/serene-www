@@ -1,25 +1,27 @@
+import 'swiper/css';
+import '../../public/assets/css/styles.css';
+import 'jarallax/dist/jarallax.min.css';
+import 'swiper/css/effect-fade';
+import 'react-modal-video/css/modal-video.css';
+import 'photoswipe/dist/photoswipe.css';
+import GoogleTagManager from '@/components/core/GoogleTagManager';
+import MetaPixel from '@/components/core/MetaPixel';
+import IntlProvider from '@/i18n/Provider';
+import { GTM_ID, META_PIXEL_ID } from '@/constants';
+import { getMessages } from 'next-intl/server';
 
-import "swiper/css";
-import "../../public/assets/css/styles.css";
-import "jarallax/dist/jarallax.min.css";
-import "swiper/css/effect-fade";
-import "react-modal-video/css/modal-video.css";
-import "photoswipe/dist/photoswipe.css";
-import GoogleTagManager from '@/components/core/GoogleTagManager'
-import MetaPixel from '@/components/core/MetaPixel'
-import IntlProvider from '@/i18n/Provider'
-import { GTM_ID, META_PIXEL_ID } from '@/constants'
-import { getMessages } from 'next-intl/server'
+import Header from '@/components/core/Header/Header';
+import Footer from '@/components/core/Footer/Footer';
 
-import "tippy.js/dist/tippy.css";
+import 'tippy.js/dist/tippy.css';
 
 const IFRAME_STYLE = {
   display: 'none',
   visibility: 'hidden',
-}
+};
 
-export default async function RootLayout({ children, params: { locale }, }) {
-  const messages = await getMessages()
+export default async function RootLayout({ children, params: { locale } }) {
+  const messages = await getMessages();
 
   return (
     <html lang="en" className="no-mobile no-touch ">
@@ -51,7 +53,7 @@ export default async function RootLayout({ children, params: { locale }, }) {
         <GoogleTagManager gtmId={GTM_ID} />
         <MetaPixel pixelId={META_PIXEL_ID} />
       </head>
-       <body className="appear-animate body">
+      <body className="appear-animate body">
         <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
@@ -69,7 +71,19 @@ export default async function RootLayout({ children, params: { locale }, }) {
           />
         </noscript>
         <IntlProvider locale={locale} messages={messages}>
-          {children}
+          <div className="theme-main">
+            <div className="page" id="top">
+              {/* Navigation Panel */}
+              <nav className="main-nav transparent stick-fixed wow-menubar">
+                <Header />
+              </nav>
+              {/* End Navigation Panel */}
+              <main id="main">{children}</main>
+              <footer className="page-section footer bg-gray-light-1 pb-30">
+                <Footer />
+              </footer>
+            </div>
+          </div>
         </IntlProvider>
       </body>
     </html>
