@@ -27,7 +27,10 @@ export default function Home() {
             </section>
             <Content />
           </main>
-          <footer className="page-section footer bg-gray-light-1 pb-30">
+          <footer
+            className="page-section footer pb-30"
+            style={{ backgroundColor: '#F5E7C6' }}
+          >
             <Footer />
           </footer>
         </div>

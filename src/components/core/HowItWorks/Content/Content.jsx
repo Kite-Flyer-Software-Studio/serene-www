@@ -61,7 +61,11 @@ export default function Content() {
 
   return (
     <>
-      <section className={`page-section  scrollSpysection`} id="services">
+      <section
+        className={`page-section  scrollSpysection`}
+        id="services"
+        style={{ backgroundColor: '#FAF3E1' }}
+      >
         <div className="container">
           <div className="row mb-100 mb-sm-80">
             <div className="col-sm-7 col-md-5">

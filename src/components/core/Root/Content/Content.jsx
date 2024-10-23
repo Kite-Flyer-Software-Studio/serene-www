@@ -85,6 +85,7 @@ export default function Content({
         className={`page-section scrollSpysection  ${
           dark ? 'bg-dark-1 light-content' : ''
         } `}
+        style={{ backgroundColor: '#FAF3E1' }}
         id="partners"
       >
         <div className="container">
@@ -142,11 +143,15 @@ export default function Content({
           </div>
         </div>
       </section>
-      <div className={`overflow-hidden  ${dark ? 'light-content' : ''} `}>
+      <div
+        className={`overflow-hidden  ${dark ? 'light-content' : ''} `}
+        style={{ backgroundColor: '#FAF3E1' }}
+      >
         <Marquee />
       </div>
       <section
         className={`page-section ${dark ? 'bg-dark-1 light-content' : ''} `}
+        style={{ backgroundColor: '#FAF3E1' }}
       >
         <Testimonials />
       </section>
