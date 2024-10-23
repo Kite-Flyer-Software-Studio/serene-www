@@ -22,7 +22,7 @@ export default function Header() {
   return (
     <div className="main-nav-sub full-wrapper">
       <div className="nav-logo-wrap local-scroll">
-        <a href="#top" className="logo">
+        <a href="/" className="logo">
           <Image
             src="/assets/images/serene/logo.svg"
             alt="Your Company Logo"

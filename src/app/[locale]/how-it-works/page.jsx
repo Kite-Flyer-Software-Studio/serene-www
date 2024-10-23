@@ -1,14 +1,9 @@
 import Header from '@/components/core/Header/Header';
 import Footer from '@/components/core/Footer/Footer';
-import Hero from '@/components/core/Root/Hero/Hero';
-import Content from '@/components/core/Root/Content/Content';
+import Hero from '@/components/core/HowItWorks/Hero/Hero';
+import Content from '@/components/core/HowItWorks/Content/Content';
 
-export const metadata = {
-  title: 'Serene.',
-  description: 'Meet the perfect strangers over food and wine!',
-};
-
-export default function Home() {
+export default function HowItWorks() {
   return (
     <>
       <div className="theme-main">
@@ -19,14 +14,9 @@ export default function Home() {
           </nav>
           {/* End Navigation Panel */}
           <main id="main">
-            <section
-              className="home-section parallax-mousemove-scene scrollSpysection"
-              id="home"
-            >
-              <Hero />
-            </section>
-            <Content />
+            <Hero />
           </main>
+          <Content />
           <footer className="page-section footer bg-gray-light-1 pb-30">
             <Footer />
           </footer>

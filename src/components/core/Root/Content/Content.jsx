@@ -1,34 +1,34 @@
-import React from "react";
-import Image from "next/image";
-import Network from "./Network";
-import Marquee from "./Marquee";
-import Testimonials from "./Testimonials";
-import Link from "next/link";
-import Accordion from "./Accordion";
-import { useLocale, useTranslations } from "next-intl";
+import React from 'react';
+import Image from 'next/image';
+import Network from './Network';
+import Marquee from './Marquee';
+import Testimonials from './Testimonials';
+import Link from 'next/link';
+import Accordion from './Accordion';
+import { useLocale, useTranslations } from 'next-intl';
 
 export default function Content({
   onePage = false,
   dark = false,
   eadge2 = false,
 }) {
-  const locale = useLocale()
-  const t = useTranslations('Root.content')
+  const locale = useLocale();
+  const t = useTranslations('Root.content');
 
   const localHref = React.useMemo(
     () => (locale === 'en' ? '/zh-HK' : '/en'),
-    [locale],
-  )
+    [locale]
+  );
 
   return (
     <>
       <section
         className={`page-section  scrollSpysection ${
-          dark ? "bg-dark-2 " : "bg-dark-1"
+          dark ? 'bg-dark-2 ' : 'bg-dark-1'
         }  light-content`}
         id="about"
       >
-        {dark || eadge2 ? <></> : <div className="edge-top-figure-1" />}
+        {/* {dark || eadge2 ? <></> : <div className="edge-top-figure-1" />} */}
         {/* Env Round Edge */}
         <div className="container position-relative">
           <div className="row">
@@ -83,7 +83,7 @@ export default function Content({
       </section>
       <section
         className={`page-section scrollSpysection  ${
-          dark ? "bg-dark-1 light-content" : ""
+          dark ? 'bg-dark-1 light-content' : ''
         } `}
         id="partners"
       >
@@ -96,7 +96,6 @@ export default function Content({
                 </h2>
               </div>
               <div className="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end">
-
                 <Link
                   href={`${localHref}/network`}
                   className="link-hover-anim align-middle"
@@ -123,14 +122,14 @@ export default function Content({
               </div>
             </div>
             <hr
-              className={` ${dark ? "white opacity-1" : "black"}  mt-3 mb-0`}
+              className={` ${dark ? 'white opacity-1' : 'black'}  mt-3 mb-0`}
             />
           </div>
           <Network />
           <div className="row">
             <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
               <hr
-                className={` ${dark ? "white opacity-1" : "black"}  mt-0 mb-20`}
+                className={` ${dark ? 'white opacity-1' : 'black'}  mt-0 mb-20`}
               />
               <div className="row">
                 <div className="col-sm-12 col-md-12 text-center text-sm-center mb-xs-20">
@@ -143,17 +142,11 @@ export default function Content({
           </div>
         </div>
       </section>
-      <div
-        className={`overflow-hidden  ${
-          dark ? "light-content" : ""
-        } `}
-      >
+      <div className={`overflow-hidden  ${dark ? 'light-content' : ''} `}>
         <Marquee />
       </div>
       <section
-        className={`page-section ${
-          dark ? "bg-dark-1 light-content" : ""
-        } `}
+        className={`page-section ${dark ? 'bg-dark-1 light-content' : ''} `}
       >
         <Testimonials />
       </section>

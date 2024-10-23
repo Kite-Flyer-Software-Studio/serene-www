@@ -10,9 +10,6 @@ import IntlProvider from '@/i18n/Provider';
 import { GTM_ID, META_PIXEL_ID } from '@/constants';
 import { getMessages } from 'next-intl/server';
 
-import Header from '@/components/core/Header/Header';
-import Footer from '@/components/core/Footer/Footer';
-
 import 'tippy.js/dist/tippy.css';
 
 const IFRAME_STYLE = {
@@ -71,19 +68,7 @@ export default async function RootLayout({ children, params: { locale } }) {
           />
         </noscript>
         <IntlProvider locale={locale} messages={messages}>
-          <div className="theme-main">
-            <div className="page" id="top">
-              {/* Navigation Panel */}
-              <nav className="main-nav transparent stick-fixed wow-menubar">
-                <Header />
-              </nav>
-              {/* End Navigation Panel */}
-              <main id="main">{children}</main>
-              <footer className="page-section footer bg-gray-light-1 pb-30">
-                <Footer />
-              </footer>
-            </div>
-          </div>
+          {children}
         </IntlProvider>
       </body>
     </html>
