@@ -123,7 +123,7 @@ export default function Content({
               </div> */}
 
               {/* Benefits Section */}
-              <section className="page-section mb-100 mb-md-60">
+              <section className="page-section mb-20 mb-md-30">
                 <div className="container position-relative">
                   {/* Grid */}
                   <div className="row">
@@ -172,6 +172,23 @@ export default function Content({
                   {/* End Grid */}
                 </div>
               </section>
+
+              <div className="row mb-100 mb-md-60">
+                <div className="text-center local-scroll">
+                  <Link
+                    href={`${typeformWaitlistUrl}?utm_content=why-serene`}
+                    className="btn btn-mod btn-large btn-border-w-light btn-circle white"
+                    data-btn-animate="y"
+                  >
+                    <span className="btn-animate-y">
+                      <span className="btn-animate-y-1">{t('about.Cta')}</span>
+                      <span className="btn-animate-y-2" aria-hidden="true">
+                        {t('about.Cta')}
+                      </span>
+                    </span>
+                  </Link>
+                </div>
+              </div>
 
               {/* Accordion */}
               {/* <Accordion /> */}
