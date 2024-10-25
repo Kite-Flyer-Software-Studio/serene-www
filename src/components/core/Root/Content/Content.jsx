@@ -43,7 +43,7 @@ export default function Content({
   const typeformWaitlistUrl = useTypeformWaitlistUrl();
 
   const localHref = React.useMemo(
-    () => (locale === 'en' ? '/zh-HK' : '/en'),
+    () => (locale === 'en' ? '/en' : '/zh-HK'),
     [locale]
   );
 
@@ -95,7 +95,7 @@ export default function Content({
               {/* End Decorative Dots */}
 
               <Link
-                href={`/main-pages-about-1${dark ? '-dark' : ''}`}
+                href={`${localHref}/about`}
                 className="link-hover-anim underline align-middle"
                 data-link-animate="y"
               >
@@ -130,7 +130,7 @@ export default function Content({
                     {/* Text */}
                     <div className="col-md-12 col-lg-3 mb-md-50">
                       <h2 className="section-caption mb-xs-10">
-                        Friends with Benefits
+                        A better way to make genuine connections
                       </h2>
                       <h3 className="section-title-small mb-40">Why Serene?</h3>
                       <div className="section-line" />
@@ -194,7 +194,7 @@ export default function Content({
               {/* <Accordion /> */}
               {/* End Accordion */}
               <div
-                className="page-section scrollSpysection pt-0 pb-0"
+                className="page-section scrollSpysection pt-0 pb-0 mb-100 mb-md-60"
                 id="established"
               >
                 <div className="position-relative text-center pt-140 pt-sm-100 pb-140 pb-sm-100">
@@ -227,6 +227,34 @@ export default function Content({
                       alt="Image Description"
                     />
                   </div>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="text-center local-scroll">
+                  <Link
+                    href={`${localHref}/how-it-works`}
+                    className="link-hover-anim ms-2 ms-sm-5 me-2"
+                    data-link-animate="y"
+                  >
+                    <span className="link-strong link-strong-unhovered">
+                      See how Serene Dinner works
+                      <i
+                        className="mi-arrow-right size-24"
+                        aria-hidden="true"
+                      ></i>
+                    </span>
+                    <span
+                      className="link-strong link-strong-hovered"
+                      aria-hidden="true"
+                    >
+                      See how Serene Dinner works
+                      <i
+                        className="mi-arrow-right size-24"
+                        aria-hidden="true"
+                      ></i>
+                    </span>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -1,24 +1,24 @@
-"use client";
-import { Navigation } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
-import Image from "next/image";
+'use client';
+import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import Image from 'next/image';
 
 export const testimonials3 = [
   {
-    text: "Love the idea of meeting new friends based on personality and background, I enjoyed the night meeting 4 new faces.",
-    author: "Michael C.",
+    text: 'Love the idea of meeting new friends based on personality and background, I enjoyed the night meeting 4 new faces.',
+    author: 'Michael C.',
   },
   {
-    text: "I like the idea of prompt card, it facilitated the conversations. Feel like they are old friends instantly",
-    author: "Cyrus C.",
+    text: "I was skeptical at first, but those prompt cards totally broke the ice (and my guard)! Serene Dinner is like gathering around the campfire - minus the s'mores (but that would be great too). I left feeling connected and inspired by some amazing humans. If you're game for meaningful connections over dinner, give it a try!",
+    author: 'Cyrus C.',
   },
   {
-    text: "The restaurant was really nice, including the vibe, fusion tasting menu and the liquor. I will join again definitely",
-    author: "Emily H.",
+    text: 'The restaurant was really nice, including the vibe, fusion tasting menu and the liquor. I will join again definitely',
+    author: 'Emily H.',
   },
   {
-    text: "This is my app for expanding my social circle in Hong Kong! New friends, delicious food, and great wine. $500 is a steal!",
-    author: "Irene T.",
+    text: 'This is my app for expanding my social circle in Hong Kong! New friends, delicious food, and great wine. $500 is a steal!',
+    author: 'Irene T.',
   },
 ];
 
@@ -33,15 +33,15 @@ export default function Testimonials() {
               slidesPerView={1}
               modules={[Navigation]}
               navigation={{
-                prevEl: ".snbp8",
-                nextEl: ".snbn8",
+                prevEl: '.snbp8',
+                nextEl: '.snbn8',
               }}
               watchSlidesProgress
               resizeObserver
               className="testimonials-slider-2 slider-strong owl-carousel owl-theme overflow-hidden position-static"
               style={{
                 opacity: 1,
-                display: "block",
+                display: 'block',
               }}
             >
               {/* Team item */}
@@ -59,9 +59,7 @@ export default function Testimonials() {
                       </div>
                       <p>{elm.text}</p>
                       <footer className="ts2-author mt-50 mt-xs-30 clearfix">
-                        <div className="overflow-hidden">
-                          {elm.author}
-                        </div>
+                        <div className="overflow-hidden">{elm.author}</div>
                       </footer>
                     </blockquote>
                   </div>
