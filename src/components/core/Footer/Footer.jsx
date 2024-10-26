@@ -14,7 +14,7 @@ export default function Footer() {
   const locale = useLocale();
 
   const localHref = React.useMemo(
-    () => (locale === 'en' ? '/zh-HK' : '/en'),
+    () => (locale === 'en' ? '/en' : '/zh-HK'),
     [locale]
   );
 

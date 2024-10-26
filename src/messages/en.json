@@ -38,6 +38,43 @@
       }
     }
   },
+  "About": {
+    "Title1": "From Strangers To Lasting Friendships",
+    "Title2": "What is Serene?",
+    "brief": {
+      "title": "Toast to New Friendships!",
+      "paragraph1": "Serene hosts refined dinners with a tasting menu, encouraging guests to forge new friendships through exquisite cuisine, fine wine, and engaging conversations.",
+      "paragraph2": "Serene collaborates with top restaurants to offer exclusive tasting menus tailored for our guests. Each dish is thoughtfully paired with handpicked wines, ensuring an unforgettable evening filled with exceptional flavors and delightful experiences."
+    },
+    "partners": {
+      "title": "Our Partners",
+      "description": "Know more about our partners!",
+      "paragraph": "Serene ensures the finest experience by partnering directly with restaurants, bars, and wine distributors. We anticipate you meeting your new best friend in the most enjoyable and elegant setting."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "enquiry": "Still hesitate to experience Serene Dinner? Or interested in forming business partnerships. Contact us! We will get back to you asap.",
+      "contactUs": "Contact Us"
+    }
+  },
+  "HowItWorks": {
+    "Title1": "Curious about Serene?",
+    "Title2": "How to join and get prepared for Serene Dinner?",
+    "Subtitle": "Join us for a stress-free evening where we handle all the details, so you can simply enjoy!",
+    "Cta": "Sign up now",
+    "Step 1 Title": "Get Matched with New Friends",
+    "Step 2 Title": "Dinner Plans Confirmed",
+    "Step 3 Title": "Your Perfect Match is Being Crafted...",
+    "Step 4 Title": "Get Ready for a Night to Remember",
+    "Step 5 Title": "The Fun Begins!",
+    "Step 6 Title": "Share Your Thoughts",
+    "Step 1 Description": "Take our quick and fun personality test to help us match you with new friends who share similar interests and values!",
+    "Step 2 Description": "We've got your dinner plans locked in! Look out for an email invite for restaurant info, special Serene set menu, time, and location. Make your payment to secure your spot.",
+    "Step 3 Description": "While we work behind the scenes to find your perfect match, get ready to meet new and interesting people!",
+    "Step 4 Description": "Your final instructions will be sent out within 24 hours before the dinner! Make sure to read carefully and come prepared for an unforgettable evening.",
+    "Step 5 Description": "We're so excited for you to meet your new friends! Our dinner events are designed to bring people together. Enjoy the mini games, ice-breakers, wines, and fine dining experience! Don't forget to capture the memories with our film camera!",
+    "Step 6 Description": "Your feedback is crucial in helping us create better experiences for you and your new friends. Take a minute to share your thoughts! Your input matters!"
+  },
   "Nav": {
     "Book Your Seat": "Try Serene"
   },
@@ -67,24 +104,6 @@
   "WinesPage": {
     "Title": "Our wine list",
     "Subtitle": "We handpicked each bottle of fine wine to ensure the best food & wine pairing for each Serene's guest."
-  },
-  "HowItWorks": {
-    "Title": "How it",
-    "Title2": "works",
-    "Subtitle": "Join us for a stress-free evening where we handle all the details, so you can simply enjoy!",
-    "Cta": "Sign up now",
-    "Step 1 Title": "Get Matched with New Friends",
-    "Step 2 Title": "Dinner Plans Confirmed",
-    "Step 3 Title": "Your Perfect Match is Being Crafted...",
-    "Step 4 Title": "Get Ready for a Night to Remember",
-    "Step 5 Title": "The Fun Begins!",
-    "Step 6 Title": "Share Your Thoughts",
-    "Step 1 Description": "Take our quick and fun personality test to help us match you with new friends who share similar interests and values!",
-    "Step 2 Description": "We've got your dinner plans locked in! Look out for an email invite for restaurant info, special Serene set menu, time, and location. Make your payment to secure your spot.",
-    "Step 3 Description": "While we work behind the scenes to find your perfect match, get ready to meet new and interesting people!",
-    "Step 4 Description": "Your final instructions will be sent out within 24 hours before the dinner! Make sure to read carefully and come prepared for an unforgettable evening.",
-    "Step 5 Description": "We're so excited for you to meet your new friends! Our dinner events are designed to bring people together. Enjoy the mini games, ice-breakers, wines, and fine dining experience! Don't forget to capture the memories with our film camera!",
-    "Step 6 Description": "Your feedback is crucial in helping us create better experiences for you and your new friends. Take a minute to share your thoughts! Your input matters!"
   },
   "OnboardingCompleted": {
     "Title": "What's next?",

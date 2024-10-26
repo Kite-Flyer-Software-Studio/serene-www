@@ -13,7 +13,7 @@ export default function LearnMoreAboutUsCta({ localHref }) {
         <Image
           width="103"
           height="223"
-          src="/assets/images/decoration-2.svg"
+          src="/assets/images/common/decoration-2.svg"
           alt=""
         />
       </div>

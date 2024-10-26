@@ -6637,13 +6637,15 @@ img.services-image {
   transform: translateZ(0);
 }
 .team-1-role {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.008em;
 }
 .team-1-descr {
   line-height: 1.4117;
   letter-spacing: -0.008em;
+  text-align: left;
+  font-size: 16px;
 }
 .team-1-social-links > a {
   position: relative;

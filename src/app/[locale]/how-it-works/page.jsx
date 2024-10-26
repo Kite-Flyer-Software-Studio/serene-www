@@ -13,11 +13,9 @@ export default function HowItWorks() {
     <>
       <div className="theme-main">
         <div className="page" id="top">
-          {/* Navigation Panel */}
           <nav className="main-nav transparent stick-fixed wow-menubar">
             <Header />
           </nav>
-          {/* End Navigation Panel */}
           <main id="main">
             <Hero />
             <Content />

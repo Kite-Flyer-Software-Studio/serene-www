@@ -1,8 +1,7 @@
 'use client';
-import TypeWriter from '@/components/common/TypeWriter';
+import TypeWriter from '@/components/core/TypeWriter';
 import React from 'react';
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
 import { useTranslations } from 'next-intl';
 import useTypeformWaitlistUrl from '@/hooks/useTypeformWaitlistUrl';
 import GroupDinnerOne from './images/group-dinner.jpg';
@@ -10,11 +9,7 @@ import GroupDinnerTwo from './images/group-5.jpg';
 import GroupDinnerThree from './images/group-four.jpg';
 
 import css from './style.module.css';
-import ParallaxContainer from '@/components/common/ParallaxContainer';
-
-// const ParallaxContainer = dynamic(
-//   () => import('@/components/common/ParallaxContainer'),
-// );
+import ParallaxContainer from '@/components/core/ParallaxContainer';
 
 const IMAGES = [
   {

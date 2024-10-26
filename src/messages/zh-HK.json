@@ -37,6 +37,43 @@
       }
     }
   },
+  "About": {
+    "Title1": "From Strangers To Lasting Friendships",
+    "Title2": "What is Serene?",
+    "brief": {
+      "title": "Toast to New Friendships!",
+      "paragraph1": "Serene hosts refined dinners with a tasting menu, encouraging guests to forge new friendships through exquisite cuisine, fine wine, and engaging conversations.",
+      "paragraph2": "Serene collaborates with top restaurants to offer exclusive tasting menus tailored for our guests. Each dish is thoughtfully paired with handpicked wines, ensuring an unforgettable evening filled with exceptional flavors and delightful experiences."
+    },
+    "partners": {
+      "title": "Our Partners",
+      "description": "Know more about our partners!",
+      "paragraph": "Serene ensures the finest experience by partnering directly with restaurants, bars, and wine distributors. We anticipate you meeting your new best friend in the most enjoyable and elegant setting."
+    },
+    "faq": {
+      "title": "常見問題",
+      "enquiry": "Still hesitate to experience Serene Dinner? Or interested in forming business partnerships. Contact us! We will get back to you asap.",
+      "contactUs": "Contact Us"
+    }
+  },
+  "HowItWorks": {
+    "Title1": "Curious about Serene?",
+    "Title2": "How to join and get prepared for Serene Dinner?",
+    "Subtitle": "識新朋友好簡單!你準備好未?",
+    "Cta": "立即體驗",
+    "Step 1 Title": "進行性格測試",
+    "Step 2 Title": "性格匹配",
+    "Step 3 Title": "確認您的座位",
+    "Step 4 Title": "享受美食、品味美酒與交流",
+    "Step 5 Title": "The Fun Begins!",
+    "Step 6 Title": "Share Your Thoughts",
+    "Step 1 Description": "完成性格測試的問題，幫助我們了解您個性的問題。",
+    "Step 2 Description": "我們將為您匹配 4 位陌生人進行晚餐。",
+    "Step 3 Description": "Serene 與城中最好的餐廳合作，為每次晚餐提供量身定制的菜單和精選的葡萄酒。",
+    "Step 4 Description": "在共享美好的餐飲時，人們更容易打開心扉，分享彼此的故事和感受。",
+    "Step 5 Description": "Enjoy great food and wine. Break through small talk with our conversation starters.",
+    "Step 6 Description": "Enjoy great food and wine. Break through small talk with our conversation starters."
+  },
   "Nav": {
     "Book Your Seat": "立即體驗"
   },
@@ -66,24 +103,6 @@
   "WinesPage": {
     "Title": "我們的葡萄酒清單",
     "Subtitle": "我們精心挑選每一瓶優質葡萄酒，以確保為每位 Serene 的客人提供最佳的美食和葡萄酒搭配。"
-  },
-  "HowItWorks": {
-    "Title": "如何",
-    "Title2": "參加?",
-    "Subtitle": "識新朋友好簡單!<br></br> 我哋幫您安排好哂，你準備好未?",
-    "Cta": "立即體驗",
-    "Step 1 Title": "進行性格測試",
-    "Step 2 Title": "性格匹配",
-    "Step 3 Title": "確認您的座位",
-    "Step 4 Title": "享受美食、品味美酒與交流",
-    "Step 5 Title": "The Fun Begins!",
-    "Step 6 Title": "Share Your Thoughts",
-    "Step 1 Description": "完成性格測試的問題，幫助我們了解您個性的問題。",
-    "Step 2 Description": "我們將為您匹配 4 位陌生人進行晚餐。",
-    "Step 3 Description": "Serene 與城中最好的餐廳合作，為每次晚餐提供量身定制的菜單和精選的葡萄酒。",
-    "Step 4 Description": "在共享美好的餐飲時，人們更容易打開心扉，分享彼此的故事和感受。",
-    "Step 5 Description": "Enjoy great food and wine. Break through small talk with our conversation starters.",
-    "Step 6 Description": "Enjoy great food and wine. Break through small talk with our conversation starters."
   },
   "OnboardingCompleted": {
     "Title": "接下来是什么？",

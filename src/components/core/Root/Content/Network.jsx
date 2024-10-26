@@ -9,7 +9,7 @@ export const Partners = [
   },
   {
     title: "wine&liquor",
-    imageSrc: "",
+    imageSrc: "/assets/images/serene/partners/wcellar.jpg",
     align: "text-start",
   },
   {

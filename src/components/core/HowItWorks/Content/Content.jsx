@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
@@ -63,19 +62,11 @@ export default function Content() {
     <>
       <section
         className="page-section  scrollSpysection bg-linen"
-        id="services"
+        id="how-it-works"
       >
         <div className="container">
           <div className="row  mb-sm-80">
             <div className="col-sm-7 col-md-5">
-              {/* <div className="circle overflow-hidden">
-                <Image
-                  width={788}
-                  height={280}
-                  src="/assets/images/demo-strong/section-image-4.jpg"
-                  alt="Image Description"
-                />
-              </div> */}
               <p className="section-text mb-60 mb-md-40 mb-sm-30">
                 <span className="section-title-inline">How?</span>
                 {t('Subtitle')}

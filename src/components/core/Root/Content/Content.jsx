@@ -14,11 +14,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import useTypeformWaitlistUrl from '@/hooks/useTypeformWaitlistUrl';
 import SereneMoments from './SereneMoments';
 
-export default function Content({
-  onePage = false,
-  dark = false,
-  eadge2 = false,
-}) {
+export default function Content() {
   const locale = useLocale();
   const t = useTranslations('Root.content');
   const typeformWaitlistUrl = useTypeformWaitlistUrl();
@@ -32,9 +28,7 @@ export default function Content({
     <>
       <PillarsMarquee />
       <section
-        className={`page-section  scrollSpysection ${
-          dark ? 'bg-dark-2 ' : 'bg-dark-1'
-        }  light-content`}
+        className={`page-section  scrollSpysection bg-dark-1 light-content`}
         id="about"
       >
         <div className="container position-relative">
@@ -62,9 +56,7 @@ export default function Content({
         </div>
       </section>
       <section
-        className={`page-section scrollSpysection bg-linen ${
-          dark ? 'bg-dark-1 light-content' : ''
-        } `}
+        className={`page-section scrollSpysection bg-linen`}
         id="partners"
       >
         <div className="container">
@@ -75,41 +67,16 @@ export default function Content({
                   {t('partners.title')}
                 </h2>
               </div>
-              {/* <div className="col-sm-6 local-scroll mt-n10 mb-n10 text-sm-end">
-                <Link
-                  href={`${localHref}/network`}
-                  className="link-hover-anim align-middle"
-                  data-link-animate="y"
-                >
-                  <span className="link-strong link-strong-unhovered">
-                    {t('partners.seeAllPartners')}
-                    <i
-                      className="icon-arrow-right2 size-14"
-                      aria-hidden="true"
-                    ></i>
-                  </span>
-                  <span
-                    className="link-strong link-strong-hovered"
-                    aria-hidden="true"
-                  >
-                    {t('partners.seeAllPartners')}
-                    <i
-                      className="icon-arrow-right2 size-14"
-                      aria-hidden="true"
-                    ></i>
-                  </span>
-                </Link>
-              </div> */}
             </div>
             <hr
-              className={` ${dark ? 'white opacity-1' : 'black'}  mt-3 mb-0`}
+              className={`black  mt-3 mb-0`}
             />
           </div>
           <Network />
           <div className="row">
             <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
               <hr
-                className={` ${dark ? 'white opacity-1' : 'black'}  mt-0 mb-20`}
+                className={`black mt-0 mb-20`}
               />
               <div className="row">
                 <div className="col-sm-12 col-md-12 text-center text-sm-center mb-xs-20">
@@ -140,14 +107,12 @@ export default function Content({
         </div>
       </section>
       <div
-        className={`overflow-hidden  ${dark ? 'light-content' : ''} bg-linen`}
+        className={`overflow-hidden bg-linen`}
       >
         <Marquee />
       </div>
       <section
-        className={`page-section ${
-          dark ? 'bg-dark-1 light-content' : ''
-        } bg-linen`}
+        className={`page-section bg-linen`}
       >
         <Testimonials />
       </section>

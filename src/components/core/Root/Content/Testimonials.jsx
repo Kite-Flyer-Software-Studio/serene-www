@@ -51,7 +51,7 @@ export default function Testimonials() {
                     <blockquote className="mb-0">
                       <div className="blockquote-icon" aria-hidden="true">
                         <Image
-                          src="/assets/images/demo-bold/blockquote.svg"
+                          src="/assets/images/common/blockquote.svg"
                           alt=""
                           width={127}
                           height={99}

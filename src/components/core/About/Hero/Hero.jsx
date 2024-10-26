@@ -1,8 +1,9 @@
 import { useTranslations } from 'next-intl';
 import AnimatedText from '@/components/core/AnimatedText';
 
+
 export default function Hero() {
-  const t = useTranslations('HowItWorks');
+  const t = useTranslations('About');
 
   return (
     <div
@@ -30,7 +31,7 @@ export default function Hero() {
         className="local-scroll scroll-down-3-wrap wow fadeInUp"
         data-wow-offset={0}
       >
-        <a href="#how-it-works" className="scroll-down-3">
+        <a href="#brief" className="scroll-down-3">
           Scroll Down
         </a>
       </div>
