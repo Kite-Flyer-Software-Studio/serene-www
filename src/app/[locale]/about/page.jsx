@@ -8,6 +8,9 @@ import FAQ from '@/components/core/About/FAQ';
 export const metadata = {
   title: 'About | Serene.',
   description: 'From Strangers To Lasting Friendships',
+  icons: {
+    icon: '/assets/images/favicon.ico',
+  },
 };
 
 export default function About() {

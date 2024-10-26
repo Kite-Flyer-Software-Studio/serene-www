@@ -6,6 +6,9 @@ import Content from '@/components/core/HowItWorks/Content/Content';
 export const metadata = {
   title: 'How It Works | Serene.',
   description: 'Meet the perfect strangers over food and wine!',
+  icons: {
+    icon: '/assets/images/favicon.ico',
+  },
 };
 
 export default function HowItWorks() {

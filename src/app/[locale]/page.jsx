@@ -6,6 +6,9 @@ import Content from '@/components/core/Root/Content/Content';
 export const metadata = {
   title: 'Serene.',
   description: 'Meet the perfect strangers over food and wine!',
+  icons: {
+    icon: '/assets/images/favicon.ico',
+  },
 };
 
 export default function Home() {
