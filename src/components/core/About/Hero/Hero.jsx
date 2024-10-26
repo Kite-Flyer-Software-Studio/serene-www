@@ -12,7 +12,7 @@ export default function Hero() {
         background: 'url(/assets/images/serene/how-it-works-hero-2.svg) center no-repeat',
         margin: 0,
         minWidth: '100vw',
-        backgroundSize: '100%'
+        backgroundSize: 'cover'
       }}
     >
       <div className="home-content text-center">
