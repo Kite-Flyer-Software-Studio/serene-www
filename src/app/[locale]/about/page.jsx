@@ -1,14 +1,11 @@
 import Header from '@/components/core/Header/Header';
 import Footer from '@/components/core/Footer/Footer';
-import Hero from '@/components/core/HowItWorks/Hero/Hero';
-import Content from '@/components/core/HowItWorks/Content/Content';
 
 export const metadata = {
-  title: 'How It Works | Serene.',
+  title: 'About Serene',
   description: 'Meet the perfect strangers over food and wine!',
 };
-
-export default function HowItWorks() {
+export default function AboutUs() {
   return (
     <>
       <div className="theme-main">
@@ -17,11 +14,7 @@ export default function HowItWorks() {
           <nav className="main-nav transparent stick-fixed wow-menubar">
             <Header />
           </nav>
-          {/* End Navigation Panel */}
-          <main id="main">
-            <Hero />
-            <Content />
-          </main>
+          <main id="main"></main>
           <footer className="page-section footer pb-30">
             <Footer />
           </footer>
