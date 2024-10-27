@@ -25,9 +25,9 @@ export default function Header() {
         <a href="/" className="logo">
           <Image
             src="/assets/images/serene/logo.svg"
-            alt="Your Company Logo"
-            width={84}
-            height={33}
+            alt="Serene Logo"
+            width={140}
+            height={91}
             className="light-mode-logo"
           />
         </a>

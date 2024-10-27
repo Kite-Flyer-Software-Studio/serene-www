@@ -17,6 +17,14 @@ const IFRAME_STYLE = {
   visibility: 'hidden',
 };
 
+export const metadata = {
+  title: 'Serene.',
+  description: 'Meet the perfect strangers over food and wine!',
+  icons: {
+    icon: '/assets/images/favicon.ico',
+  },
+};
+
 export default async function RootLayout({ children, params: { locale } }) {
   const messages = await getMessages();
 
