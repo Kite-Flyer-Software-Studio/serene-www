@@ -5,14 +5,16 @@ import Brief from '@/components/core/About/Brief';
 import Partners from '@/components/core/About/Partners/Partners';
 import FAQ from '@/components/core/About/FAQ';
 
-export const metadata = {
-  title: 'About | Serene.',
-  description: 'From Strangers To Lasting Friendships',
-  openGraph: {
-    title: 'Serene — About Us',
-    description: 'Serene hosts refined dinners with a tasting menu, encouraging guests to forge new friendships through exquisite cuisine, fine wine, and engaging conversations.'
-  }
-};
+export async function generateMetadata() {
+  return {
+    title: 'About | Serene.',
+    description: 'From Strangers To Lasting Friendships',
+    openGraph: {
+      title: 'Serene — About Us',
+      description: 'Serene hosts refined dinners with a tasting menu, encouraging guests to forge new friendships through exquisite cuisine, fine wine, and engaging conversations.'
+    }
+  };
+}
 
 export default function About() {
   return (
