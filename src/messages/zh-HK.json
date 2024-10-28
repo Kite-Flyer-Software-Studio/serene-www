@@ -74,6 +74,10 @@
     "Step 5 Description": "Enjoy great food and wine. Break through small talk with our conversation starters.",
     "Step 6 Description": "Enjoy great food and wine. Break through small talk with our conversation starters."
   },
+  "Wines": {
+    "Title1": "我們的葡萄酒清單",
+    "Title2": "我們精心挑選每一瓶優質葡萄酒，以確保為每位 Serene 的客人提供最佳的美食和葡萄酒搭配。"
+  },
   "Nav": {
     "Book Your Seat": "立即體驗"
   },
@@ -99,10 +103,6 @@
   "FAQ": {
     "Title": "常見問題",
     "Cta": "仲有疑問?"
-  },
-  "WinesPage": {
-    "Title": "我們的葡萄酒清單",
-    "Subtitle": "我們精心挑選每一瓶優質葡萄酒，以確保為每位 Serene 的客人提供最佳的美食和葡萄酒搭配。"
   },
   "OnboardingCompleted": {
     "Title": "接下来是什么？",

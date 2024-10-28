@@ -14,26 +14,24 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <>
-      <div className="theme-main">
-        <div className="page" id="top">
-          <nav className="main-nav transparent stick-fixed wow-menubar">
-            <Header />
-          </nav>
-          <main id="main">
-            <section
-              className="home-section parallax-mousemove-scene scrollSpysection"
-              id="home"
-            >
-              <Hero />
-            </section>
-            <Content />
-          </main>
-          <footer className="page-section footer pb-30">
-            <Footer />
-          </footer>
-        </div>
+    <div className="theme-main">
+      <div className="page" id="top">
+        <nav className="main-nav transparent stick-fixed wow-menubar">
+          <Header />
+        </nav>
+        <main id="main">
+          <section
+            className="home-section parallax-mousemove-scene scrollSpysection"
+            id="home"
+          >
+            <Hero />
+          </section>
+          <Content />
+        </main>
+        <footer className="page-section footer pb-30">
+          <Footer />
+        </footer>
       </div>
-    </>
+    </div>
   );
 }

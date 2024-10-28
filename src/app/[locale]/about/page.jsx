@@ -16,23 +16,21 @@ export const metadata = {
 
 export default function About() {
   return (
-     <>
-      <div className="theme-main">
-        <div className="page" id="top">
-          <nav className="main-nav transparent stick-fixed wow-menubar">
-            <Header />
-          </nav>
-          <main id="main">
-            <Hero />
-            <Brief />
-            <Partners />
-            <FAQ />
-          </main>
-          <footer className="page-section footer pb-30">
-            <Footer />
-          </footer>
-        </div>
+    <div className="theme-main">
+      <div className="page" id="top">
+        <nav className="main-nav transparent stick-fixed wow-menubar">
+          <Header />
+        </nav>
+        <main id="main">
+          <Hero />
+          <Brief />
+          <Partners />
+          <FAQ />
+        </main>
+        <footer className="page-section footer pb-30">
+          <Footer />
+        </footer>
       </div>
-    </>
+    </div>
   )
 }
