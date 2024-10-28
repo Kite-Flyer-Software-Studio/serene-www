@@ -8,9 +8,10 @@ import FAQ from '@/components/core/About/FAQ';
 export const metadata = {
   title: 'About | Serene.',
   description: 'From Strangers To Lasting Friendships',
-  icons: {
-    icon: '/assets/images/favicon.ico',
-  },
+  openGraph: {
+    title: 'Serene — About Us',
+    description: 'Serene hosts refined dinners with a tasting menu, encouraging guests to forge new friendships through exquisite cuisine, fine wine, and engaging conversations.'
+  }
 };
 
 export default function About() {

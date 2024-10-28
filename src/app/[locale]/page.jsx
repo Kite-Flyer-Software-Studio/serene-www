@@ -4,11 +4,12 @@ import Hero from '@/components/core/Root/Hero/Hero';
 import Content from '@/components/core/Root/Content/Content';
 
 export const metadata = {
-  title: 'Serene.',
+  title: 'Serene',
   description: 'Meet the perfect strangers over food and wine!',
-  icons: {
-    icon: '/assets/images/favicon.ico',
-  },
+  openGraph: {
+    title: 'Serene — Meet the perfect strangers over food and wine!',
+    description: "At Serene, we believe that great food, fine wine, and tailored restaurant menus can create a perfect storm of authentic connection and community – join us for an evening you'll never forget."
+  }
 };
 
 export default function Home() {

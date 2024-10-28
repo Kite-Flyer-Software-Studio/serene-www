@@ -18,11 +18,17 @@ const IFRAME_STYLE = {
 };
 
 export const metadata = {
-  title: 'Serene.',
-  description: 'Meet the perfect strangers over food and wine!',
+  keywords: 'Food • Friends • Wine',
+  author: 'Serene',
+  viewport: 'width=device-width, initial-scale=1.0',
   icons: {
     icon: '/assets/images/favicon.ico',
   },
+  openGraph: {
+    type: 'website',
+    url: 'https://sereneexperience.com',
+    images: '/assets/images/serene/logo.svg'
+  }
 };
 
 export default async function RootLayout({ children, params: { locale } }) {
