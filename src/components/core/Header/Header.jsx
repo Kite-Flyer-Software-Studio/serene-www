@@ -5,8 +5,9 @@ import Image from 'next/image';
 import LanguageSelect from './LanguageSelect';
 import useDetectUserEventNav from '@/hooks/useDetectUserEventNav';
 import useTypeformWaitlistUrl from '@/hooks/useTypeformWaitlistUrl';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { LUMA_REGULAR_CALENDAR } from '@/constants';
+import { useMemo } from 'react';
 
 const links = [
   { href: 'about', text: 'About', dataBtnAnimate: 'y' },
@@ -18,11 +19,17 @@ export default function Header() {
   useDetectUserEventNav();
   const typeformWaitlistUrl = useTypeformWaitlistUrl();
   const t = useTranslations('Nav');
+  const locale = useLocale();
+
+  const localHref = useMemo(
+    () => (locale === 'en' ? '/en' : '/zh-HK'),
+    [locale]
+  );
 
   return (
     <div className="main-nav-sub full-wrapper">
       <div className="nav-logo-wrap local-scroll">
-        <a href="/" className="logo">
+        <a href={localHref} className="logo">
           <Image
             src="/assets/images/serene/logo.svg"
             alt="Serene Logo"

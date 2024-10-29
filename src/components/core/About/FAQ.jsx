@@ -1,4 +1,3 @@
-import ParallaxContainer from "@/components/core/ParallaxContainer";
 import AnimatedText from "@/components/core/AnimatedText";
 import Image from "next/image";
 
@@ -72,8 +71,8 @@ export default function FAQ() {
   return (
     <>
       <section className="page-section pt-0 pb-0" id="faq">
-        <ParallaxContainer
-          className="page-section bg-gray-light-1 bg-light-alpha-90 parallax-5"
+        <div
+          className="page-section bg-gray-light-1 bg-light-alpha-90"
         >
           <>
             <div className="position-absolute top-0 bottom-0 start-0 end-0 bg-gradient-white" />
@@ -104,7 +103,7 @@ export default function FAQ() {
               {/* End Section Content */}
             </div>
           </>
-        </ParallaxContainer>
+        </div>
       </section>
       <section className="page-section pt-0">
         <div className="container relative wow fadeInUp">

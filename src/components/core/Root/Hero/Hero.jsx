@@ -9,7 +9,6 @@ import GroupDinnerTwo from './images/group-5.jpg';
 import GroupDinnerThree from './images/group-four.jpg';
 
 import css from './style.module.css';
-import ParallaxContainer from '@/components/core/ParallaxContainer';
 
 const IMAGES = [
   {
@@ -31,8 +30,8 @@ export default function Hero() {
   const typeformWaitlistUrl = useTypeformWaitlistUrl();
 
   return (
-    <ParallaxContainer
-      className="page-section parallax-5"
+    <div
+      className="page-section"
       style={{
         backgroundImage: 'url(/assets/images/serene/how-it-works-hero.svg)',
       }}
@@ -113,6 +112,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </ParallaxContainer>
+    </div>
   );
 }
