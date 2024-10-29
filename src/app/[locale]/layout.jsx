@@ -6,9 +6,9 @@ import 'react-modal-video/css/modal-video.css';
 import 'photoswipe/dist/photoswipe.css';
 import GoogleTagManager from '@/components/core/GoogleTagManager';
 import MetaPixel from '@/components/core/MetaPixel';
-import IntlProvider from '@/i18n/Provider';
 import { GTM_ID, META_PIXEL_ID } from '@/constants';
 import { getMessages } from 'next-intl/server';
+import { NextIntlClientProvider } from 'next-intl'
 
 import 'tippy.js/dist/tippy.css';
 
@@ -81,9 +81,9 @@ export default async function RootLayout({ children, params: { locale } }) {
             src={`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`}
           />
         </noscript>
-        <IntlProvider locale={locale} messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
-        </IntlProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
