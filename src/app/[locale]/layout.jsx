@@ -1,8 +1,7 @@
 import 'swiper/css';
-import '../../public/assets/css/styles.css';
+import '../../../public/assets/css/styles.css';
 import 'jarallax/dist/jarallax.min.css';
 import 'swiper/css/effect-fade';
-import 'react-modal-video/css/modal-video.css';
 import 'photoswipe/dist/photoswipe.css';
 import GoogleTagManager from '@/components/core/GoogleTagManager';
 import MetaPixel from '@/components/core/MetaPixel';
@@ -12,24 +11,31 @@ import { NextIntlClientProvider } from 'next-intl'
 
 import 'tippy.js/dist/tippy.css';
 
+export const viewport = {
+  'width': 'device-width',
+  'initial-scale': '1.0'
+}
+
 const IFRAME_STYLE = {
   display: 'none',
   visibility: 'hidden',
 };
 
-export const metadata = {
-  keywords: 'Food • Friends • Wine',
-  author: 'Serene',
-  viewport: 'width=device-width, initial-scale=1.0',
-  icons: {
-    icon: '/assets/images/favicon.ico',
-  },
-  openGraph: {
-    type: 'website',
-    url: 'https://sereneexperience.com',
-    images: '/assets/images/serene/logo.svg'
+export async function generateMetadata() {
+  return {
+    metadataBase: 'https://sereneexperience.com',
+    keywords: 'Food • Friends • Wine',
+    author: 'Serene',
+    icons: {
+      icon: '/assets/images/favicon.ico',
+    },
+    openGraph: {
+      type: 'website',
+      url: 'https://sereneexperience.com',
+      images: '/assets/images/serene/logo.svg'
+    }
   }
-};
+}
 
 export default async function RootLayout({ children, params: { locale } }) {
   const messages = await getMessages();

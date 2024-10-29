@@ -133,7 +133,7 @@ export default function FAQ() {
               data-rellax-percentage="0.5"
             >
               <Image
-                src="/assets/images/decoration-3.svg"
+                src="/assets/images/common/decoration-3.svg"
                 className="svg-shape"
                 width={148}
                 height={148}
