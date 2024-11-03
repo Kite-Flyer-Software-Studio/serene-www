@@ -11,6 +11,7 @@ export default function TakePersonalityTestCta({
           href={`${typeformWaitlistUrl}?utm_content=why-serene`}
           className="btn btn-mod btn-large btn-border-w-light btn-circle white"
           data-btn-animate="y"
+          target='_blank'
         >
           <span className="btn-animate-y">
             <span className="btn-animate-y-1">{locale('about.Cta')}</span>

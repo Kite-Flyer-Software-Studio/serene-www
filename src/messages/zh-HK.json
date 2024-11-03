@@ -44,7 +44,8 @@
     "brief": {
       "title": "Toast to New Friendships!",
       "paragraph1": "Serene hosts refined dinners with a tasting menu, encouraging guests to forge new friendships through exquisite cuisine, fine wine, and engaging conversations.",
-      "paragraph2": "Serene collaborates with top restaurants to offer exclusive tasting menus tailored for our guests. Each dish is thoughtfully paired with handpicked wines, ensuring an unforgettable evening filled with exceptional flavors and delightful experiences."
+      "paragraph2": "Serene collaborates with top restaurants to offer exclusive tasting menus tailored for our guests. Each dish is thoughtfully paired with handpicked wines, ensuring an unforgettable evening filled with exceptional flavors and delightful experiences.",
+      "Cta": "Join Now"
     },
     "partners": {
       "title": "Our Partners",
@@ -78,6 +79,12 @@
   "Wines": {
     "Title1": "我們的葡萄酒清單",
     "Title2": "我們精心挑選每一瓶優質葡萄酒，以確保為每位 Serene 的客人提供最佳的美食和葡萄酒搭配。"
+  },
+  "Dinners": {
+    "Title1": "Serene Dinners",
+    "Title2": "Cultivate meaningful connections and forge lifelong friendships",
+    "Cta": "I'm interested",
+    "More Events": "More Events"
   },
   "Nav": {
     "Book Your Seat": "立即體驗"

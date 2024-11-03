@@ -114,6 +114,7 @@ export default function Content() {
                 className="btn btn-mod  btn-medium btn-circle white"
                 data-btn-animate="y"
                 style={{ backgroundColor: '#FF6D1F' }}
+                target='_blank'
               >
                 <span className="btn-animate-y">
                   <span className="btn-animate-y-1">{t('Cta')}</span>

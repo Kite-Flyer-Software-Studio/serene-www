@@ -8,7 +8,7 @@ export const scrollToElement = () => {
       //   console.log(anchor.href);
       anchor.addEventListener("click", (e) => {
         e.preventDefault();
-        console.log("clicle");
+
         const id = anchor.href.split("#")[1];
         const element = document.getElementById(id);
         if (element) {

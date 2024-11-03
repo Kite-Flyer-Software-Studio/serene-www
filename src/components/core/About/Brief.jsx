@@ -1,8 +1,11 @@
+import useTypeformWaitlistUrl from "@/hooks/useTypeformWaitlistUrl";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Brief() {
   const t = useTranslations('About.brief')
+  const typeformWaitlistUrl = useTypeformWaitlistUrl();
 
   return (
    <div className="container mt-60 mb-60" id="brief">
@@ -50,8 +53,21 @@ export default function Brief() {
             {t('paragraph2')}
           </p>
         </div>
+        <Link
+          href={`${typeformWaitlistUrl}?utm_content=about`}
+          className="btn btn-mod  btn-medium btn-circle white"
+          data-btn-animate="y"
+          style={{ backgroundColor: '#FF6D1F' }}
+          target="_blank"
+        >
+          <span className="btn-animate-y">
+            <span className="btn-animate-y-1">{t('Cta')}</span>
+            <span className="btn-animate-y-2" aria-hidden="true">
+              {t('Cta')}
+            </span>
+          </span>
+        </Link>
       </div>
-
       <div className="col-lg-2 offset-xl-1 d-none d-lg-block">
         <div className="round overflow-hidden">
           <Image

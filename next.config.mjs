@@ -8,6 +8,14 @@ const nextConfig = {
   //   defaultLocale: 'en',
   //   locales: ['en', 'zh'],
   // },
+  images: {
+    remotePatterns: [{
+      protocol: 'https',
+      hostname: 'images.lumacdn.com',
+      port: '',
+      pathname: '**'
+    }]
+  },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/i,

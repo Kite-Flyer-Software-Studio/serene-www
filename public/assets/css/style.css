@@ -8007,7 +8007,7 @@ img.services-image {
 }
 .portfolio-3-title {
   margin-bottom: 15px;
-  font-size: 62px;
+  font-size: 60px;
   font-weight: 400;
   line-height: 1;
   letter-spacing: 0.02em;
@@ -8025,6 +8025,13 @@ img.services-image {
 .portfolio-3-title a:hover {
   color: inherit;
   background-size: 100% 1px;
+}
+.portfolio-3-subtitle {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
 }
 .portfolio-3-descr {
   font-size: 15px;
@@ -11925,7 +11932,8 @@ html:not(.mobile) .owl-animate-fadeInDown {
 }
 .testimonials-6-author {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
+  text-decoration: underline;
 }
 .testimonials-6-position {
   font-size: 16px;

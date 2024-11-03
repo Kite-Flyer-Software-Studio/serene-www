@@ -6,13 +6,12 @@ import LanguageSelect from './LanguageSelect';
 import useDetectUserEventNav from '@/hooks/useDetectUserEventNav';
 import useTypeformWaitlistUrl from '@/hooks/useTypeformWaitlistUrl';
 import { useLocale, useTranslations } from 'next-intl';
-import { LUMA_REGULAR_CALENDAR } from '@/constants';
 import { useMemo } from 'react';
 
 const links = [
   { href: 'about', text: 'About', dataBtnAnimate: 'y' },
   { href: 'how-it-works', text: 'How it works', dataBtnAnimate: 'y' },
-  { href: LUMA_REGULAR_CALENDAR, text: 'Dinners', dataBtnAnimate: 'y' },
+  { href: 'dinners', text: 'Dinners', dataBtnAnimate: 'y' },
 ];
 
 export default function Header() {
@@ -63,6 +62,7 @@ export default function Header() {
             <a
               href={`${typeformWaitlistUrl}?utm_content=header`}
               className="opacity-1 no-hover"
+              target='_blank'
             >
               <span
                 className="btn btn-mod btn-border btn-border-white btn-small btn-circle"

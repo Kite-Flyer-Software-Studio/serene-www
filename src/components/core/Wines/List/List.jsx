@@ -57,7 +57,7 @@ const WINES = [
 ]
 
 export default function List() {
-  const t = useTranslations('WinesPage')
+  const t = useTranslations('Wines')
 
   return (
     <div
