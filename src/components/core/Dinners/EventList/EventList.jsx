@@ -27,7 +27,7 @@ export default async function EventList() {
   const t = await getTranslations('Dinners');
 
   return (
-    <div className="grid gap-4 mt-120 px-5" id="event-list">
+    <div className="grid gap-4 mt-120 px-5 pb-60" id="event-list">
       {events.map(({ event }, i) => (
         <Fragment key={event.app_id}>
           {!(i % 2) ? (
