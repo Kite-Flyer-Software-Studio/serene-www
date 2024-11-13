@@ -12,7 +12,7 @@ const links = [
   { href: 'about', text: 'About', dataBtnAnimate: 'y' },
   { href: 'how-it-works', text: 'How it works', dataBtnAnimate: 'y' },
   { href: 'dinners', text: 'Dinners', dataBtnAnimate: 'y' },
-  // { href: 'community', text: 'Community', dataBtnAnimate: 'y' },
+  { href: 'community', text: 'Community', dataBtnAnimate: 'y' },
 ];
 
 export default function Header() {
