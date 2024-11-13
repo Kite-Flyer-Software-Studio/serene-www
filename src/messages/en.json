@@ -98,190 +98,45 @@
       "Terms & Conditions": "Terms & Conditions"
     }
   },
-  "RestaurantSelection": {
-    "Title": "Restaurant Partners",
-    "We handpick restaurants": "We handpick the best restaurants in town with <br></br> tailored menus to guarantee you the finest dining experiences.",
-    "More partnerships": "We're cooking up more delicious partnerships... Stay tuned!",
-    "Cta": "Book your seat"
-  },
-  "Carousel": {
-    "Title": "Create Lasting Connections",
-    "Cta": "Take personality test"
-  },
-  "FAQ": {
-    "Title": "F.A.Q",
-    "Cta": "Ask us any questions"
-  },
-  "OnboardingCompleted": {
-    "Title": "What's next?",
-    "Paragraph0": "Our algorithm will study your answers and match you with 4-5 like-minded individuals for the upcoming dinner.",
-    "Paragraph1": "You will receive an instagram DM about the restaurant, set menu, and link to purchase the ticket.",
-    "Foot": "Follow us on Instagram to stay tuned!"
-  },
-  "OnboardingPage": {
-    "Movie": {
-      "Label": "What is your movie choice?",
-      "Options": {
-        "Cult Movie": "Cult Movie",
-        "Mainstream Blockbuster": "Mainstream Blockbuster"
+  "Community": {
+     "hero": {
+      "Title1": "Serene Community",
+      "Title2": "Start with friendship, and watch the possibilities soar!",
+      "learnMore": "Learn More",
+      "joinNow": "Join Now"
+    },
+    "community": {
+      "header": "Serene Community",
+      "slogan": "Everything starts from Friendship",
+      "description": "First in Hong Kong fostering meaningful connections through exceptional experience.",
+      "ctaTitle": "Every adventure begins with friendship, unlocking a treasure trove of endless possibilities ahead!",
+      "cta": "Join Now",
+      "offerings": {
+        "dining": {
+          "span": "Exquisite Cuisine",
+          "description": "Serene has partnered with the best restaurants for an unforgettable group dining experience! Savor a uniquely crafted set menu featuring both beloved favorites and hidden gems. Join the fun!"
+        },
+        "drinks": {
+          "span": "Savor the Sip",
+          "description": "Serene enhances your dining with an exquisite wine selection! Enjoy curated pairings at dinner, and effortlessly purchase your favorites to take home or gift. Cheers to unforgettable flavors!"
+        },
+        "wellness": {
+          "span": "Personal Wellness",
+          "description": "Serene knows personal wellness transforms busy lives! Enjoy rejuvenating massages, spa treatments, and relaxing activities that support your journey to well-being—your gateway to endless possibilities awaits!"
+        },
+        "events": {
+          "span": "Exclusive Events",
+          "description": "Serene hosts exciting events for members to connect and have fun! Enjoy delightful dinners, lively happy hours, cozy book clubs, exclusive screenings, and more—endless possibilities await your next adventure!"
+        },
+        "fitness": {
+          "span": "Engaging Fitness",
+          "description": "Serene keeps your energy high and spirit adventurous! Enjoy fun Pilates, exhilarating HIIT, and dynamic gym workouts while sweating it out with friends. Let’s get moving together on this fitness journey!"
+        },
+        "mentoring": {
+          "span": "Career coaching",
+          "description": "Serene is a vibrant community of dynamic professionals! Connect for networking, career coaching, and mentoring. With talents from various fields, we create endless possibilities and make a positive impact together!"
+        }
       }
-    },
-    "Fashion": {
-      "Label": "What is your fashion choice?",
-      "Options": {
-        "High Fashion": "High Fashion",
-        "Street Fashion": "Street Fashion"
-      }
-    },
-    "DateChoice": {
-      "Label": "What is your fashion choice?",
-      "Options": {
-        "Well-planned and Informed": "Well-planned and Informed",
-        "Spontaneous and Surprising": "Spontaneous and Surprising"
-      }
-    },
-    "PreferredLanguage": {
-      "Label": "Your preferred language for the dinner",
-      "Options": {
-        "English": "English",
-        "Mandarin": "Mandarin",
-        "Cantonese": "Cantonese"
-      }
-    },
-
-    "PreferredDinner": {
-      "Label": "Your preferred language for the dinner",
-      "Options": {
-        "Fusion": "Fusion",
-        "Traditional": "Traditional"
-      }
-    },
-
-    "PreferredFood": {
-      "Label": "Expected dinner menu options?",
-      "Options": {
-        "Meat": "Meat",
-        "Seafood": "Seafood",
-        "Vegetarian": "Vegetarian",
-        "Vegan": "Vegan",
-        "Dessert": "Dessert"
-      }
-    },
-
-    "Motto": {
-      "Label": "Your life motto"
-    },
-
-    "DefinitionOfSuccess": {
-      "Label": "Your definition of success"
-    },
-    "Instagram": {
-      "Label": "What is your instagram account name?"
-    },
-
-    "YearOfBirth": {
-      "Label": "What year were you born?"
-    },
-    "Industry": {
-      "Label": "What industry do you work in?",
-      "Options": {
-        "Technology": "Technology",
-        "Healthcare": "Healthcare",
-        "Retail": "Retail",
-        "Food & Beverage": "Food & Beverage",
-        "Arts": "Arts",
-        "Government": "Government",
-        "Finance": "Finance",
-        "Hospitality": "Hospitality",
-        "Professional Services": "Professional Services"
-      }
-    },
-    "Mbti": {
-      "Label": "What is your MBTI?"
-    },
-    "AstrologicalSign": {
-      "Label": "What is your zodiac sign?"
-    },
-    "Country": {
-      "Label": "Where are you from?"
-    },
-
-    "DefineYourself": {
-      "Label": "How do you define yourself?",
-      "Options": {
-        "Man": "Man",
-        "Woman": "Woman",
-        "Non-Binary": "Non-Binary"
-      }
-    },
-
-    "RelationshipStatus": {
-      "Label": "What is your relationship status?",
-      "Options": {
-        "Single": "Single",
-        "Married": "Married",
-        "In a relationship": "In a relationship",
-        "Complicated": "Complicated"
-      }
-    },
-
-    "Introvert": {
-      "Label": "Are you a/an:",
-      "Options": {
-        "Introvert": "Introvert",
-        "Somewhere in the middle": "Somewhere in the middle",
-        "Extrovert": "Extrovert"
-      }
-    },
-
-    "DecisionMaking": {
-      "Label": "What affect you more on decision making?",
-      "Options": {
-        "Emotions and Intuition": "Emotions and Intuition",
-        "Logic and Facts": "Logic and Facts"
-      }
-    },
-
-    "Funny": {
-      "Label": "I am a funny person",
-      "MinLabel": "Strongly Disagree",
-      "MaxLabel": "Strongly Agree"
-    },
-
-    "SolvingProblem": {
-      "Label": "I enjoy solving convoluted problem",
-      "MinLabel": "Strongly Disagree",
-      "MaxLabel": "Strongly Agree"
-    },
-
-    "SenseEmotions": {
-      "Label": "I can easily sense other people's emotions",
-      "MinLabel": "Strongly Disagree",
-      "MaxLabel": "Strongly Agree"
-    },
-
-    "LoveMyJob": {
-      "Label": "I love my job",
-      "MinLabel": "Strongly Disagree",
-      "MaxLabel": "Strongly Agree"
-    },
-
-    "Outdoor": {
-      "Label": "I am more of an _ person",
-      "MinLabel": "Indoor",
-      "MaxLabel": "Outdoor"
-    },
-
-    "Talker": {
-      "Label": "I am more of a",
-      "MinLabel": "Listener",
-      "MaxLabel": "Talker"
-    },
-
-    "MeetingNewPeople": {
-      "Label": "I enjoy meeting new people",
-      "MinLabel": "Strongly Disagree",
-      "MaxLabel": "Strongly Agree"
     }
   }
 }

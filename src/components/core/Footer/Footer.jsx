@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import FooterSocials from './FooterSocials';
+import Socials from './Socials';
 import { useLocale, useTranslations } from 'next-intl';
 
 export const footerLinks = [
@@ -45,9 +45,7 @@ export default function Footer() {
             <div className="col-sm-4 mt-30"></div>
             <div className="col-sm-4 mt-30">
               <h3 className="fw-title">{t('Social Media')}</h3>
-              <ul className="fw-menu clearlist">
-                <FooterSocials />
-              </ul>
+              <Socials />
             </div>
             <div className="col-sm-4 mt-30">
               <h3 className="fw-title">{t('Legal')}</h3>
