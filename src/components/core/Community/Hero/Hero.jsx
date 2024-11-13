@@ -51,6 +51,7 @@ export default function Hero() {
                 className="btn btn-mod btn-w btn-large btn-round ms-1 me-1 mt-2 align-middle"
                 style={{ backgroundColor: '#FF6D1F', color: '#fff' }}
                 data-btn-animate="y"
+                target="_blank"
               >
                 {t('joinNow')}
               </a>

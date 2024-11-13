@@ -117,6 +117,7 @@ export default function About() {
                     href={`https://my-serene.mn.co/landing?utm_source=website&utm_content=community-about-cta`}
                     className="btn btn-mod btn-large btn-round btn-hover-anim"
                     style={{ backgroundColor: '#FF6D1F', color: '#fff' }}
+                    target="_blank"
                   >
                     <span>{t('cta')}</span>
                   </a>
