@@ -15,6 +15,7 @@ export default function Hero() {
           autoPlay
           muted
           loop
+          playsinline
         >
           <source src="/assets/videos/Serene_community.mp4" type="video/mp4" />
         </video>
