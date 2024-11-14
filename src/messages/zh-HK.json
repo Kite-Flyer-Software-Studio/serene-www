@@ -99,11 +99,44 @@
     }
   },
   "Community": {
-    "hero": {
+     "hero": {
       "Title1": "Serene Community",
       "Title2": "Start with friendship, and watch the possibilities soar!",
       "learnMore": "Learn More",
       "joinNow": "Join Now"
+    },
+    "community": {
+      "header": "Serene Community",
+      "slogan": "Everything starts from Friendship",
+      "description": "First in Hong Kong fostering meaningful connections through exceptional experience.",
+      "ctaTitle": "Every adventure begins with friendship, unlocking a treasure trove of endless possibilities ahead!",
+      "cta": "Join Now",
+      "offerings": {
+        "dining": {
+          "span": "Exquisite Cuisine",
+          "description": "Serene has partnered with the best restaurants for an unforgettable group dining experience! Savor a uniquely crafted set menu featuring both beloved favorites and hidden gems. Join the fun!"
+        },
+        "drinks": {
+          "span": "Savor the Sip",
+          "description": "Serene enhances your dining with an exquisite wine selection! Enjoy curated pairings at dinner, and effortlessly purchase your favorites to take home or gift. Cheers to unforgettable flavors!"
+        },
+        "wellness": {
+          "span": "Personal Wellness",
+          "description": "Serene knows personal wellness transforms busy lives! Enjoy rejuvenating massages, spa treatments, and relaxing activities that support your journey to well-being—your gateway to endless possibilities awaits!"
+        },
+        "events": {
+          "span": "Exclusive Events",
+          "description": "Serene hosts exciting events for members to connect and have fun! Enjoy delightful dinners, lively happy hours, cozy book clubs, exclusive screenings, and more—endless possibilities await your next adventure!"
+        },
+        "fitness": {
+          "span": "Engaging Fitness",
+          "description": "Serene keeps your energy high and spirit adventurous! Enjoy fun Pilates, exhilarating HIIT, and dynamic gym workouts while sweating it out with friends. Let’s get moving together on this fitness journey!"
+        },
+        "mentoring": {
+          "span": "Career coaching",
+          "description": "Serene is a vibrant community of dynamic professionals! Connect for networking, career coaching, and mentoring. With talents from various fields, we create endless possibilities and make a positive impact together!"
+        }
+      }
     }
   }
 }
