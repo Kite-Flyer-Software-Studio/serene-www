@@ -7,6 +7,7 @@ import useDetectUserEventNav from '@/hooks/useDetectUserEventNav';
 import useTypeformWaitlistUrl from '@/hooks/useTypeformWaitlistUrl';
 import { useLocale, useTranslations } from 'next-intl';
 import { useMemo } from 'react';
+import { LUMA_REGULAR_CALENDAR } from '@/constants';
 
 const links = [
   { href: 'about', text: 'About', dataBtnAnimate: 'y' },
@@ -59,17 +60,31 @@ export default function Header() {
           {/* Languages */}
           <LanguageSelect />
           {/* End Languages */}
-          <li>
+          <li className="me-0">
             <a
-              href={`${typeformWaitlistUrl}?utm_content=header`}
+              href={LUMA_REGULAR_CALENDAR}
               className="opacity-1 no-hover"
-              target='_blank'
+              target="_blank"
             >
               <span
                 className="btn btn-mod btn-border btn-border-white btn-small btn-circle"
                 data-btn-animate="y"
               >
                 {t('Book Your Seat')}
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              href={`${typeformWaitlistUrl}?utm_content=header`}
+              className="opacity-1 no-hover"
+              target="_blank"
+            >
+              <span
+                className="btn btn-mod btn-border btn-border-white btn-small btn-circle"
+                data-btn-animate="y"
+              >
+                {t('Join Waitlist')}
               </span>
             </a>
           </li>

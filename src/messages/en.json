@@ -87,7 +87,8 @@
     "More Events": "More Events"
   },
   "Nav": {
-    "Book Your Seat": "Try Serene"
+    "Book Your Seat": "Book your seat",
+    "Join Waitlist": "Subscribe Future Events"
   },
   "Footer": {
     "Social Media": "Social Media",
@@ -99,7 +100,7 @@
     }
   },
   "Community": {
-     "hero": {
+    "hero": {
       "Title1": "Serene Community",
       "Title2": "Start with friendship, and watch the possibilities soar!",
       "learnMore": "Learn More",

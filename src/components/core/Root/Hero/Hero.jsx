@@ -3,10 +3,11 @@ import TypeWriter from '@/components/core/TypeWriter';
 import React from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import useTypeformWaitlistUrl from '@/hooks/useTypeformWaitlistUrl';
+
 import GroupDinnerOne from './images/group-dinner.jpg';
 import GroupDinnerTwo from './images/group-5.jpg';
 import GroupDinnerThree from './images/group-four.jpg';
+import { LUMA_REGULAR_CALENDAR } from '@/constants';
 
 import css from './style.module.css';
 
@@ -27,7 +28,6 @@ const IMAGES = [
 
 export default function Hero() {
   const t = useTranslations('Root.hero');
-  const typeformWaitlistUrl = useTypeformWaitlistUrl();
 
   return (
     <div
@@ -77,11 +77,11 @@ export default function Hero() {
                   data-wow-offset={0}
                 >
                   <a
-                    href={`${typeformWaitlistUrl}?utm_content=hero`}
+                    href={LUMA_REGULAR_CALENDAR}
                     className="btn btn-mod btn-large btn-circle"
                     data-btn-animate="y"
                     style={{ backgroundColor: '#FF6D1F' }}
-                    target='_blank'
+                    target="_blank"
                   >
                     <span className="btn-animate-y">
                       <span className="btn-animate-y-1">
