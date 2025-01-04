@@ -11923,6 +11923,7 @@ html:not(.mobile) .owl-animate-fadeInDown {
   font-weight: 700;
   line-height: 1;
   color: var(--color-primary-light-1);
+  z-index: -1;
 }
 .testimonials-6-text {
   margin-bottom: 0;

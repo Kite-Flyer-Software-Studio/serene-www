@@ -51,7 +51,7 @@ export default async function EventList() {
                   >
                   !!
                   </div>
-                  <p className="testimonials-6-text mb-20 mb-sm-10">{event.description.split(' ').slice(0, 30).join(' ')}...</p>
+                  <p className="testimonials-6-text mb-20 mb-sm-10">{event.description.split(' ').slice(0, 20).join(' ')}...</p>
                   <footer>
                     <div className="testimonials-6-author">{event.name}</div>
                     <div className="testimonials-6-position">
@@ -73,7 +73,7 @@ export default async function EventList() {
               </div>
             </div>
           ) : (
-            <div className="row">
+            <div className="row mb-80 mb-sm-60">
               <div className="col-md-5 offset-md-1 col-lg-4 offset-lg-1 order-md-last mb-sm-20">
                 <div className="overflow-hidden round-large">
                   <Image
@@ -93,7 +93,7 @@ export default async function EventList() {
                   >
                   !!
                   </div>
-                  <p className="testimonials-6-text mb-20 mb-sm-10">{event.description.split(' ').slice(0, 30).join(' ')}...</p>
+                  <p className="testimonials-6-text mb-20 mb-sm-10">{event.description.split(' ').slice(0, 20).join(' ')}...</p>
                   <footer>
                     <div className="testimonials-6-author">{event.name}</div>
                     <div className="testimonials-6-position">
