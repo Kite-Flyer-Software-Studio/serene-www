@@ -55,7 +55,7 @@ export default async function EventList() {
                   <footer>
                     <div className="testimonials-6-author">{event.name}</div>
                     <div className="testimonials-6-position">
-                      {new Date(event.start_at).toLocaleString()}
+                      {new Date(event.start_at).toLocaleString(undefined, {timeZone: 'Asia/Singapore' })}
                     </div>
                   </footer>
                   <Link
@@ -97,7 +97,7 @@ export default async function EventList() {
                   <footer>
                     <div className="testimonials-6-author">{event.name}</div>
                     <div className="testimonials-6-position">
-                      {new Date(event.start_at).toLocaleString()}
+                      {new Date(event.start_at).toLocaleString(undefined, {timeZone: 'Asia/Singapore' })}
                     </div>
                     <Link
                       href={event.url}
