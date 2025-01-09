@@ -4,8 +4,8 @@ import Socials from './Socials';
 import { useLocale, useTranslations } from 'next-intl';
 
 export const footerLinks = [
-  { name: 'Privacy Policy', path: '/privacy-policy.html' },
-  { name: 'Terms & Conditions', path: '/terms.html' },
+  { name: 'Privacy Policy', path: '/privacy-policy.html', static: true },
+  { name: 'Terms & Conditions', path: '/terms-and-conditions.html', static: true },
 ];
 
 export default function Footer() {
@@ -52,7 +52,7 @@ export default function Footer() {
               <ul className="fw-menu clearlist">
                 {footerLinks.map((elm, i) => (
                   <li key={i}>
-                    <a href={`/${localHref}${elm.path}`}>
+                    <a href={`${elm.static ? '' : localHref}${elm.path}`}>
                       {t(`Legals.${elm.name}`)}
                     </a>
                   </li>
