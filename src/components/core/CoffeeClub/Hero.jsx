@@ -1,9 +1,10 @@
 'use client';
 
-import TypeWriter from '@/components/core/TypeWriter';
+import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
 export default function Hero() {
+  const t = useTranslations('CoffeeClub.hero');
   return (
     <>
       <div
@@ -28,22 +29,22 @@ export default function Hero() {
                     className="section-caption-border mb-30 mb-xs-20 wow fadeInUp"
                     data-wow-duration="1.2s"
                   >
-                    Serene Coffee Club
+                    {t('subtitle')}
                   </h2>
                   <h1 className="hs-title-13 mb-40 mb-sm-20 wow fadeInUp">
-                    Meet new people over coffee
+                    {t('title')}
                   </h1>
                   <p
                     className="section-text wow fadeInUp mb-0"
                     data-wow-delay="0.2s"
                   >
-                    No dating or networking
+                    {t('tagline1')}
                   </p>
                   <p
                     className="section-text mb-50 wow fadeInUp fst-italic serif"
                     data-wow-delay="0.2s"
                   >
-                    Just coffee
+                    {t('tagline2')}
                   </p>
                   <div
                     className="local-scroll wow fadeInUp wch-unset"
@@ -60,7 +61,7 @@ export default function Hero() {
                       <span className="btn-animate-y">
                         <span className="btn-animate-y-1">Join waitlist</span>
                         <span className="btn-animate-y-2" aria-hidden="true">
-                          Join waitlist
+                          {t('cta')}
                         </span>
                       </span>
                     </a>
@@ -89,7 +90,7 @@ export default function Hero() {
                         <Image
                           width={850}
                           height={834}
-                          src="/assets/images/serene/coffee/hs-image-1.jpg"
+                          src="/assets/images/serene/coffee/guy-girl-coffee.jpeg"
                           alt="Image Description"
                         />
                       </div>

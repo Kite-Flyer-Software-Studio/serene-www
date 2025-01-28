@@ -142,5 +142,72 @@
   },
   "Common": {
     "floatingCTAButton": "Reserve Your Spot Now!"
+  },
+  "CoffeeClub": {
+    "hero": {
+      "title": "Meet new people over coffee",
+      "subtitle": "Serene Coffee Club",
+      "tagline1": "Not swiping, dating, or networking",
+      "tagline2": "Just coffee",
+      "cta": "Join Waitlist"
+    },
+    "howItWorks1": {
+      "title": "Every Tuesday at 11AM, our POSSIBILITY algorithm introduces two people to each other.",
+      "description1": {
+        "1": "We call every introduction",
+        "2": "a possibility."
+      },
+      "description2": "The person intros will be shown upon introduction."
+    },
+    "howItWorks2": {
+      "title": "You will have 24 hours to schedule the coffee meet with that person.",
+      "description1": "If not, the possibility expires, and you get a new one in a week.",
+      "description2": "Once you schedule the coffee, we reveal the full profile of the person and conversation starters."
+    },
+    "possibilities": {
+      "title": "We believe in possibilities, not matches",
+      "tagline": "I am your possibility",
+      "taglines": {
+        "1": "for small talk",
+        "2": "for big talk",
+        "3": "for real talk",
+        "4": "for free therapy session",
+        "5": "to awake you",
+        "6": "for mistakes",
+        "7": "as a workout bro",
+        "8": "for nothing special"
+      },
+      "cta": "Join to make offline connections"
+    },
+    "faq": {
+      "1": {
+        "question": "Why one possibility per week?",
+        "answer": "Serene Coffee Club is all about quality interaction with real people: we believe in showing up, not swiping. That’s why every day you get the opportunity to take a chance on someone new. Take it or pass it on — no pressure!"
+      },
+      "2": {
+        "question": "How do possibilities work?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula porttitor rutrum. Ut laoreet sodales rutrum. Ut eget tristique nibh. Cras mattis est eget lacus dignissim, non consectetur velit pellentesque. Ut sit amet placerat eros, id gravida arcu. Sed felis purus, tempor ac vestibulum nec, consectetur at purus."
+      },
+      "3": {
+        "question": "Who is on Serene’s coffee club?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula porttitor rutrum. Ut laoreet sodales rutrum. Ut eget tristique nibh. Cras mattis est eget lacus dignissim, non consectetur velit pellentesque. Ut sit amet placerat eros, id gravida arcu. Sed felis purus, tempor ac vestibulum nec, consectetur at purus."
+      },
+      "4": {
+        "question": "Why invites?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula porttitor rutrum. Ut laoreet sodales rutrum. Ut eget tristique nibh. Cras mattis est eget lacus dignissim, non consectetur velit pellentesque. Ut sit amet placerat eros, id gravida arcu. Sed felis purus, tempor ac vestibulum nec, consectetur at purus."
+      },
+      "5": {
+        "question": "Is Serene’s cafe club free?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula porttitor rutrum. Ut laoreet sodales rutrum. Ut eget tristique nibh. Cras mattis est eget lacus dignissim, non consectetur velit pellentesque. Ut sit amet placerat eros, id gravida arcu. Sed felis purus, tempor ac vestibulum nec, consectetur at purus."
+      },
+      "6": {
+        "question": "What’s the point?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula porttitor rutrum. Ut laoreet sodales rutrum. Ut eget tristique nibh. Cras mattis est eget lacus dignissim, non consectetur velit pellentesque. Ut sit amet placerat eros, id gravida arcu. Sed felis purus, tempor ac vestibulum nec, consectetur at purus."
+      },
+      "7": {
+        "question": "Why coffee?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula porttitor rutrum. Ut laoreet sodales rutrum. Ut eget tristique nibh. Cras mattis est eget lacus dignissim, non consectetur velit pellentesque. Ut sit amet placerat eros, id gravida arcu. Sed felis purus, tempor ac vestibulum nec, consectetur at purus."
+      }
+    }
   }
 }

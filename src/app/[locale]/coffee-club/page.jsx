@@ -2,9 +2,9 @@ import Header from '@/components/core/Header/Header';
 import Footer from '@/components/core/Footer/Footer';
 import Hero from '@/components/core/CoffeeClub/Hero';
 import HowItWorks1 from '@/components/core/CoffeeClub/HowItWorks1';
-import Possibilities from '@/components/core/CoffeeClub/Possibilities';
 import HowItWorks2 from '@/components/core/CoffeeClub/HowItWorks2';
-import Cta from '@/components/core/CoffeeClub/Cta';
+import Possibilities from '@/components/core/CoffeeClub/Possibilities';
+import Faq from '@/components/core/CoffeeClub/Faq';
 
 export async function generateMetadata() {
   return {
@@ -28,9 +28,9 @@ export default function CoffeeClub() {
         <main id="main">
           <Hero />
           <HowItWorks1 />
-          <Possibilities />
           <HowItWorks2 />
-          <Cta />
+          <Possibilities />
+          <Faq />
         </main>
         <footer className="page-section footer pb-30">
           <Footer />

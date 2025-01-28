@@ -1,13 +1,8 @@
 import Image from 'next/image';
-
-const featuresListData = [
-  { text: 'Agency Website' },
-  { text: 'Personal Website' },
-  { text: 'Landing Page' },
-  { text: 'Portfolio and Gallery' },
-];
+import { useTranslations } from 'next-intl';
 
 export default function HowItWorks2() {
+  const t = useTranslations('CoffeeClub.howItWorks2');
   return (
     <section className="pt-30">
       <div id="paddingRightContainer" className="container" />
@@ -31,18 +26,11 @@ export default function HowItWorks2() {
             </div>
             {/* End Decorative Dots */}
             <div>
-              <h2 className="section-title mb-80">
-                You will have 24 hours to schedule the coffee meet with that
-                person.
-              </h2>
+              <h2 className="section-title mb-80">{t('title')}</h2>
               <p className="mb-50 lead fst-italic serif mb-80 pe-2">
-                If not, the possibility expires, and you get a new one in a
-                week.
+                {t('description1')}
               </p>
-              <p className="mb-50 lead">
-                Once you schedule the coffee, we reveal the full profile of the
-                person and conversation starters.
-              </p>
+              <p className="mb-50 lead">{t('description2')}</p>
             </div>
           </div>
         </div>

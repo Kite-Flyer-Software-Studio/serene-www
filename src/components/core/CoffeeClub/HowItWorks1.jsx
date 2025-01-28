@@ -1,15 +1,15 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 export default function HowItWorks1() {
+  const t = useTranslations('CoffeeClub.howItWorks1');
   return (
     <section className="page-section  scrollSpysection" id="about">
       <div className="container">
         <div className="row">
           <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-start">
             <h3 className="section-title-strong mb-90 mb-sm-50">
-              Every Tuesday at 11AM, our POSSIBILITY algorithm introduces two
-              people to each other.
+              {t('title')}
             </h3>
           </div>
         </div>
@@ -21,7 +21,7 @@ export default function HowItWorks1() {
                 <Image
                   width={500}
                   height={692}
-                  src="/assets/images/serene/coffee/section-image-1.jpg"
+                  src="/assets/images/serene/coffee/coffee-beans.jpg"
                   alt="Image description"
                   className="wow scaleOutIn"
                   data-wow-duration="1.2s"
@@ -43,13 +43,11 @@ export default function HowItWorks1() {
 
           <div className="col-sm-8 col-lg-6 col-xl-4 offset-xl-1 mt-n10">
             <div className="wow linesAnimIn" data-splitting="lines">
-              <p className="lead-alt mt-0 mb-0">We call every introduction</p>
+              <p className="lead-alt mt-0 mb-0">{t('description1.1')}</p>
               <p className="lead-alt mt-0 mb-100 fst-italic serif">
-                a possibility.
+                {t('description1.2')}
               </p>
-              <p className="lead-alt mb-40">
-                The person intros will be shown upon introduction.
-              </p>
+              <p className="lead-alt mb-40">{t('description2')}</p>
             </div>
           </div>
 

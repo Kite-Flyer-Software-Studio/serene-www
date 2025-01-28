@@ -1,10 +1,28 @@
 'use client';
 
+import { useMemo } from 'react';
+import { useTranslations } from 'next-intl';
 import TypeWriter from '@/components/core/TypeWriter';
 import React from 'react';
 import Image from 'next/image';
 
 export default function Possibilities() {
+  const t = useTranslations('CoffeeClub.possibilities');
+
+  const taglines = useMemo(
+    () => [
+      t('taglines.1'),
+      t('taglines.2'),
+      t('taglines.3'),
+      t('taglines.4'),
+      t('taglines.5'),
+      t('taglines.6'),
+      t('taglines.7'),
+      t('taglines.8'),
+    ],
+    [t]
+  );
+
   return (
     <section
       className="home-section parallax-mousemove-scene scrollSpysection"
@@ -18,11 +36,11 @@ export default function Possibilities() {
             <div className="col-lg-6 d-flex align-items-center mb-md-60 mb-sm-30 z-index-1">
               <div className="hs-title-overlap w-200 text-center text-lg-start">
                 <h2 className="section-descr-large mb-30 mb-sm-20 wow fadeInUp">
-                  We believe in possibilities, not matches
+                  {t('title')}
                 </h2>
                 <h1 className="hs-title-12 uppercase font-alt mb-40 mb-sm-30">
                   <span className="d-block wow fadeRotateIn">
-                    I am your possibility
+                    {t('tagline')}
                   </span>
                   <span
                     className="d-block wow fadeRotateIn"
@@ -30,21 +48,9 @@ export default function Possibilities() {
                     data-wow-offset={0}
                   >
                     <span className="visually-hidden">
-                      designer, developer, artist
+                      for small talk, for big talk, for real talk
                     </span>
-                    <TypeWriter
-                      strings={[
-                        'for small talk',
-                        'for big talk',
-                        'for real talk',
-                        'for free therapy session',
-                        'to awake you',
-                        'for mistakes',
-                        'as a workout bro',
-                        'for nothing special',
-                      ]}
-                      colorClass=""
-                    />
+                    <TypeWriter strings={taglines} colorClass="" />
                   </span>
                 </h1>
                 <div
@@ -60,9 +66,9 @@ export default function Possibilities() {
                     target="_blank"
                   >
                     <span className="btn-animate-y">
-                      <span className="btn-animate-y-1">Join waitlist</span>
+                      <span className="btn-animate-y-1">{t('cta')}</span>
                       <span className="btn-animate-y-2" aria-hidden="true">
-                        Join waitlist
+                        {t('cta')}
                       </span>
                     </span>
                   </a>
