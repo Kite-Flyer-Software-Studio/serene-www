@@ -34,6 +34,7 @@ export default function Hero() {
       className="page-section"
       style={{
         backgroundImage: 'url(/assets/images/serene/how-it-works-hero.svg)',
+        paddingTop: 120
       }}
       id="home"
     >
@@ -44,10 +45,10 @@ export default function Hero() {
             {/* Home Section Text */}
             <div className="col-lg-6 col-12 d-flex align-items-center mb-md-60 mb-sm-30 z-index-1">
               <div className="hs-title-overlap w-100 text-center text-lg-start">
-                <h2 className="section-descr-large mb-20 mb-sm-10 wow fadeInUp">
+                <h2 className="section-descr-large mb-20 mb-sm-50 wow fadeInUp">
                   {t.rich('Every Tuesday & Thursday')}
                 </h2>
-                <h1 className="hs-title-2 font-alt mb-20 mb-sm-10">
+                <h1 className="hs-title-2 font-alt mb-20 mb-sm-50">
                   <span
                     className="d-block wow uppercase fadeRotateIn"
                     style={{ letterSpacing: '-0.05em' }}
