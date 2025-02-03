@@ -73,9 +73,6 @@ a {
   .mobile-on .js-opened .mn-sub.mobile-sub-active {
     max-height: 1000px;
   }
-  .languageSelect {
-    display: none !important;
-  }
 }
 .dark-mode .form .form-tip-2 {
   color: var(--color-dark-mode-gray-1);
