@@ -45,7 +45,7 @@
       "title": "Toast to New Friendships!",
       "paragraph1": "Serene hosts refined dinners with a tasting menu, encouraging guests to forge new friendships through exquisite cuisine, fine wine, and engaging conversations.",
       "paragraph2": "Serene collaborates with top restaurants to offer exclusive tasting menus tailored for our guests. Each dish is thoughtfully paired with handpicked wines, ensuring an unforgettable evening filled with exceptional flavors and delightful experiences.",
-      "Cta": "Join Now"
+      "Cta": "Match & Meet"
     },
     "partners": {
       "title": "Our Partners",
@@ -139,5 +139,8 @@
         }
       }
     }
+  },
+  "Common": {
+    "floatingCTAButton": "Reserve Your Spot Now!"
   }
 }

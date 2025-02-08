@@ -42,10 +42,10 @@ export default function Brief() {
           </div>
         </div>
 
-        <div className="col-sm-8 col-lg-6 col-xl-4 offset-xl-1 mt-n10">
+        <div className="col-sm-8 col-lg-6 col-xl-4 offset-xl-1 mt-n10 about-brief-section">
           <div className="wow linesAnimIn" data-splitting="lines">
-            <p className="lead mt-0 mb-40">{t('paragraph1')}</p>
-            <p className="mb-40">{t('paragraph2')}</p>
+            <p className="lead mt-0 mb-32">{t('paragraph1')}</p>
+            <p className="m-0">{t('paragraph2')}</p>
           </div>
           <Link
             href={`${typeformWaitlistUrl}?utm_content=about`}

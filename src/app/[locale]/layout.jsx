@@ -10,6 +10,7 @@ import { getMessages } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl'
 
 import 'tippy.js/dist/tippy.css';
+import FloatingMobileCTA from '@/components/core/FloatingMobileCTA';
 
 export const viewport = {
   'width': 'device-width',
@@ -89,6 +90,7 @@ export default async function RootLayout({ children, params: { locale } }) {
         </noscript>
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
+          <FloatingMobileCTA />
         </NextIntlClientProvider>
       </body>
     </html>

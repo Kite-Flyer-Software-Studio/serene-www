@@ -69,6 +69,7 @@ export default function Header() {
               <span
                 className="btn btn-mod btn-border btn-border-white btn-small btn-circle"
                 data-btn-animate="y"
+                style={{ backgroundColor: '#000', color: '#FF6D1F'}}
               >
                 {t('Book Your Seat')}
               </span>

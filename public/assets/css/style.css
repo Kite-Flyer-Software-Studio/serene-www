@@ -12727,3 +12727,32 @@ html:not(.mobile) .owl-animate-fadeInDown {
 .video-hero {
   background: linear-gradient(90deg, rgba(2,0,36,0.1) 0%, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.3) 100%);
 }
+
+.floating-mobile-cta {
+  display: none;
+  position: fixed;
+  bottom: 16px;
+  left: 8px;
+  z-index: 9999;
+  padding: 8px 16px !important;
+  color: #FF6D1F !important;
+  font-weight: 600;
+  width: 230px;
+  margin-left: calc((100% - 230px) / 2);
+}
+
+.about-brief-section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media only screen and (max-width: 768px) {
+  .floating-mobile-cta {
+    display: block;
+  }
+  
+  .about-brief-section {
+    flex-direction: column-reverse;
+  }
+}
