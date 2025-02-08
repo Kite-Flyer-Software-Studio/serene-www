@@ -5,18 +5,21 @@ export default function Hero() {
   const t = useTranslations('Dinners');
 
   return (
-    <div
-      className="container min-height-100vh d-flex align-items-center pt-100 pb-100 pt-sm-120 pb-sm-120"
-       style={{
-        background: 'url(/assets/images/serene/how-it-works-hero-2.svg) center no-repeat',
-        margin: 0,
-        minWidth: '100vw',
-        backgroundSize: 'cover'
-      }}
-    >
-      <div className="position-absolute top-0 bottom-0 start-0 end-0 bg-gradient-white" />
-      <div className="container position-relative pt-50">
-        <div className="text-center">
+    <div className="container min-height-100vh d-flex align-items-center pt-100 pb-100 pt-sm-120 pb-sm-120">
+     <div className="bg-video-wrapper">
+        <video
+          className="bg-video"
+          preload="auto"
+          autoPlay
+          muted
+          loop
+          playsInline
+        >
+          <source src="/assets/videos/Serene_dinner.mp4" type="video/mp4" />
+        </video>
+        <div className="bg-video-overlay bg-dark-alpha-20  video-hero" />
+      </div>
+      <div className="home-content">
           <div className="row">
             <div className="col-md-10 offset-md-1">
               <h2
@@ -33,7 +36,6 @@ export default function Hero() {
                   <AnimatedText text= {t('Title2')} />
                 </span>
               </h1>
-            </div>
           </div>
         </div>
       </div>
