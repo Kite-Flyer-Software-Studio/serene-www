@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function CoffeeClub() {
   return (
     <section
@@ -24,31 +26,13 @@ export default function CoffeeClub() {
               a member of an organization.
             </p>
             <div className="local-scroll mb-70 mb-sm-50">
-              {onePage ? (
-                <>
-                  {' '}
-                  <a
-                    href="#contact"
-                    className="btn btn-mod btn-w-c btn-large btn-round btn-hover-anim opacity-09"
-                  >
-                    <span>Get a Consultation</span>
-                  </a>
-                </>
-              ) : (
-                <>
-                  {' '}
-                  <Link
-                    href={`/corporate-contact${dark ? '-dark' : ''}`}
-                    className="btn btn-mod btn-w-c btn-large btn-round btn-hover-anim opacity-09"
-                  >
-                    <span>Get a Consultation</span>
-                  </Link>
-                </>
-              )}
+              <Link
+                href={`/corporate-contact`}
+                className="btn btn-mod btn-w-c btn-large btn-round btn-hover-anim opacity-09"
+              >
+                <span>Get a Consultation</span>
+              </Link>
             </div>
-            {/* Features List */}
-            <Cta2 />
-            {/* End Features List */}
           </div>
         </div>
       </div>
