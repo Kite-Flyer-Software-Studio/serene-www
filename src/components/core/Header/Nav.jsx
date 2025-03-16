@@ -40,11 +40,11 @@ export default function OnePageNav({ links, animateY = false }) {
         return (
           <li key={link.text}>
             <Link
-              className={
+              className={`${
                 !externalUrl && pathname.split('/').reverse()[0] == link.href
                   ? 'active'
                   : ''
-              }
+              } position-relative`}
               href={externalUrl ? link.href : `${localHref}/${link.href}`}
               target={externalUrl ? '_blank' : '_self'}
             >
@@ -57,6 +57,11 @@ export default function OnePageNav({ links, animateY = false }) {
                 </span>
               ) : (
                 link.text
+              )}
+              {link.new && (
+                <span class="position-absolute translate-middle badge rounded-pill bg-danger nav-badge">
+                  New
+                </span>
               )}
             </Link>
           </li>

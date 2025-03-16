@@ -92,3 +92,14 @@ a {
 .bg-linen {
   background-color: #faf3e1 !important;
 }
+
+.nav-badge {
+  left: 53% !important;
+  top: 26% !important;
+  font-size: 8px !important;
+
+  @media (max-width: 1024px) {
+    left: 72px !important;
+    top: 50% !important;
+  }
+}

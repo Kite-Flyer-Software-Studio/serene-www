@@ -13,7 +13,7 @@ const links = [
   { href: 'about', text: 'About', dataBtnAnimate: 'y' },
   { href: 'how-it-works', text: 'How it works', dataBtnAnimate: 'y' },
   { href: 'dinners', text: 'Dinners', dataBtnAnimate: 'y' },
-  { href: 'meet', text: 'Meet', dataBtnAnimate: 'y' },
+  { href: 'meet', text: 'Meet', dataBtnAnimate: 'y', new: true },
   // { href: 'community', text: 'Community', dataBtnAnimate: 'y' },
 ];
 
