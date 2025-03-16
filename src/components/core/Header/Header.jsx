@@ -7,12 +7,13 @@ import useDetectUserEventNav from '@/hooks/useDetectUserEventNav';
 import useTypeformWaitlistUrl from '@/hooks/useTypeformWaitlistUrl';
 import { useLocale, useTranslations } from 'next-intl';
 import { useMemo } from 'react';
-import { LUMA_REGULAR_CALENDAR } from '@/constants';
+import { LUMA_REGULAR_CALENDAR, SIGN_UP_FORM } from '@/constants';
 
 const links = [
   { href: 'about', text: 'About', dataBtnAnimate: 'y' },
   { href: 'how-it-works', text: 'How it works', dataBtnAnimate: 'y' },
   { href: 'dinners', text: 'Dinners', dataBtnAnimate: 'y' },
+  { href: 'meet', text: 'Meet', dataBtnAnimate: 'y' },
   // { href: 'community', text: 'Community', dataBtnAnimate: 'y' },
 ];
 
@@ -69,7 +70,7 @@ export default function Header() {
               <span
                 className="btn btn-mod btn-border btn-border-white btn-small btn-circle"
                 data-btn-animate="y"
-                style={{ backgroundColor: '#000', color: '#FF6D1F'}}
+                style={{ backgroundColor: '#000', color: '#FF6D1F' }}
               >
                 {t('Book Your Seat')}
               </span>

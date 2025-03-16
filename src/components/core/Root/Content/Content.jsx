@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
+
 import PillarsMarquee from './PillarsMarquee';
 import LearnMoreAboutUsCta from './LearnMoreAboutUsCta';
 import Benefits from './Benefits';
@@ -7,8 +9,8 @@ import HowSereneWorksCta from './HowSereneWorksCta';
 import Network from './Network';
 import Marquee from './Marquee';
 import Testimonials from './Testimonials';
-import Link from 'next/link';
 import Accordion from './Accordion';
+import CoffeeClub from './CoffeeClub';
 import { useLocale, useTranslations } from 'next-intl';
 
 import useTypeformWaitlistUrl from '@/hooks/useTypeformWaitlistUrl';
@@ -55,6 +57,7 @@ export default function Content() {
           </div>
         </div>
       </section>
+      {/* <CoffeeClub /> */}
       <section
         className={`page-section scrollSpysection bg-linen`}
         id="partners"
@@ -68,16 +71,12 @@ export default function Content() {
                 </h2>
               </div>
             </div>
-            <hr
-              className={`black  mt-3 mb-0`}
-            />
+            <hr className={`black  mt-3 mb-0`} />
           </div>
           <Network />
           <div className="row">
             <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-              <hr
-                className={`black mt-0 mb-20`}
-              />
+              <hr className={`black mt-0 mb-20`} />
               <div className="row">
                 <div className="col-sm-12 col-md-12 text-center text-sm-center mb-xs-20">
                   <p className="section-descr mb-0 black">
@@ -95,7 +94,7 @@ export default function Content() {
               className="btn btn-mod btn-large btn-circle white"
               data-btn-animate="y"
               style={{ backgroundColor: '#FF6D1F' }}
-              target='_blank'
+              target="_blank"
             >
               <span className="btn-animate-y">
                 <span className="btn-animate-y-1">{t('partners.Cta')}</span>
@@ -107,14 +106,10 @@ export default function Content() {
           </div>
         </div>
       </section>
-      <div
-        className={`overflow-hidden bg-linen`}
-      >
+      <div className={`overflow-hidden bg-linen`}>
         <Marquee />
       </div>
-      <section
-        className={`page-section bg-linen`}
-      >
+      <section className={`page-section bg-linen`}>
         <Testimonials />
       </section>
     </>
