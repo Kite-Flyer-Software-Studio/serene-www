@@ -103,3 +103,9 @@ a {
     top: 50% !important;
   }
 }
+
+.coming-soon {
+  left: 109% !important;
+  top: -5% !important;
+  font-size: 10px !important;
+}

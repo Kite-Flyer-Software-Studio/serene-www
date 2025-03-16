@@ -33,6 +33,13 @@ export default function Hero() {
                     data-wow-duration="1.2s"
                   >
                     {t('subtitle')}
+                    <span
+                      class="position-absolute translate-middle badge rounded-pill coming-soon d-flex"
+                      style={{ backgroundColor: '#FF6D1F' }}
+                    >
+                      <span className="text-uppercase">C</span>
+                      <span className="text-lowercase">oming soon</span>
+                    </span>
                   </h2>
                   <h1 className="hs-title-13 mb-40 mb-sm-20 wow fadeInUp">
                     {t('title')}

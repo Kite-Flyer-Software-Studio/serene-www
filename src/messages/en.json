@@ -147,12 +147,12 @@
     "hero": {
       "title": "Meet new people, starting with coffee",
       "subtitle": "Serene Meet",
-      "tagline1": "No more swiping, networking, or small talks.",
-      "tagline2": "Powered by AI.",
+      "tagline1": "No more swiping or networking",
+      "tagline2": "Just Coffee",
       "cta": "Join Waitlist"
     },
     "howItWorks1": {
-      "title": "Every week, our POSSIBILITY algorithm introduces two people to each other.",
+      "title": "Every week, our AI-powered POSSIBILITY algorithm introduces two people to each other.",
       "description1": {
         "1": "We call every introduction",
         "2": "a possibility."
@@ -160,7 +160,7 @@
       "description2": "The person intros will be shown upon introduction."
     },
     "howItWorks2": {
-      "title": "You will have 24 hours to schedule the coffee meet with that person.",
+      "title": "You will have 24 hours to schedule a meet with that person.",
       "description1": "If not, the possibility expires, and you get a new one in a week.",
       "description2": "Once you schedule the coffee, we reveal the full profile of the person and conversation starters."
     },

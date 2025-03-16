@@ -31,7 +31,7 @@ export default function Possibilities() {
       className="home-section parallax-mousemove-scene scrollSpysection"
       id="possibilities"
     >
-      <div className="container min-height-100vh d-flex align-items-center pt-100 pb-100 pt-sm-120 pb-sm-120">
+      <div className="container min-height-100vh d-flex align-items-center pt-10 pb-100 pt-sm-120 pb-sm-120">
         {/* Home Section Content */}
         <div className="home-content text-start pb-md-20">
           <div className="row">

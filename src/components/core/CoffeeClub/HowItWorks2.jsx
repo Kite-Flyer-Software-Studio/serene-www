@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 export default function HowItWorks2() {
   const t = useTranslations('CoffeeClub.howItWorks2');
   return (
-    <section className="pt-30">
+    <section className="pt-30 pb-100">
       <div id="paddingRightContainer" className="container" />
       <div className="row g-0">
         <div className="col-lg-6 mt-n30 mt-md-0 mb-30 mb-md-0">
