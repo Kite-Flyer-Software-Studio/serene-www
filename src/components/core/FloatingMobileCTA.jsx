@@ -1,24 +1,25 @@
-import { LUMA_REGULAR_CALENDAR } from "@/constants"
-import { useTranslations } from "next-intl"
+import { useTranslations } from 'next-intl';
+
+import useTypeformWaitlistUrl from '@/hooks/useTypeformWaitlistUrl';
 
 export default function FloatingMobileCTA() {
   const t = useTranslations('Common');
+  const typeformWaitlistUrl = useTypeformWaitlistUrl();
+
   return (
     <a
-      href={LUMA_REGULAR_CALENDAR}
+      href={`${typeformWaitlistUrl}?utm_content=floating-cta`}
       className="btn btn-mod btn-large btn-circle floating-mobile-cta"
       data-btn-animate="y"
       style={{ backgroundColor: '#000' }}
       target="_blank"
     >
       <span className="btn-animate-y">
-        <span className="btn-animate-y-1">
-          {t('floatingCTAButton')}
-        </span>
+        <span className="btn-animate-y-1">{t('floatingCTAButton')}</span>
         <span className="btn-animate-y-2" aria-hidden="true">
           {t('floatingCTAButton')}
         </span>
       </span>
     </a>
-  )
+  );
 }
