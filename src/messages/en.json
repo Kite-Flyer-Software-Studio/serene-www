@@ -88,7 +88,7 @@
   },
   "Nav": {
     "Book Your Seat": "Book your seat",
-    "Join Waitlist": "Subscribe Future Events"
+    "Join Waitlist": "Join waitlist"
   },
   "Footer": {
     "Social Media": "Social Media",
@@ -145,14 +145,14 @@
   },
   "CoffeeClub": {
     "hero": {
-      "title": "Meet new people over coffee",
-      "subtitle": "Serene Coffee Club",
-      "tagline1": "Not swiping, dating, or networking",
-      "tagline2": "Just coffee",
+      "title": "Meet new people, starting with coffee",
+      "subtitle": "Serene Meet",
+      "tagline1": "No more swiping, networking, or small talks.",
+      "tagline2": "Powered by AI.",
       "cta": "Join Waitlist"
     },
     "howItWorks1": {
-      "title": "Every Tuesday at 11AM, our POSSIBILITY algorithm introduces two people to each other.",
+      "title": "Every week, our POSSIBILITY algorithm introduces two people to each other.",
       "description1": {
         "1": "We call every introduction",
         "2": "a possibility."
@@ -182,31 +182,31 @@
     "faq": {
       "1": {
         "question": "Why one possibility per week?",
-        "answer": "Serene Coffee Club is all about quality interaction with real people: we believe in showing up, not swiping. That’s why every day you get the opportunity to take a chance on someone new. Take it or pass it on — no pressure!"
+        "answer": "At Serene Meet, we prioritize meaningful connections over endless swiping. By curating just one intentional match weekly, we encourage deeper engagement and give you space to authentically connect — no rush, no clutter. You’re free to embrace the opportunity or pass, all pressure-free!"
       },
       "2": {
         "question": "How do possibilities work?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula porttitor rutrum. Ut laoreet sodales rutrum. Ut eget tristique nibh. Cras mattis est eget lacus dignissim, non consectetur velit pellentesque. Ut sit amet placerat eros, id gravida arcu. Sed felis purus, tempor ac vestibulum nec, consectetur at purus."
+        "answer": "Our POSSIBILITY algorithm uses AI to craft personalized matches for meaningful connections. It analyzes your profile, activity, and preferences (like interests, personality traits, and intentions) to pair you with someone for a shared activity, starting with coffee. While you set your priorities for similarity, POSSIBILITY intentionally balances this with opportunities to meet people who broaden your perspective. The result? Curated, low-pressure interactions that spark authentic bonds — helping you grow your world through new experiences and diverse connections."
       },
       "3": {
-        "question": "Who is on Serene’s coffee club?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula porttitor rutrum. Ut laoreet sodales rutrum. Ut eget tristique nibh. Cras mattis est eget lacus dignissim, non consectetur velit pellentesque. Ut sit amet placerat eros, id gravida arcu. Sed felis purus, tempor ac vestibulum nec, consectetur at purus."
+        "question": "Who is on Serene Meet?",
+        "answer": "There’s a simple description for our community: modern creatives. We are open-minded and driven individuals with various backgrounds: tech, entrepreneurship, art, design, film, food, architecture, writing, science, journalism, wellness, you name it. But being a modern creative is not just about your profession — it’s about your passion, your process and your openness to possibility. To us, creativity is a way of being. And that’s something we can all connect around."
       },
       "4": {
         "question": "Why invites?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula porttitor rutrum. Ut laoreet sodales rutrum. Ut eget tristique nibh. Cras mattis est eget lacus dignissim, non consectetur velit pellentesque. Ut sit amet placerat eros, id gravida arcu. Sed felis purus, tempor ac vestibulum nec, consectetur at purus."
+        "answer": "Everyone goes through a rigorous vetting process to be invited. Invites help us keep the space clear of bots, spammers, fake, or incomplete profiles. We want to make sure each profile is personal, thorough, and informative. That way, every chance is a meaningful introduction."
       },
       "5": {
-        "question": "Is Serene’s cafe club free?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula porttitor rutrum. Ut laoreet sodales rutrum. Ut eget tristique nibh. Cras mattis est eget lacus dignissim, non consectetur velit pellentesque. Ut sit amet placerat eros, id gravida arcu. Sed felis purus, tempor ac vestibulum nec, consectetur at purus."
+        "question": "Is Serene Meet free?",
+        "answer": "Your first Serene meet is free! We match you with a compatible human over coffee to help you get started. Serene Meet is membership-based. That’s to ensure that all our members approach every new introduction with the same level of intention and respect. A membership gives you access to our growing community and helps us continue to build an inspiring and safe space for modern connection."
       },
       "6": {
         "question": "What’s the point?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula porttitor rutrum. Ut laoreet sodales rutrum. Ut eget tristique nibh. Cras mattis est eget lacus dignissim, non consectetur velit pellentesque. Ut sit amet placerat eros, id gravida arcu. Sed felis purus, tempor ac vestibulum nec, consectetur at purus."
+        "answer": "Life happens to people who are open — to new opportunities, new people, new experiences. In the modern world, even as we grow more connected digitally, people are increasingly closed off from one another. But how do we break out of our bubbles? At Serene Meet, our mission is to connect more curious and open people all over the world through real conversations, in real life, over coffee. Free from the pressures of dating or networking."
       },
       "7": {
-        "question": "Why coffee?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula porttitor rutrum. Ut laoreet sodales rutrum. Ut eget tristique nibh. Cras mattis est eget lacus dignissim, non consectetur velit pellentesque. Ut sit amet placerat eros, id gravida arcu. Sed felis purus, tempor ac vestibulum nec, consectetur at purus."
+        "question": "Why starting with coffee specifically?",
+        "answer": "Because dinner sounds like a date, and lunch sounds like a work meeting. Coffee is usually just that — coffee."
       }
     }
   }

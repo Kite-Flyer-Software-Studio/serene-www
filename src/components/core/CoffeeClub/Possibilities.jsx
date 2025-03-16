@@ -6,7 +6,10 @@ import TypeWriter from '@/components/core/TypeWriter';
 import React from 'react';
 import Image from 'next/image';
 
+import useTypeformWaitlistUrl from '@/hooks/useTypeformWaitlistUrl';
+
 export default function Possibilities() {
+  const typeformWaitlistUrl = useTypeformWaitlistUrl();
   const t = useTranslations('CoffeeClub.possibilities');
 
   const taglines = useMemo(
@@ -59,7 +62,7 @@ export default function Possibilities() {
                   data-wow-offset={0}
                 >
                   <a
-                    href="/"
+                    href={`${typeformWaitlistUrl}?utm_content=meet-possibilities`}
                     className="btn btn-mod btn-large btn-circle"
                     data-btn-animate="y"
                     style={{ backgroundColor: '#FF6D1F' }}

@@ -3,12 +3,15 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
+import useTypeformWaitlistUrl from '@/hooks/useTypeformWaitlistUrl';
+
 export default function Hero() {
   const t = useTranslations('CoffeeClub.hero');
+  const typeformWaitlistUrl = useTypeformWaitlistUrl();
   return (
     <>
       <div
-        className="container min-height-100vh d-flex align-items-center pt-100 pt-sm-120"
+        className="container min-height-100vh d-flex align-items-center pt-30 pt-sm-120"
         style={{
           background:
             'url(/assets/images/serene/how-it-works-hero-2.svg) center no-repeat',
@@ -41,7 +44,7 @@ export default function Hero() {
                     {t('tagline1')}
                   </p>
                   <p
-                    className="section-text mb-50 wow fadeInUp fst-italic serif"
+                    className="section-text mb-40 wow fadeInUp fst-italic serif"
                     data-wow-delay="0.2s"
                   >
                     {t('tagline2')}
@@ -52,7 +55,7 @@ export default function Hero() {
                     data-wow-offset={0}
                   >
                     <a
-                      href="/"
+                      href={`${typeformWaitlistUrl}?utm_content=meet-hero`}
                       className="btn btn-mod btn-large btn-circle"
                       data-btn-animate="y"
                       style={{ backgroundColor: '#FF6D1F' }}
@@ -70,7 +73,7 @@ export default function Hero() {
               </div>
               {/* End Home Section Text */}
               {/* Images */}
-              <div className="col-lg-6 d-flex align-items-center">
+              <div className="col-lg-6 d-flex align-items-center d-sm-none d-md-block d-none d-sm-block d-md-none d-lg-block">
                 <div
                   className="w-100 ps-xl-3 wow fadeInLeft"
                   data-wow-delay="0.15s"

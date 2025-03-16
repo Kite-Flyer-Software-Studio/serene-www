@@ -8,7 +8,7 @@ import Faq from '@/components/core/CoffeeClub/Faq';
 
 export async function generateMetadata() {
   return {
-    title: 'Coffee Club | Serene.',
+    title: 'Meet | Serene.',
     description: 'From Strangers To Lasting Friendships',
     openGraph: {
       title: 'Serene — About Us',

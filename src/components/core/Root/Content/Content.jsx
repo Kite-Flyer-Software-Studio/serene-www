@@ -57,7 +57,7 @@ export default function Content() {
           </div>
         </div>
       </section>
-      <CoffeeClub />
+      {/* <CoffeeClub /> */}
       <section
         className={`page-section scrollSpysection bg-linen`}
         id="partners"
