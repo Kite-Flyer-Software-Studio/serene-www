@@ -64,8 +64,14 @@ export default function HowItWorks1() {
               <div className="mb-40">
                 <p className="lead-alt mb-0">{t('step2.title')}</p>
                 <p className="mb-0 fs-4">{t('step2.description')}</p>
-                <p className="mt-3 mb-0 fs-6">*{t('step2.helptext')}</p>
-                <p className="mt-1 mb-0 fs-6">*{t('step2.helptext2')}</p>
+                {/* <p className="mt-3 mb-0 fs-6">
+                  *<span className="fst-italic">first meet</span>
+                  {t('step2.helptext')}
+                </p> */}
+                {/* <p className="mt-1 mb-0 fs-6">
+                  *<span className="fst-italic">future meet</span>
+                  {t('step2.helptext2')}
+                </p> */}
               </div>
               <div className="mb-40">
                 <p className="lead-alt mb-0">{t('step3.title')}</p>

@@ -31,6 +31,11 @@ export default function Faq() {
         question: t('7.question'),
         answer: t('7.answer'),
       },
+      {
+        id: 8,
+        question: t('8.question'),
+        answer: t('8.answer'),
+      },
     ],
     [t]
   );
