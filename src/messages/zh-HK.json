@@ -200,14 +200,6 @@
       "cta": "Join to make offline connections"
     },
     "faq": {
-      "1": {
-        "question": "Why one possibility per week?",
-        "answer": "At Serene Meet, we prioritize meaningful connections over endless swiping. By curating just one intentional match weekly, we encourage deeper engagement and give you space to authentically connect — no rush, no clutter. You’re free to embrace the opportunity or pass, all pressure-free!"
-      },
-      "2": {
-        "question": "How do possibilities work?",
-        "answer": "Our POSSIBILITY algorithm uses AI to craft personalized matches for meaningful connections. It analyzes your profile, activity, and preferences (like interests, personality traits, and intentions) to pair you with someone for a shared activity, starting with coffee. While you set your priorities for similarity, POSSIBILITY intentionally balances this with opportunities to meet people who broaden your perspective. The result? Curated, low-pressure interactions that spark authentic bonds — helping you grow your world through new experiences and diverse connections."
-      },
       "3": {
         "question": "Who is on Serene Meet?",
         "answer": "There’s a simple description for our community: modern creatives. We are open-minded and driven individuals with various backgrounds: tech, entrepreneurship, art, design, film, food, architecture, writing, science, journalism, wellness, you name it. But being a modern creative is not just about your profession — it’s about your passion, your process and your openness to possibility. To us, creativity is a way of being. And that’s something we can all connect around."
@@ -218,7 +210,7 @@
       },
       "5": {
         "question": "Is Serene Meet free?",
-        "answer": "Your first Serene meet is free! We match you with a compatible human over coffee to help you get started. Serene Meet is membership-based. That’s to ensure that all our members approach every new introduction with the same level of intention and respect. A membership gives you access to our growing community and helps us continue to build an inspiring and safe space for modern connection."
+        "answer": "Your first Serene meet is free! We match you with a compatible human over coffee to help you get started."
       },
       "6": {
         "question": "What’s the point?",

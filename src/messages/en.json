@@ -158,14 +158,13 @@
       "subtitle": "YOUR PRE-MEET JOURNEY",
       "step1": {
         "title": "1. Unlock Your Vibe",
-        "description": "Take the 90-second Serene Quiz. We handpick your most compatible match.",
-        "helptext": "FIRST MEET = FREE! Just a deposit for no-show + drink credit."
+        "description": "Take the 90-second Serene Quiz. We handpick your most compatible match."
       },
       "step2": {
         "title": "2. Your VIP Match Awaits",
         "description": "We’ll WhatsApp you once we find you a compatible human. Share 3 time slots → We handle scheduling.",
-        "helptext": "FIRST MEET = FREE! just a deposit for no-show + drink credit.",
-        "helptext2": "FUTURE MEETS = $100 matching fee (curated partner + reserved seat) + Drinks purchased separately at our shop on meet day"
+        "helptext": " = FREE, Just a deposit for pre-paid drink credit ☕️/🍷 (Forfeit if no-show)",
+        "helptext2": " = $100 matching fee (curated partner + reserved seat) + Drinks purchased separately"
       },
       "step3": {
         "title": "3. Sneak Peek",
@@ -220,6 +219,10 @@
       "7": {
         "question": "Why starting with coffee/wine specifically?",
         "answer": "Because dinner sounds like a date, and lunch sounds like a work meeting. Coffee is usually just that — coffee."
+      },
+      "8": {
+        "question": "What if I need to cancel my meet?",
+        "answer": "We deeply value everyone's time, so cancellations must be made at least 24 hours before your meet. If you cancel this early, your deposit becomes credit for future use. However, cancellations within 24 hours forfeit the deposit entirely, and cancellations within 12 hours or no-shows result in permanent blacklisting from future bookings."
       }
     }
   }
