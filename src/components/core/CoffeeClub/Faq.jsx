@@ -61,7 +61,7 @@ export default function Faq() {
   }, [currentIndex]);
 
   return (
-    <section className="page-section pt-0">
+    <section className="page-section pt-0" id="faq">
       <div className="container relative wow fadeInUp">
         <div className="row mb-30">
           <div className="col-md-8 offset-md-2">
