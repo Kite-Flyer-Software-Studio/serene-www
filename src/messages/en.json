@@ -81,7 +81,7 @@
     "Title2": "We handpicked each bottle of fine wine to ensure the best food & wine pairing for each Serene's guest."
   },
   "Dinners": {
-    "Title1": "Serene Dinners",
+    "Title1": "Serene Events",
     "Title2": "Cultivate meaningful connections and forge lifelong friendships",
     "Cta": "I'm interested",
     "More Events": "More Events"
@@ -145,24 +145,44 @@
   },
   "CoffeeClub": {
     "hero": {
-      "title": "Meet new people, starting with coffee",
+      "title": "Meet. Sip. Connect.",
       "subtitle": "Serene Meet",
-      "tagline1": "No more swiping or networking",
-      "tagline2": "Just Coffee",
-      "cta": "Join Waitlist"
+      "tagline1": "1-on-1 Meets with Vetted Individuals — ",
+      "tagline2": "No Expectations, No Group Drama, No \"Networking\".",
+      "tagline3": "Over Coffee / Wine",
+      "cta": "Reserve Your Spot"
     },
     "howItWorks1": {
-      "title": "Every week, our AI-powered POSSIBILITY algorithm introduces two people to each other.",
-      "description1": {
-        "1": "We call every introduction",
-        "2": "a possibility."
+      "title": "Ditch Awkward Apps/Networking. Real Connection, Made Effortless.",
+      "subtitle": "YOUR PRE-MEET JOURNEY",
+      "step1": {
+        "title": "1. Unlock Your Vibe",
+        "description": "Take the 90-second Serene Quiz. We handpick your most compatible match.",
+        "helptext": "FIRST MEET = FREE! Just a deposit for no-show + drink credit."
       },
-      "description2": "The person intros will be shown upon introduction."
+      "step2": {
+        "title": "2. Your VIP Match Awaits",
+        "description": "We’ll WhatsApp you once we find you a compatible human. Share 3 time slots → We handle scheduling.",
+        "helptext": "FIRST MEET = FREE! just a deposit for no-show + drink credit.",
+        "helptext2": "FUTURE MEETS = $100 matching fee (curated partner + reserved seat) + Drinks purchased separately at our shop on meet day"
+      },
+      "step3": {
+        "title": "3. Sneak Peek",
+        "description": "Receive meet details + match’s bio. Already buzzing? Perfect."
+      }
     },
     "howItWorks2": {
-      "title": "You will have 24 hours to schedule a meet with that person.",
+      "title": "ON MEET DAY @ SERENE",
       "description1": "If not, the possibility expires, and you get a new one in a week.",
-      "description2": "Once you schedule the coffee, we reveal the full profile of the person and conversation starters."
+      "description2": "Once you schedule the coffee, we reveal the full profile of the person and conversation starters.",
+      "step1": {
+        "title": "1. Seat. Sip. Connect.",
+        "description": "Barista greets you → Order your drink → Pick 3 curated prompt cards. Be guided to your reserved table."
+      },
+      "step2": {
+        "title": "2. Walk Out Inspired",
+        "description": "Prompt cards spark real stories, not small talk. Leave with new perspectives (and maybe a new friend)."
+      }
     },
     "possibilities": {
       "title": "We believe in possibilities, not matches",
@@ -180,14 +200,6 @@
       "cta": "Join to make offline connections"
     },
     "faq": {
-      "1": {
-        "question": "Why one possibility per week?",
-        "answer": "At Serene Meet, we prioritize meaningful connections over endless swiping. By curating just one intentional match weekly, we encourage deeper engagement and give you space to authentically connect — no rush, no clutter. You’re free to embrace the opportunity or pass, all pressure-free!"
-      },
-      "2": {
-        "question": "How do possibilities work?",
-        "answer": "Our POSSIBILITY algorithm uses AI to craft personalized matches for meaningful connections. It analyzes your profile, activity, and preferences (like interests, personality traits, and intentions) to pair you with someone for a shared activity, starting with coffee. While you set your priorities for similarity, POSSIBILITY intentionally balances this with opportunities to meet people who broaden your perspective. The result? Curated, low-pressure interactions that spark authentic bonds — helping you grow your world through new experiences and diverse connections."
-      },
       "3": {
         "question": "Who is on Serene Meet?",
         "answer": "There’s a simple description for our community: modern creatives. We are open-minded and driven individuals with various backgrounds: tech, entrepreneurship, art, design, film, food, architecture, writing, science, journalism, wellness, you name it. But being a modern creative is not just about your profession — it’s about your passion, your process and your openness to possibility. To us, creativity is a way of being. And that’s something we can all connect around."
@@ -198,14 +210,14 @@
       },
       "5": {
         "question": "Is Serene Meet free?",
-        "answer": "Your first Serene meet is free! We match you with a compatible human over coffee to help you get started. Serene Meet is membership-based. That’s to ensure that all our members approach every new introduction with the same level of intention and respect. A membership gives you access to our growing community and helps us continue to build an inspiring and safe space for modern connection."
+        "answer": "Your first Serene meet is free! We match you with a compatible human over coffee to help you get started."
       },
       "6": {
         "question": "What’s the point?",
         "answer": "Life happens to people who are open — to new opportunities, new people, new experiences. In the modern world, even as we grow more connected digitally, people are increasingly closed off from one another. But how do we break out of our bubbles? At Serene Meet, our mission is to connect more curious and open people all over the world through real conversations, in real life, over coffee. Free from the pressures of dating or networking."
       },
       "7": {
-        "question": "Why starting with coffee specifically?",
+        "question": "Why starting with coffee/wine specifically?",
         "answer": "Because dinner sounds like a date, and lunch sounds like a work meeting. Coffee is usually just that — coffee."
       }
     }

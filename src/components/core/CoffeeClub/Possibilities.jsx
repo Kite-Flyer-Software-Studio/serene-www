@@ -86,7 +86,7 @@ export default function Possibilities() {
                 data-wow-delay="0.6s"
               >
                 <Image
-                  src="/assets/images/serene/coffee/coffee-chat-3.jpg"
+                  src="/assets/images/serene/coffee/meet-pic-bg.jpg"
                   alt="Image Description"
                   width={900}
                   height={600}

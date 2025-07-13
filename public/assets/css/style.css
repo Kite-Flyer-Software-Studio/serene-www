@@ -8349,16 +8349,40 @@ a.portfolio-5-link:hover .portfolio-5-title span {
   border-radius: var(--border-radius-default);
   isolation: isolate;
   transform: translateZ(0);
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 .call-action-4-image-2 {
   position: absolute;
-  bottom: 0;
+  bottom: -40%;
   right: 0;
   width: 73.17%;
   overflow: hidden;
   border-radius: var(--border-radius-default);
   isolation: isolate;
   transform: translateZ(0);
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.call-action-4-image-3 {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    position: relative;
+    bottom: 0;
+    left: 20%;
+    width: 50%;
+    overflow: hidden;
+    border-radius: var(--border-radius-default);
+    isolation: isolate;
+    transform: translateZ(0);
+  }
 }
 
 /* ==============================
@@ -8520,7 +8544,8 @@ a.portfolio-5-link:hover .portfolio-5-title span {
 }
 .composition-4-image-1 {
   position: relative;
-  width: 86.0084%;
+  /* width: 86.0084%; */
+  width: 64%;
   margin-left: auto;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -8535,8 +8560,8 @@ a.portfolio-5-link:hover .portfolio-5-title span {
 }
 .composition-4-image-2 {
   position: relative;
-  width: 59.7738%;
-  margin-top: -36.672%;
+  width: 35%;
+  margin-top: -40%;
   overflow: hidden;
   background: #fff;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -8546,6 +8571,21 @@ a.portfolio-5-link:hover .portfolio-5-title span {
   border: 10px solid #fff;
   overflow: hidden;
   border-bottom-left-radius: 75%;
+}
+.composition-4-image-3 {
+  position: absolute;
+  width: 35%;
+  margin-top: -40%;
+  top: 68%;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-top-right-radius: 75%;
+}
+.composition-4-image-3-inner {
+  border: 10px solid #fff;
+  overflow: hidden;
+  border-top-right-radius: 75%;
 }
 .composition-4-decoration {
   position: absolute;

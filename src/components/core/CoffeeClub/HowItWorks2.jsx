@@ -26,11 +26,17 @@ export default function HowItWorks2() {
             </div>
             {/* End Decorative Dots */}
             <div>
-              <h2 className="section-title mb-80">{t('title')}</h2>
-              <p className="mb-50 lead fst-italic serif mb-80 pe-2">
-                {t('description1')}
-              </p>
-              <p className="mb-50 lead">{t('description2')}</p>
+              <h2 className="section-title mb-80">
+                PHASE 2 -<em>{` ${t('title')}`}</em>
+              </h2>
+              <div className="mb-40">
+                <p className="lead-alt mb-0">{t('step1.title')}</p>
+                <p className="mb-0">{t('step1.description')}</p>
+              </div>
+              <div className="mb-40">
+                <p className="lead-alt mb-0">{t('step2.title')}</p>
+                <p className="mb-0">{t('step2.description')}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -39,7 +45,7 @@ export default function HowItWorks2() {
             <Image
               width={1100}
               height={930}
-              src="/assets/images/serene/coffee/coffee-sign.jpg"
+              src="/assets/images/serene/coffee/reico-esmee-meet.jpg"
               alt="Image Description"
             />
           </div>

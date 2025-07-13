@@ -28,8 +28,8 @@ export default function CoffeeClub() {
         <main id="main">
           <Hero />
           <HowItWorks1 />
-          <Possibilities />
           <HowItWorks2 />
+          <Possibilities />
           <Faq />
         </main>
         <footer className="page-section footer pb-30">

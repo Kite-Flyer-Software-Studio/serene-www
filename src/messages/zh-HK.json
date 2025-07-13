@@ -81,7 +81,7 @@
     "Title2": "我們精心挑選每一瓶優質葡萄酒，以確保為每位 Serene 的客人提供最佳的美食和葡萄酒搭配。"
   },
   "Dinners": {
-    "Title1": "Serene Dinners",
+    "Title1": "Serene Events",
     "Title2": "Cultivate meaningful connections and forge lifelong friendships",
     "Cta": "I'm interested",
     "More Events": "More Events"
@@ -145,24 +145,44 @@
   },
   "CoffeeClub": {
     "hero": {
-      "title": "Meet new people, starting with coffee",
+      "title": "Meet. Sip. Connect.",
       "subtitle": "Serene Meet",
-      "tagline1": "No more swiping or networking",
-      "tagline2": "Just Coffee",
-      "cta": "Join Waitlist"
+      "tagline1": "1-on-1 Meets with Vetted Individuals — ",
+      "tagline2": "No Expectations, No Group Drama, No \"Networking\".",
+      "tagline3": "Over Coffee / Wine",
+      "cta": "Reserve Your Spot"
     },
     "howItWorks1": {
-      "title": "Every week, our AI-powered POSSIBILITY algorithm introduces two people to each other.",
-      "description1": {
-        "1": "We call every introduction",
-        "2": "a possibility."
+      "title": "Ditch Awkward Apps/Networking. Real Connection, Made Effortless.",
+      "subtitle": "YOUR PRE-MEET JOURNEY",
+      "step1": {
+        "title": "1. Unlock Your Vibe",
+        "description": "Take the 90-second Serene Quiz. We handpick your most compatible match.",
+        "helptext": "FIRST MEET = FREE! just a deposit for no-show + drink credit."
       },
-      "description2": "The person intros will be shown upon introduction."
+      "step2": {
+        "title": "2. Your VIP Match Awaits",
+        "description": "We’ll WhatsApp you once we find you a compatible human. Share 3 time slots → We handle scheduling.",
+        "helptext": "FIRST MEET = FREE, Just a deposit for pre-paid drink credit ☕️/🍷 (Forfeit if no-show)",
+        "helptext2": "FUTURE MEETS = $100 matching fee (curated partner + reserved seat) + Drinks purchased separately at our shop on meet day"
+      },
+      "step3": {
+        "title": "3. Sneak Peek",
+        "description": "Receive meet details + match’s bio. Already buzzing? Perfect."
+      }
     },
     "howItWorks2": {
-      "title": "You will have 24 hours to schedule a meet with that person.",
+      "title": "ON MEET DAY @ SERENE",
       "description1": "If not, the possibility expires, and you get a new one in a week.",
-      "description2": "Once you schedule the coffee, we reveal the full profile of the person and conversation starters."
+      "description2": "Once you schedule the coffee, we reveal the full profile of the person and conversation starters.",
+      "step1": {
+        "title": "1. Seat. Sip. Connect.",
+        "description": "Barista greets you → Order your drink → Pick 3 curated prompt cards. Be guided to your reserved table."
+      },
+      "step2": {
+        "title": "2. Walk Out Inspired",
+        "description": "Prompt cards spark real stories, not small talk. Leave with new perspectives (and maybe a new friend)."
+      }
     },
     "possibilities": {
       "title": "We believe in possibilities, not matches",
@@ -205,7 +225,7 @@
         "answer": "Life happens to people who are open — to new opportunities, new people, new experiences. In the modern world, even as we grow more connected digitally, people are increasingly closed off from one another. But how do we break out of our bubbles? At Serene Meet, our mission is to connect more curious and open people all over the world through real conversations, in real life, over coffee. Free from the pressures of dating or networking."
       },
       "7": {
-        "question": "Why starting with coffee specifically?",
+        "question": "Why starting with coffee/wine specifically?",
         "answer": "Because dinner sounds like a date, and lunch sounds like a work meeting. Coffee is usually just that — coffee."
       }
     }

@@ -33,15 +33,15 @@ export default function Hero() {
                     data-wow-duration="1.2s"
                   >
                     {t('subtitle')}
-                    <span
+                    {/* <span
                       class="position-absolute translate-middle badge rounded-pill coming-soon d-flex"
                       style={{ backgroundColor: '#FF6D1F' }}
                     >
                       <span className="text-uppercase">C</span>
                       <span className="text-lowercase">oming soon</span>
-                    </span>
+                    </span> */}
                   </h2>
-                  <h1 className="hs-title-13 mb-40 mb-sm-20 wow fadeInUp">
+                  <h1 className="hs-title-1 mb-40 mb-sm-20 wow fadeInUp">
                     {t('title')}
                   </h1>
                   <p
@@ -51,10 +51,16 @@ export default function Hero() {
                     {t('tagline1')}
                   </p>
                   <p
-                    className="section-text mb-40 wow fadeInUp fst-italic serif"
+                    className="section-text wow fadeInUp mb-3"
                     data-wow-delay="0.2s"
                   >
                     {t('tagline2')}
+                  </p>
+                  <p
+                    className="section-text mb-40 wow fadeInUp fst-italic serif"
+                    data-wow-delay="0.2s"
+                  >
+                    {t('tagline3')}
                   </p>
                   <div
                     className="local-scroll wow fadeInUp wch-unset"
@@ -69,7 +75,7 @@ export default function Hero() {
                       target="_blank"
                     >
                       <span className="btn-animate-y">
-                        <span className="btn-animate-y-1">Join waitlist</span>
+                        <span className="btn-animate-y-1"> {t('cta')}</span>
                         <span className="btn-animate-y-2" aria-hidden="true">
                           {t('cta')}
                         </span>
@@ -100,7 +106,17 @@ export default function Hero() {
                         <Image
                           width={850}
                           height={834}
-                          src="/assets/images/serene/coffee/guy-girl-coffee.jpeg"
+                          src="/assets/images/serene/coffee/daniel-nancy.jpg"
+                          alt="Image Description"
+                        />
+                      </div>
+                    </div>
+                    <div className="composition-4-image-3">
+                      <div className="composition-4-image-3-inner">
+                        <Image
+                          width={570}
+                          height={598}
+                          src="/assets/images/serene/coffee/coffee-cup.jpg"
                           alt="Image Description"
                         />
                       </div>
@@ -110,7 +126,7 @@ export default function Hero() {
                         <Image
                           width={570}
                           height={598}
-                          src="/assets/images/serene/coffee/coffee-cup.jpg"
+                          src="/assets/images/serene/coffee/wine-glasses.JPG"
                           alt="Image Description"
                         />
                       </div>
