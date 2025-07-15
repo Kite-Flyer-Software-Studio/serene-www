@@ -81,9 +81,9 @@ export default function Hero() {
                         </span>
                       </span>
                     </a>
-                    <span className="font-alt">
-                      {'  - First Meet is FREE!'}
-                    </span>
+                  </div>
+                  <div class="badge rounded-pill coming-soon text-dark ms-1">
+                    <span className="text-lowercase">first meet is free</span>
                   </div>
                 </div>
               </div>
