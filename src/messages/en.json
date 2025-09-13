@@ -1,10 +1,10 @@
 {
   "Root": {
     "hero": {
-      "Every Tuesday & Thursday": "Moments when friendship is born",
-      "Meet new friends": "Meet new friends over",
-      "Uniqueness": "Good Food, Fine Wine, Coffee, Genuine Convo",
-      "Connect with": "Connect with new faces, all matched by personality algorithm.",
+      "Every Tuesday & Thursday": "No more swiping, just what you wish for—IRL.",
+      "Meet new friends": "I wanna meet",
+      "Uniqueness": "A finance bro for a serious relationship, A ESG expert to exchange ideas, A fitness pal who loves wine",
+      "Connect with": "Meet Who You Wish For—Serene Matches Your Vibe",
       "Step out comfort": "Step out of your comfort zone"
     },
     "content": {
@@ -87,8 +87,8 @@
     "More Events": "More Events"
   },
   "Nav": {
-    "Book Your Seat": "Book your seat",
-    "Join Waitlist": "Join waitlist"
+    "joinEvents": "Join our events",
+    "Join Waitlist": "Subscribe Future Events"
   },
   "Footer": {
     "Social Media": "Social Media",
@@ -141,7 +141,7 @@
     }
   },
   "Common": {
-    "floatingCTAButton": "Join Waitlist"
+    "floatingCTAButton": "Browse Events Now!"
   },
   "CoffeeClub": {
     "hero": {

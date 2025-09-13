@@ -1,147 +1,147 @@
 {
   "Root": {
     "hero": {
-      "Every Tuesday & Thursday": "每星期都結交新朋友",
-      "Meet new friends": "擴寬社交圈只需",
-      "Uniqueness": "美食, 美酒, 咖啡, 真誠的對話",
-      "Connect with": "Serene演算法幫您配對四位個性、興趣和志向相似的人相遇。",
-      "Step out comfort": "跳出Comfort Zone"
+      "Every Tuesday & Thursday": "唔使再swipe，只需要話你想識咩人—真實見面。",
+      "Meet new friends": "我想識",
+      "Uniqueness": "一位認真搵拍拖嘅金融才子, 一位ESG專家交流想法, 一位鍾意紅酒嘅健身好友",
+      "Connect with": "遇見你所想—Serene為你配對最啱頻道嘅人",
+      "Step out comfort": "踏出你嘅舒適圈"
     },
     "content": {
       "about": {
-        "Cta": "Take personality test",
+        "Cta": "做性格測驗",
         "title": "關於Serene",
-        "description": "我們致力於透過真實的連結來激發快樂！我們的使命是創造一個充滿活力和包容的空間，讓人們在美味的餐點中享受歡笑、誠實和難忘的友誼。加入我們，享受有趣、真摯的對話和一點魔法！",
-        "establish": "創於",
-        "since": "2024",
-        "subSlogan": "友誼需面對面交流，才能真正萌芽！",
+        "description": "喺Serene，我哋相信美食、好酒同精心設計嘅餐單可以帶嚟真摯連繫同社群——一齊嚟享受一個你永不會忘記嘅美好晚上。",
+        "establish": "成立",
+        "since": "於2024年",
+        "subSlogan": "每一啖食物，每一口美酒，都可以促成志同道合朋友嘅深厚連繫。",
         "ourStory": {
-          "title": "Our Story",
-          "description": "We felt a void—a lack of opportunity to socialize and connect with others. Inspired by this need, we envisioned an app called Serene, designed to help people forge new friendships over shared meals and fine wine. By incorporating a personality test, Serene aims to match like-minded individuals, fostering genuine connections that inspire and uplift. The goal is to create a vibrant community where people can grow together, share experiences, and influence one another positively. Through Serene, we hope to transform dining into a meaningful social experience for everyone."
+          "title": "我哋的故事",
+          "description": "我哋感受到社交圈子欠缺機會同空間。因應呢個需要，我哋構思咗Serene，旨在讓大家可以透過共晉晚餐同品酒去認識新朋友。配合性格測驗，Serene希望撮合志同道合嘅人，發展真誠、鼓勵同正向嘅關係。目標係建立一個大家可以共同成長、分享經歷、互相啟發嘅活躍社群。透過Serene，我哋希望食飯可以變得更有意義。"
         },
         "ourMission": {
-          "title": "Our Mission",
-          "description": "At Serene, our mission is to build a vibrant community where like-minded individuals can connect over good food and fine wine. We believe that meaningful relationships are essential to a fulfilling life, yet often feel like a desert in today’s fast-paced world. Whether you’re seeking friendship, networking opportunities, or even romance, Serene provides the perfect setting to meet new people. By fostering genuine connections in a relaxed atmosphere, we aim to transform dining into a delightful experience that enriches lives. Join us in creating a space where friendships blossom and opportunities abound, making every meal a chance for connection."
+          "title": "我哋的使命",
+          "description": "Serene嘅使命係建立一個讓志同道合嘅人可以圍繞美食美酒互相連繫嘅社群。我哋相信有意義嘅人際關係係美滿人生不可或缺，但喺今日節奏急速嘅社會往往難以發展。唔論你搵緊新朋友、職場人脈定愛情，Serene都係遇見新人的完美場所。讓大家可以喺輕鬆氛圍下真誠交流，將每頓飯都變成人際連繫嘅契機。快啲加入我哋，等友情喺呢度開花結果，每次聚餐都帶嚟新機會。"
         }
       },
       "partners": {
-        "title": "Our Network",
-        "seeAllPartners": "All Serene Partners",
+        "title": "我哋嘅網絡",
+        "seeAllPartners": "所有Serene合作夥伴",
         "list": {
-          "restaurants": "Restaurants",
-          "wine&liquor": "Wine & Liquor",
-          "drinks&party": "Drinks & Party",
-          "networking": "Networking"
+          "restaurants": "餐廳",
+          "wine&liquor": "美酒&酒類",
+          "drinks&party": "飲品&派對",
+          "networking": "人脈網絡"
         },
-        "slogan": "Coming together to get inspired, ignited, impressed, and influenced.",
-        "Cta": "Book your seat"
+        "slogan": "聚首一堂，一齊啟發、激發、欣賞、影響彼此。",
+        "Cta": "預約你的座位"
       }
     }
   },
   "About": {
-    "Title1": "From Strangers To Lasting Friendships",
-    "Title2": "What is Serene?",
+    "Title1": "由陌生人成為摯友",
+    "Title2": "咩係Serene？",
     "brief": {
-      "title": "Toast to New Friendships!",
-      "paragraph1": "Serene hosts refined dinners with a tasting menu, encouraging guests to forge new friendships through exquisite cuisine, fine wine, and engaging conversations.",
-      "paragraph2": "Serene collaborates with top restaurants to offer exclusive tasting menus tailored for our guests. Each dish is thoughtfully paired with handpicked wines, ensuring an unforgettable evening filled with exceptional flavors and delightful experiences.",
-      "Cta": "Match & Meet"
+      "title": "為新友情舉杯！",
+      "paragraph1": "Serene舉辦高質晚宴同品酒活動，透過頂級美食美酒同精彩對話，令賓客認識到新朋友。",
+      "paragraph2": "Serene聯乘頂尖餐廳，為賓客度身訂造專屬品嚐菜單。每道菜都配以精心挑選嘅美酒，打造難忘嘅美食盛宴，同時帶來令人愉快嘅體驗。",
+      "Cta": "配對・見面"
     },
     "partners": {
-      "title": "Our Partners",
-      "description": "Know more about our partners!",
-      "paragraph": "Serene ensures the finest experience by partnering directly with restaurants, bars, and wine distributors. We anticipate you meeting your new best friend in the most enjoyable and elegant setting."
+      "title": "合作夥伴",
+      "description": "了解更多關於我哋嘅合作夥伴！",
+      "paragraph": "Serene直接同餐廳、酒吧同酒類供應商合作，保證體驗最佳。我哋希望你會喺最舒適優雅嘅環境下遇見新摯友。"
     },
     "faq": {
       "title": "常見問題",
-      "enquiry": "Still hesitate to experience Serene Dinner? Or interested in forming business partnerships. Contact us! We will get back to you asap.",
-      "contactUs": "Contact Us"
+      "enquiry": "對Serene晚宴仍有疑問？或有興趣商業合作？歡迎聯絡我哋！我哋會盡快答覆！",
+      "contactUs": "聯絡我們"
     }
   },
   "HowItWorks": {
-    "Title1": "Curious about Serene?",
-    "Title2": "How to join and get prepared for Serene Dinner?",
-    "Subtitle": "識新朋友好簡單!你準備好未?",
-    "Cta": "立即體驗",
-    "Step 1 Title": "進行性格測試",
-    "Step 2 Title": "性格匹配",
-    "Step 3 Title": "確認您的座位",
-    "Step 4 Title": "享受美食、品味美酒與交流",
-    "Step 5 Title": "The Fun Begins!",
-    "Step 6 Title": "Share Your Thoughts",
-    "Step 1 Description": "完成性格測試的問題，幫助我們了解您個性的問題。",
-    "Step 2 Description": "我們將為您匹配 4 位陌生人進行晚餐。",
-    "Step 3 Description": "Serene 與城中最好的餐廳合作，為每次晚餐提供量身定制的菜單和精選的葡萄酒。",
-    "Step 4 Description": "在共享美好的餐飲時，人們更容易打開心扉，分享彼此的故事和感受。",
-    "Step 5 Description": "Enjoy great food and wine. Break through small talk with our conversation starters.",
-    "Step 6 Description": "Enjoy great food and wine. Break through small talk with our conversation starters."
+    "Title1": "想知Serene係咩？",
+    "Title2": "點樣參加Serene Dinner並好好準備？",
+    "Subtitle": "嚟參加無壓力晚宴，一切交畀我哋處理，你只需要盡情享受！",
+    "Cta": "立即報名",
+    "Step 1 Title": "與新朋友配對",
+    "Step 2 Title": "晚餐安排確定",
+    "Step 3 Title": "專屬配對制作中...",
+    "Step 4 Title": "為難忘一夜做好準備",
+    "Step 5 Title": "精彩聚會開始！",
+    "Step 6 Title": "分享你的想法",
+    "Step 1 Description": "花幾分鐘玩性格測驗，等我哋根據興趣同價值觀幫你配對新朋友！",
+    "Step 2 Description": "你嘅晚宴安排已經搞掂！記住查收電郵，內有餐廳資料、專屬set menu、時間、地點。記得付款確認留位。",
+    "Step 3 Description": "我哋會幫你喺背後揀選理想配對，準備認識新奇有趣嘅朋友啦！",
+    "Step 4 Description": "活動前24小時會收到最後指引！記得細心閱讀，準備度過一個難忘晚上。",
+    "Step 5 Description": "我哋好期待你識到新朋友！晚宴活動有小遊戲、破冰環節、美酒佳餚，全情投入吧！記得用菲林相機影低美好回憶！",
+    "Step 6 Description": "你嘅意見對我哋非常重要，請花少少時間分享感受，令下次體驗更好！"
   },
   "Wines": {
-    "Title1": "我們的葡萄酒清單",
-    "Title2": "我們精心挑選每一瓶優質葡萄酒，以確保為每位 Serene 的客人提供最佳的美食和葡萄酒搭配。"
+    "Title1": "美酒一覽",
+    "Title2": "我哋細心嚴選每瓶美酒，確保Serene客人都可享受最佳食物配酒體驗。"
   },
   "Dinners": {
-    "Title1": "Serene Events",
-    "Title2": "Cultivate meaningful connections and forge lifelong friendships",
-    "Cta": "I'm interested",
-    "More Events": "More Events"
+    "Title1": "Serene 晚宴",
+    "Title2": "建立有意義關係、締造長遠友誼",
+    "Cta": "有興趣",
+    "More Events": "更多活動"
   },
   "Nav": {
-    "Book Your Seat": "立即體驗",
-    "Join Waitlist": "加入邀請名單"
+    "joinEvents": "參加活動",
+    "Join Waitlist": "訂閱未來活動"
   },
   "Footer": {
     "Social Media": "社交媒體",
-    "Legal": "政策及條款",
-    "Base in HK": "香港製造",
+    "Legal": "法律資訊",
+    "Base in HK": "香港基地",
     "Legals": {
-      "Privacy Policy": "隱私權政策",
-      "Terms & Conditions": "服務條款"
+      "Privacy Policy": "私隱政策",
+      "Terms & Conditions": "條款及細則"
     }
   },
   "Community": {
     "hero": {
-      "Title1": "Serene Community",
-      "Title2": "Start with friendship, and watch the possibilities soar!",
-      "learnMore": "Learn More",
-      "joinNow": "Join Now"
+      "Title1": "Serene社群",
+      "Title2": "由友情開始，可能無限延伸！",
+      "learnMore": "了解更多",
+      "joinNow": "立即加入"
     },
     "community": {
-      "header": "Serene Community",
-      "slogan": "Everything starts from Friendship",
-      "description": "First in Hong Kong fostering meaningful connections through exceptional experience.",
-      "ctaTitle": "Every adventure begins with friendship, unlocking a treasure trove of endless possibilities ahead!",
-      "cta": "Join Now",
+      "header": "Serene 社群",
+      "slogan": "一切從友情開始",
+      "description": "香港首個通過優質體驗促進有意義連繫嘅社群。",
+      "ctaTitle": "每次冒險都由友情起步，開啟無限可能！",
+      "cta": "立即加入",
       "offerings": {
         "dining": {
-          "span": "Exquisite Cuisine",
-          "description": "Serene has partnered with the best restaurants for an unforgettable group dining experience! Savor a uniquely crafted set menu featuring both beloved favorites and hidden gems. Join the fun!"
+          "span": "高級美食",
+          "description": "Serene聯乘頂級餐廳，打造難忘共享晚餐體驗！精心預備set menu，兼有人氣同隱藏佳餚，快啲一齊樂在其中！"
         },
         "drinks": {
-          "span": "Savor the Sip",
-          "description": "Serene enhances your dining with an exquisite wine selection! Enjoy curated pairings at dinner, and effortlessly purchase your favorites to take home or gift. Cheers to unforgettable flavors!"
+          "span": "美酒品嚐",
+          "description": "Serene為你嘅用餐體驗添上極品美酒！晚餐時享受專屬配酒，鐘意嘅可即場選購或作禮物。乾杯！"
         },
         "wellness": {
-          "span": "Personal Wellness",
-          "description": "Serene knows personal wellness transforms busy lives! Enjoy rejuvenating massages, spa treatments, and relaxing activities that support your journey to well-being—your gateway to endless possibilities awaits!"
+          "span": "身心健康",
+          "description": "Serene明白個人健康可以改變忙碌生活！享受放鬆按摩、Spa護理、靜修活動，無限可能正等緊你！"
         },
         "events": {
-          "span": "Exclusive Events",
-          "description": "Serene hosts exciting events for members to connect and have fun! Enjoy delightful dinners, lively happy hours, cozy book clubs, exclusive screenings, and more—endless possibilities await your next adventure!"
+          "span": "專屬活動",
+          "description": "Serene為會員舉辦精彩活動，俾你邊玩邊識新朋友！有晚宴、Happy Hour、讀書會、放映會等等，下次精彩等你參加！"
         },
         "fitness": {
-          "span": "Engaging Fitness",
-          "description": "Serene keeps your energy high and spirit adventurous! Enjoy fun Pilates, exhilarating HIIT, and dynamic gym workouts while sweating it out with friends. Let’s get moving together on this fitness journey!"
+          "span": "活力健體",
+          "description": "Serene為你注入活力同冒險精神！有Pilates、高強度鍛煉、健身等活動，同朋友一齊出汗，快啲加入健身之旅！"
         },
         "mentoring": {
-          "span": "Career coaching",
-          "description": "Serene is a vibrant community of dynamic professionals! Connect for networking, career coaching, and mentoring. With talents from various fields, we create endless possibilities and make a positive impact together!"
+          "span": "職涯教練",
+          "description": "Serene聚集唔同行業專才！一齊交流、事業指導、人脈發展，大家共同創造無限可能，一齊成長！"
         }
       }
     }
   },
   "Common": {
-    "floatingCTAButton": "Join Waitlist"
+    "floatingCTAButton": "立即瀏覽活動！"
   },
   "CoffeeClub": {
     "hero": {

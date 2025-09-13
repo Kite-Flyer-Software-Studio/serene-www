@@ -1,30 +1,22 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 
 import PillarsMarquee from './PillarsMarquee';
-import LearnMoreAboutUsCta from './LearnMoreAboutUsCta';
 import Benefits from './Benefits';
-import TakePersonalityTestCta from './TakePersonalityTestCta';
-import HowSereneWorksCta from './HowSereneWorksCta';
-import Network from './Network';
+import FAQ from './FAQ';
 import Marquee from './Marquee';
 import Testimonials from './Testimonials';
-import Accordion from './Accordion';
-import CoffeeClub from './CoffeeClub';
-import { useLocale, useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl';
 
-import useTypeformWaitlistUrl from '@/hooks/useTypeformWaitlistUrl';
 import SereneMoments from './SereneMoments';
+import {useScrollToIdSection} from '@/hooks/useScrollToIdSection';
 
 export default function Content() {
-  const locale = useLocale();
   const t = useTranslations('Root.content');
-  const typeformWaitlistUrl = useTypeformWaitlistUrl();
 
-  const localHref = React.useMemo(
-    () => (locale === 'en' ? '/en' : '/zh-HK'),
-    [locale]
-  );
+  useScrollToIdSection();
 
   return (
     <>
@@ -35,7 +27,7 @@ export default function Content() {
       >
         <div className="container position-relative">
           <div className="row">
-            <LearnMoreAboutUsCta localHref={localHref} />
+            {/* <LearnMoreAboutUsCta localHref={localHref} /> */}
             <div className="col-lg-10 offset-lg-1">
               {/* About Section */}
               {/* <div
@@ -46,19 +38,18 @@ export default function Content() {
                 {t('about.description')}
               </div> */}
               <Benefits />
-              <TakePersonalityTestCta
+              {/* <TakePersonalityTestCta
                 typeformWaitlistUrl={typeformWaitlistUrl}
                 locale={t}
-              />
+              /> */}
               {/* <Accordion /> */}
               <SereneMoments locale={t} />
-              <HowSereneWorksCta localHref={localHref} />
+              {/* <HowSereneWorksCta localHref={localHref} /> */}
             </div>
           </div>
         </div>
       </section>
-      {/* <CoffeeClub /> */}
-      <section
+      {/* <section
         className={`page-section scrollSpysection bg-linen`}
         id="partners"
       >
@@ -105,8 +96,15 @@ export default function Content() {
             </Link>
           </div>
         </div>
-      </section>
-      <div className={`overflow-hidden bg-linen`}>
+      </section> */}
+      <div
+        className={`overflow-hidden bg-linen`}
+      >
+        <FAQ />
+      </div>
+      <div
+        className={`overflow-hidden bg-linen`}
+      >
         <Marquee />
       </div>
       <section className={`page-section bg-linen`}>

@@ -10,16 +10,14 @@ import { useMemo } from 'react';
 import { LUMA_REGULAR_CALENDAR, SIGN_UP_FORM } from '@/constants';
 
 const links = [
-  { href: 'about', text: 'About', dataBtnAnimate: 'y' },
+  // { href: 'about', text: 'About', dataBtnAnimate: 'y' },
   // { href: 'how-it-works', text: 'How it works', dataBtnAnimate: 'y' },
-  { href: 'events', text: 'Events', dataBtnAnimate: 'y' },
-  { href: 'meet', text: 'Meet', dataBtnAnimate: 'y', new: true },
+  // { href: 'dinners', text: 'Dinners', dataBtnAnimate: 'y' },
   // { href: 'community', text: 'Community', dataBtnAnimate: 'y' },
 ];
 
 export default function Header() {
   useDetectUserEventNav();
-  const typeformWaitlistUrl = useTypeformWaitlistUrl();
   const t = useTranslations('Nav');
   const locale = useLocale();
 
@@ -55,9 +53,9 @@ export default function Header() {
       <div className="inner-nav desktop-nav">
         <ul className="clearlist scroll-nav local-scroll justify-content-end scrollspyLinks">
           <Nav links={links} animateY />
-          <li className="desktop-nav-display">
+          {/* <li className="desktop-nav-display">
             <div className="vr" />
-          </li>
+          </li> */}
           {/* Languages */}
           <LanguageSelect />
           {/* End Languages */}
@@ -72,21 +70,7 @@ export default function Header() {
                 data-btn-animate="y"
                 style={{ backgroundColor: '#000', color: '#FF6D1F' }}
               >
-                {t('Book Your Seat')}
-              </span>
-            </a>
-          </li>
-          <li>
-            <a
-              href={`${typeformWaitlistUrl}?utm_content=header`}
-              className="opacity-1 no-hover"
-              target="_blank"
-            >
-              <span
-                className="btn btn-mod btn-border btn-border-white btn-small btn-circle"
-                data-btn-animate="y"
-              >
-                {t('Join Waitlist')}
+                {t('joinEvents')}
               </span>
             </a>
           </li>

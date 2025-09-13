@@ -109,3 +109,13 @@ a {
   top: -5% !important;
   font-size: 10px !important;
 }
+/* Language globe icon responsive fill colors */
+.language-globe-icon path {
+  fill: #000; /* Black for desktop */
+}
+
+@media (max-width: 1024px) {
+  .language-globe-icon path {
+    fill: #fff; /* White for mobile */
+  }
+}

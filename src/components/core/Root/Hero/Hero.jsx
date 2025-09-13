@@ -4,25 +4,25 @@ import React from 'react';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
-import GroupDinnerOne from './images/group-dinner.jpg';
-import GroupDinnerTwo from './images/group-5.jpg';
-import GroupDinnerThree from './images/group-four.jpg';
-import { LUMA_REGULAR_CALENDAR } from '@/constants';
+import MeetOne from './images/meet-1.jpg';
+import MeetTwo from './images/meet-2.jpg';
+import MeetThree from './images/meet-3.jpg';
+import { APP_STORE_URL } from '@/constants';
 
 import css from './style.module.css';
 
 const IMAGES = [
   {
-    caption: 'Now or Never.',
-    image: GroupDinnerOne,
+    caption: 'Unexpected conversations with gorgeous souls.',
+    image: MeetOne,
   },
   {
-    caption: 'Unexpected conversations with gorgeous souls.',
-    image: GroupDinnerThree,
+    caption: 'Now or Never',
+    image: MeetTwo,
   },
   {
     caption: 'Strangers are just friends waiting to happen.',
-    image: GroupDinnerTwo,
+    image: MeetThree,
   },
 ];
 
@@ -34,7 +34,8 @@ export default function Hero() {
       className="page-section"
       style={{
         backgroundImage: 'url(/assets/images/serene/how-it-works-hero.svg)',
-        paddingTop: 120
+        paddingTop: 120,
+        height: '100vh'
       }}
       id="home"
     >
@@ -77,22 +78,7 @@ export default function Hero() {
                   data-wow-delay="0.5s"
                   data-wow-offset={0}
                 >
-                  <a
-                    href={LUMA_REGULAR_CALENDAR}
-                    className="btn btn-mod btn-large btn-circle"
-                    data-btn-animate="y"
-                    style={{ backgroundColor: '#FF6D1F' }}
-                    target="_blank"
-                  >
-                    <span className="btn-animate-y">
-                      <span className="btn-animate-y-1">
-                        {t('Step out comfort')}
-                      </span>
-                      <span className="btn-animate-y-2" aria-hidden="true">
-                        {t('Step out comfort')}
-                      </span>
-                    </span>
-                  </a>
+                  <a href={APP_STORE_URL} target="_blank" className="appstore-button-2 w-inline-block"><img src="https://cdn.prod.website-files.com/661e79a55efc01789befffa6/66340136311af75cbabf3a7c_Vectors-Wrapper.svg" loading="lazy" width="140" height="46.666664123535156" alt="" className="appstore-button-2" /></a>
                 </div>
               </div>
             </div>
@@ -102,7 +88,7 @@ export default function Hero() {
               <div className={css.polaroids}>
                 {IMAGES.map(({ caption, image }, index) => {
                   return (
-                    <div className={css.polaroid} key={index}>
+                    <div className={css.polaroid} key={index} style={{ width: index === 0 ? 480 : index === 1 ? 640 : 560, marginTop: index === 2 ? 120 : 0 }}>
                       <Image src={image} alt="Image" className={css.picture} />
                       <div className={css.caption}>{caption}</div>
                     </div>
