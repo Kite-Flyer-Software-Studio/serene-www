@@ -12792,6 +12792,10 @@ html:not(.mobile) .owl-animate-fadeInDown {
   gap: 32px;
 }
 
+.hero-typer-text {
+  font-size: 80px !important;
+}
+
 @media only screen and (max-width: 768px) {
   .floating-mobile-cta {
     display: block;
@@ -12799,5 +12803,9 @@ html:not(.mobile) .owl-animate-fadeInDown {
 
   .about-brief-section {
     flex-direction: column-reverse;
+  }
+
+  .hero-typer-text {
+    font-size: 33px !important;
   }
 }

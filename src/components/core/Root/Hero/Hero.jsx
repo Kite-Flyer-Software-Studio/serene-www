@@ -49,7 +49,7 @@ export default function Hero() {
                 <h2 className="section-descr-large mb-20 mb-sm-50 wow fadeInUp">
                   {t.rich('Every Tuesday & Thursday')}
                 </h2>
-                <h1 className="hs-title-2 font-alt mb-20 mb-sm-50">
+                <h1 className="hs-title-2 font-alt mb-20 mb-sm-50 hero-typer-text">
                   <span
                     className="d-block wow uppercase fadeRotateIn"
                     style={{ letterSpacing: '-0.05em' }}
