@@ -76,6 +76,10 @@
     "Step 5 Description": "We're so excited for you to meet your new friends! Our dinner events are designed to bring people together. Enjoy the mini games, ice-breakers, wines, and fine dining experience! Don't forget to capture the memories with our film camera!",
     "Step 6 Description": "Your feedback is crucial in helping us create better experiences for you and your new friends. Take a minute to share your thoughts! Your input matters!"
   },
+  "DeleteAccount": {
+    "Title1": "We are sorry to see you go.",
+    "Title2": "Tell us why you're leaving!"
+  },
   "Wines": {
     "Title1": "Our wine list",
     "Title2": "We handpicked each bottle of fine wine to ensure the best food & wine pairing for each Serene's guest."
