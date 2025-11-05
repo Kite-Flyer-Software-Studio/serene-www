@@ -1,26 +1,34 @@
-import 'swiper/css';
-import '../../../public/assets/css/styles.css';
-import 'jarallax/dist/jarallax.min.css';
-import 'swiper/css/effect-fade';
-import 'photoswipe/dist/photoswipe.css';
+import '../global.css';
+// import 'swiper/css';
+// import '../../../public/assets/css/styles.css';
+// import 'jarallax/dist/jarallax.min.css';
+// import 'swiper/css/effect-fade';
+// import 'photoswipe/dist/photoswipe.css';
+
+import { Inter } from 'next/font/google';
+
 import GoogleTagManager from '@/components/core/GoogleTagManager';
 import MetaPixel from '@/components/core/MetaPixel';
+import { cn } from '@/utils';
 import { GTM_ID, META_PIXEL_ID } from '@/constants';
 import { getMessages } from 'next-intl/server';
-import { NextIntlClientProvider } from 'next-intl'
+import { NextIntlClientProvider } from 'next-intl';
 
 import 'tippy.js/dist/tippy.css';
 import FloatingMobileCTA from '@/components/core/FloatingMobileCTA';
+import { ThemeProvider } from '@/contexts/ThemeProvider';
 
 export const viewport = {
-  'width': 'device-width',
-  'initial-scale': '1.0'
-}
+  width: 'device-width',
+  'initial-scale': '1.0',
+};
 
 const IFRAME_STYLE = {
   display: 'none',
   visibility: 'hidden',
 };
+
+const inter = Inter({ subsets: ['latin'] });
 
 export async function generateMetadata() {
   return {
@@ -33,9 +41,9 @@ export async function generateMetadata() {
     openGraph: {
       type: 'website',
       url: 'https://sereneexperience.com',
-      images: '/assets/images/serene/logo.svg'
-    }
-  }
+      images: '/assets/images/serene/logo.svg',
+    },
+  };
 }
 
 export default async function RootLayout({ children, params: { locale } }) {
@@ -71,7 +79,9 @@ export default async function RootLayout({ children, params: { locale } }) {
         <GoogleTagManager gtmId={GTM_ID} />
         <MetaPixel pixelId={META_PIXEL_ID} />
       </head>
-      <body className="appear-animate body">
+      <body
+        className={cn('antialiased dark:bg-black bg-white', inter.className)}
+      >
         <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
@@ -89,8 +99,10 @@ export default async function RootLayout({ children, params: { locale } }) {
           />
         </noscript>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
-          <FloatingMobileCTA />
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            {children}
+            <FloatingMobileCTA />
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>

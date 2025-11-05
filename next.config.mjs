@@ -1,6 +1,6 @@
-import createNextIntlPlugin from 'next-intl/plugin'
+import createNextIntlPlugin from 'next-intl/plugin';
 
-const withNextIntl = createNextIntlPlugin()
+const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -9,12 +9,16 @@ const nextConfig = {
   //   locales: ['en', 'zh'],
   // },
   images: {
-    remotePatterns: [{
-      protocol: 'https',
-      hostname: 'images.lumacdn.com',
-      port: '',
-      pathname: '**'
-    }]
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.lumacdn.com',
+        port: '',
+        pathname: '**',
+      },
+      { hostname: 'assets.aceternity.com' },
+      { hostname: 'images.unsplash.com' },
+    ],
   },
   webpack(config) {
     config.module.rules.push({
@@ -42,17 +46,17 @@ const nextConfig = {
           },
         },
       ],
-    })
+    });
 
     config.module.rules.push({
       test: /\.svg$/i,
       resourceQuery: /url/,
       issuer: /\.[jt]sx?$/,
       type: 'asset/resource',
-    })
+    });
 
-    return config
+    return config;
   },
-}
+};
 
-export default withNextIntl(nextConfig)
+export default withNextIntl(nextConfig);
