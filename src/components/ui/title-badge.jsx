@@ -1,8 +1,8 @@
 'use client';
 
-import { ShimmerText } from './ShimmerText';
+import { ShimmerText } from './shimmer-text';
 
-export const Badge = ({ text }) => {
+export const TitleBadge = ({ text }) => {
   return (
     <ShimmerText
       duration={1.2}

@@ -4,7 +4,7 @@ import { motion, useMotionValue, useSpring, useTransform } from 'motion/react';
 import { useRef } from 'react';
 import { cn } from '@/utils';
 
-import { DivideX } from './DivideX';
+import { DivideX } from '@/components/ui/divide-x';
 
 const springConfig = {
   stiffness: 300,

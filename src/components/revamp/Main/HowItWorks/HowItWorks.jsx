@@ -1,13 +1,15 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { Container } from './Container';
-import { Badge } from './Badge';
-import { SubHeading } from './Subheading';
-import { SectionHeading } from './SectionHeading';
-import { PixelatedCanvas } from './PixelatedCanvas';
-import { cn } from '@/utils';
 import { AnimatePresence, motion } from 'motion/react';
+
+import { cn } from '@/utils';
+import { Container } from '@/components/ui/container';
+import { TitleBadge } from '@/components/ui/title-badge';
+import { SubHeading } from '@/components/ui/sub-heading';
+import { SectionHeading } from '@/components/ui/section-heading';
+
+import { PixelatedCanvas } from './PixelatedCanvas';
 import {
   ConnectYourTooklsSkeleton,
   DeployAndScaleSkeleton,
@@ -17,25 +19,25 @@ import {
 export const HowItWorks = () => {
   const tabs = [
     {
-      title: 'Step 1 (Profile Setup)',
+      title: 'Step 1: Tell Serene who you want to meet',
       description:
-        'Download app & create profile. A refined profile captures preferences, schedule, and vibe. (~3 minutes)',
+        'Every Thursday at noon, share your mood and interests to Serene through our playful question. It takes 60 seconds.',
       icon: FirstIcon,
       id: 'workflow',
       skeleton: <DesignYourWorkflowSkeleton />,
     },
     {
-      title: 'Step 2 (Weekly query + AI match)',
+      title: 'Step 2: Get Matched',
       description:
-        'Our AI, Serene, combines weekly query insights with availability for curated suggestions.',
+        'Serene finds you one person with aligned vibes and schedules. You start chatting with your match. We handle the logistics via our Social Concierge.',
       icon: SecondIcon,
       id: 'tools',
       skeleton: <ConnectYourTooklsSkeleton />,
     },
     {
-      title: 'Step 3 (Book meet / redeem venue perk in-app)',
+      title: 'Step 3: Meet IRL',
       description:
-        'Concierge prepares intro notes; venue credits reserved for members.',
+        'You show up at Serene Coffee & Wine. We provide the good vibes and the first drinks. You provide the conversation.',
       icon: ThirdIcon,
       id: 'deploy',
       skeleton: <DeployAndScaleSkeleton />,
@@ -58,14 +60,15 @@ export const HowItWorks = () => {
   return (
     <Container id="how-it-works" className="border-divide border-x">
       <div className="flex flex-col items-center pt-16">
-        <Badge text="How Serene Works" />
+        <TitleBadge text="How Serene Works" />
         <SectionHeading className="mt-4">
           Precision matching, effortless meetings
         </SectionHeading>
 
         <SubHeading as="p" className="mx-auto mt-6 max-w-lg">
-          Connecting members through genuine relationships that spark confidence
-          and bring lasting joy.
+          In a city of millions, meaningful connections are rare. Our AI
+          concierage, Serene, introduces you to one fascinating person every
+          Thursday.
         </SubHeading>
         {/* Desktop Tabs */}
         <div className="border-divide divide-divide mt-16 hidden w-full grid-cols-2 divide-x border-t lg:grid">

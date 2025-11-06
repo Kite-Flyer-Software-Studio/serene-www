@@ -11,25 +11,21 @@ import Link from 'next/link';
 import React, { useRef, useState } from 'react';
 import { Button } from '../Button';
 import { Logo } from '../Logo';
-import { ToggleModeButton } from './ToggleModeButton';
+// import { ToggleModeButton } from './ToggleModeButton';
 
 export const Navbar = () => {
   const navItems = [
     {
-      name: 'How it works',
-      link: '/#how-it-works',
+      name: 'About',
+      link: '/#about',
     },
     {
-      name: 'Features',
+      name: 'Why Serene',
       link: '/#features',
     },
     {
-      name: 'Pricing',
-      link: '/#pricing',
-    },
-    {
-      name: 'Contact',
-      link: '/#contact',
+      name: 'How it works',
+      link: '/#how-it-works',
     },
   ];
 
@@ -105,9 +101,9 @@ const DesktopNav = ({ navItems, visible }) => {
         ))}
       </motion.div>
       <div className="flex items-center gap-4">
-        <ToggleModeButton />
+        {/* <ToggleModeButton /> */}
         <Button as="button" variant="primary" className="hidden md:block ">
-          Discover Events
+          Download Serene
         </Button>
       </div>
     </motion.div>
@@ -182,7 +178,7 @@ const MobileNav = ({ navItems, visible }) => {
                 variant="primary"
                 className="block md:hidden w-full"
               >
-                Book a call
+                Download Serene
               </Button>
             </motion.div>
           )}

@@ -6,7 +6,7 @@ import { motion, useMotionValue, useTransform } from 'motion/react';
 import { cn } from '@/utils';
 
 import { TechCard } from './TechCard';
-import { DivideX } from './DivideX';
+import { DivideX } from '@/components/ui/divide-x';
 import { Scale } from './Scale';
 import {
   AnthropicLogo,
@@ -15,7 +15,7 @@ import {
   OpenAILogo,
   SlackLogo,
   IntegrationsLogo,
-} from './GeneralIcons';
+} from '@/components/ui/logos';
 import Image from 'next/image';
 
 export const DesignYourWorkflowSkeleton = () => {

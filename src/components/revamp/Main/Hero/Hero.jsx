@@ -2,13 +2,17 @@
 
 import { useRef } from 'react';
 import { motion } from 'motion/react';
-import { cn } from '@/utils';
-import Balancer from 'react-wrap-balancer';
-import Link from 'next/link';
-import { Button } from '../../Button';
-import { useMediaQuery } from '@/hooks/useMediaQuery';
-import { IphoneMockup } from './IphoneMockUp';
 import Image from 'next/image';
+import Balancer from 'react-wrap-balancer';
+// import Link from 'next/link';
+
+import { cn } from '@/utils';
+import { useMediaQuery } from '@/hooks/useMediaQuery';
+import { APP_STORE_URL } from '@/constants';
+
+import { TitleBadge } from '@/components/ui/title-badge';
+// import { Button } from '../../Button';
+import { IphoneMockup } from './IphoneMockUp';
 import { Personas } from './Personas';
 
 export const Hero = () => {
@@ -16,9 +20,12 @@ export const Hero = () => {
   return (
     <div
       ref={parentRef}
-      className="relative flex max-w-7xl rounded-b-3xl my-2 md:my-20  mx-auto flex-col items-center justify-center pt-32 overflow-hidden px-4 md:px-8 bg-gradient-to-t from-[rgba(247,135,67,1)]  via-[rgba(255,244,239,1)] to-[rgba(255,255,255,1)]"
+      className="relative flex max-w-7xl rounded-b-3xl my-2 md:my-20  mx-auto flex-col items-center justify-center pt-16 overflow-hidden px-4 md:px-8 bg-gradient-to-t from-[rgba(247,135,67,1)]  via-[rgba(255,244,239,1)] to-[rgba(255,255,255,1)]"
     >
-      <Personas />
+      <TitleBadge text="For busy professionals in Hong Kong" />
+      <div class="mt-4">
+        <Personas />
+      </div>
       <div className="text-balance relative z-20 mx-auto mb-4 max-w-6xl text-center text-4xl font-semibold tracking-tight text-gray-700  md:text-7xl">
         <Balancer>
           <motion.h2
@@ -44,10 +51,10 @@ export const Hero = () => {
               'bg-clip-text text-transparent py-2'
             )}
           >
-            Minus the{' '}
-            <span className="bg-gradient-to-b from-[rgba(255,167,86,1)] to-[rgba(238,96,44,1)] bg-clip-text text-transparent">
-              Pressure
-            </span>
+            Not more Swipes
+            {/* <span className="bg-gradient-to-b from-[rgba(255,167,86,1)] to-[rgba(238,96,44,1)] bg-clip-text text-transparent">
+              Swipes
+            </span> */}
           </motion.h2>
         </Balancer>
       </div>
@@ -67,14 +74,34 @@ export const Hero = () => {
         transition={{ duration: 0.2, delay: 0.7 }}
         className="mb-8 mt-6 z-10 sm:mb-10 sm:mt-8 flex w-full flex-col items-center justify-center gap-4 px-4 sm:px-8 sm:flex-row md:mb-20"
       >
-        <Button
+        {/* <Button
           as={Link}
           href="/login"
           variant="primary"
           className="w-full sm:w-40 h-12 flex items-center justify-center"
         >
           Get Started
-        </Button>
+        </Button> */}
+        <div
+          className="local-scroll wow fadeInUp wch-unset"
+          data-wow-delay="0.5s"
+          data-wow-offset={0}
+        >
+          <a
+            href={APP_STORE_URL}
+            target="_blank"
+            className="appstore-button-2 w-inline-block"
+          >
+            <img
+              src="https://cdn.prod.website-files.com/661e79a55efc01789befffa6/66340136311af75cbabf3a7c_Vectors-Wrapper.svg"
+              loading="lazy"
+              width="140"
+              height="46.666664123535156"
+              alt=""
+              className="appstore-button-2"
+            />
+          </a>
+        </div>
       </motion.div>
       <div className="pt-[2rem] w-full min-h-[21rem] relative">
         <motion.div
@@ -279,7 +306,7 @@ const MockScreen = () => {
               </div>
             </div>
             <span className="px-3 py-1 rounded-full bg-[#E6D5CC] text-sm text-[#7B6B63]">
-              Coffee
+              Serene Meet
             </span>
           </div>
         </div>
