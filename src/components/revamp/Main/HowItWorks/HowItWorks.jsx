@@ -19,9 +19,9 @@ import {
 export const HowItWorks = () => {
   const tabs = [
     {
-      title: 'Step 1: Tell Serene who you want to meet',
+      title: 'Step 1: Tell Serene who you want to meet (~1 min)',
       description:
-        'Every Thursday at noon, share your mood and interests to Serene through our playful question. It takes 60 seconds.',
+        'Every Thursday at noon, share your vibes with Serene through our playful question',
       icon: FirstIcon,
       id: 'workflow',
       skeleton: <DesignYourWorkflowSkeleton />,
@@ -29,7 +29,7 @@ export const HowItWorks = () => {
     {
       title: 'Step 2: Get Matched',
       description:
-        'Serene finds you one person with aligned vibes and schedules. You start chatting with your match. We handle the logistics via our Social Concierge.',
+        'Serene finds you three matches with aligned vibes and schedules. You pick one to start chatting. Serene handles the logistics.',
       icon: SecondIcon,
       id: 'tools',
       skeleton: <ConnectYourTooklsSkeleton />,
@@ -37,7 +37,7 @@ export const HowItWorks = () => {
     {
       title: 'Step 3: Meet IRL',
       description:
-        'You show up at Serene Coffee & Wine. We provide the good vibes and the first drinks. You provide the conversation.',
+        'You show up at Serene Coffee & Wine and redeem a discount on your first drink. We provide the good vibes. You provide the conversation. If you prefer, Serene can also suggest a venue.',
       icon: ThirdIcon,
       id: 'deploy',
       skeleton: <DeployAndScaleSkeleton />,
@@ -66,9 +66,7 @@ export const HowItWorks = () => {
         </SectionHeading>
 
         <SubHeading as="p" className="mx-auto mt-6 max-w-lg">
-          In a city of millions, meaningful connections are rare. Our AI
-          concierage, Serene, introduces you to one fascinating person every
-          Thursday.
+          Simple, curated, and human.
         </SubHeading>
         {/* Desktop Tabs */}
         <div className="border-divide divide-divide mt-16 hidden w-full grid-cols-2 divide-x border-t lg:grid">

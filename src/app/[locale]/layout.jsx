@@ -101,7 +101,7 @@ export default async function RootLayout({ children, params: { locale } }) {
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             {children}
-            <FloatingMobileCTA />
+            {/* <FloatingMobileCTA /> */}
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

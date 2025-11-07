@@ -67,9 +67,9 @@ export const Features = () => {
               <CardTitle>One Perfect Match Per Week</CardTitle>
             </div>
             <CardDescription>
-              Quality over quantity.Every Thursday, you tell Serene who you want
-              to meet. No overwhelm. We focus on one high-potential connection,
-              encouraging you to be present and intentional.
+              Quality over quantity. Every Thursday, you tell Serene who you
+              want to meet. No overwhelm. We focus on one high-potential
+              connection, encouraging you to be present and intentional.
             </CardDescription>
             <NativeToolsIntegrationSkeleton />
           </Card>

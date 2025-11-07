@@ -435,13 +435,13 @@ export const NativeToolsIntegrationSkeleton = () => {
           <div className="flex flex-col gap-10">
             <TextIconBlock
               icon={<WindowIcon />}
-              text="I would like to meet a Finance Bro"
+              text="I want to meet a Finance Bro"
             >
               <TopSVG className="absolute top-2 -right-84" />
             </TextIconBlock>
             <TextIconBlock
               icon={<CodeIcon />}
-              text="I would like to meet someone who runs marathon"
+              text="I want to meet someone who runs marathon"
             >
               <MiddleSVG className="absolute top-2 -right-84" />
             </TextIconBlock>
@@ -489,7 +489,7 @@ export const NativeToolsIntegrationSkeleton = () => {
               <IconBlock
                 icon={
                   <Image
-                    src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80"
+                    src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
                     alt="Logo"
                     width={48}
                     height={48}
@@ -499,13 +499,13 @@ export const NativeToolsIntegrationSkeleton = () => {
               />
             </div>
           </div>
-          <div className="2 absolute top-24 right-0 flex h-full flex-col items-center">
-            {/* <IconBlock icon={<SupabaseLogo className="size-6" />} />
-            <VerticalLine /> */}
+          <div className="2 absolute top-30 right-0 flex h-full flex-col items-center">
+            {/* <IconBlock icon={<SupabaseLogo className="size-6" />} /> */}
+            {/* <VerticalLine /> */}
             <IconBlock
               icon={
                 <Image
-                  src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80"
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80"
                   alt="Logo"
                   width={48}
                   height={48}

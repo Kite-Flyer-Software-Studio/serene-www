@@ -26,9 +26,9 @@ export default function Home() {
       <DivideX />
       <About />
       <DivideX />
-      <Features />
-      <DivideX />
       <HowItWorks />
+      <DivideX />
+      <Features />
       <DivideX />
     </>
   );
