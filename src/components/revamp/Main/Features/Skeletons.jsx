@@ -8,15 +8,6 @@ import { cn } from '@/utils';
 import { DivideX } from '@/components/ui/divide-x';
 import { useTypewriter } from '@/hooks/useTypewriter';
 import {
-  // AnthropicLogo,
-  LinearLogo,
-  // MetaLogo,
-  NotionLogo,
-  OpenAILogo,
-  SlackLogo,
-  SupabaseLogo,
-} from '@/components/ui/logos';
-import {
   AttachmentIcon,
   CodeIcon,
   IntegrationsLogo,
@@ -437,19 +428,19 @@ export const NativeToolsIntegrationSkeleton = () => {
               icon={<WindowIcon />}
               text="I want to meet a Finance Bro"
             >
-              <TopSVG className="absolute top-2 -right-84" />
+              <TopSVG className="absolute top-2 -right-32" />
             </TextIconBlock>
             <TextIconBlock
               icon={<CodeIcon />}
               text="I want to meet someone who runs marathon"
             >
-              <MiddleSVG className="absolute top-2 -right-84" />
+              <MiddleSVG className="absolute top-2 -right-32" />
             </TextIconBlock>
             <TextIconBlock
               icon={<PhoneIcon />}
               text="I want to meet a foodie who loves French Cuisine"
             >
-              <BottomSVG className="absolute -right-84 bottom-2" />
+              <BottomSVG className="absolute -right-32 bottom-0" />
             </TextIconBlock>
           </div>
           <div className="relative h-16 w-16 overflow-hidden rounded-md bg-gray-200 p-px shadow-xl dark:bg-neutral-700">
@@ -641,7 +632,7 @@ const RightSideSVG = (props) => {
 const TopSVG = (props) => {
   return (
     <svg
-      width="312"
+      width="250"
       height="33"
       viewBox="0 0 312 33"
       fill="none"
@@ -710,7 +701,7 @@ const TopSVG = (props) => {
 export const MiddleSVG = (props) => {
   return (
     <svg
-      width="323"
+      width="150"
       height="2"
       viewBox="0 0 323 2"
       fill="none"
@@ -770,7 +761,7 @@ export const MiddleSVG = (props) => {
 export const BottomSVG = (props) => {
   return (
     <svg
-      width="326"
+      width="110"
       height="32"
       viewBox="0 0 326 32"
       fill="none"

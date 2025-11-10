@@ -100,8 +100,10 @@ export default async function RootLayout({ children, params: { locale } }) {
         </noscript>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            {children}
-            {/* <FloatingMobileCTA /> */}
+            <main>
+              {children}
+              {/* <FloatingMobileCTA /> */}
+            </main>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

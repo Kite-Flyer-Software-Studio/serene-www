@@ -39,10 +39,11 @@ export const Hero = () => {
           >
             Meet{' '}
             <span className="bg-gradient-to-b from-[rgba(255,167,86,1)] to-[rgba(238,96,44,1)] bg-clip-text text-transparent">
-              People
+              better
             </span>
+            <span className="pl-0.5">,</span> not more.
           </motion.h2>
-          <motion.h2
+          {/* <motion.h2
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -50,12 +51,12 @@ export const Hero = () => {
               'bg-gradient-to-b from-[rgba(94,94,94,1)] to-[rgba(0,0,0,1)]',
               'bg-clip-text text-transparent py-2'
             )}
-          >
-            Not more Swipes
-            {/* <span className="bg-gradient-to-b from-[rgba(255,167,86,1)] to-[rgba(238,96,44,1)] bg-clip-text text-transparent">
+          > */}
+          {/* not more */}
+          {/* <span className="bg-gradient-to-b from-[rgba(255,167,86,1)] to-[rgba(238,96,44,1)] bg-clip-text text-transparent">
               Swipes
             </span> */}
-          </motion.h2>
+          {/* </motion.h2> */}
         </Balancer>
       </div>
       <motion.p
@@ -64,9 +65,8 @@ export const Hero = () => {
         transition={{ duration: 0.2, delay: 0.5 }}
         className="relative z-20 mx-auto mt-4 max-w-2xl px-4 text-center text-base/6 text-gray-600  sm:text-base"
       >
-        In a city of millions, meaningful connections are rare. Our AI
-        concierage, Serene, introduces you to one fascinating person every
-        Thursday.
+        Every week, Serene sends you one person worth meeting IRL. One Query a
+        week, one match you’ll actually enjoy.
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 10 }}

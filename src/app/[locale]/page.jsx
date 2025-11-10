@@ -4,6 +4,9 @@ import { Hero } from '@/components/revamp/Main/Hero/Hero';
 import { About } from '@/components/revamp/Main/About/About';
 import { HowItWorks } from '@/components/revamp/Main/HowItWorks/HowItWorks';
 import { Features } from '@/components/revamp/Main/Features/Features';
+import { CuratedGroupEvents } from '@/components/revamp/Main/CuratedGroupEvents/CuratedGroupEvents';
+import { Space } from '@/components/revamp/Main/Space/Space';
+import { Footer } from '@/components/revamp/Footer/Footer';
 
 export async function generateMetadata() {
   return {
@@ -30,6 +33,11 @@ export default function Home() {
       <DivideX />
       <Features />
       <DivideX />
+      <CuratedGroupEvents />
+      <DivideX />
+      <Space />
+      <DivideX />
+      <Footer />
     </>
   );
 }

@@ -74,7 +74,7 @@ export const Features = () => {
             <NativeToolsIntegrationSkeleton />
           </Card>
         </div>
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
+        {/* <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
           <Card>
             <div className="flex items-center gap-2">
               <FingerprintIcon />
@@ -106,7 +106,7 @@ export const Features = () => {
               and test interactions
             </CardDescription>
           </Card>
-        </div>
+        </div> */}
       </div>
     </Container>
   );

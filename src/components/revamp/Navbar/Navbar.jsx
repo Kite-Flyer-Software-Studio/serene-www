@@ -20,12 +20,20 @@ export const Navbar = () => {
       link: '/#about',
     },
     {
-      name: 'How it works',
+      name: 'How',
       link: '/#how-it-works',
     },
     {
-      name: 'Why Serene',
+      name: 'Why',
       link: '/#features',
+    },
+    {
+      name: 'Events',
+      link: '/#curated-group-events',
+    },
+    {
+      name: 'Space',
+      link: '/#space',
     },
   ];
 
@@ -103,7 +111,7 @@ const DesktopNav = ({ navItems, visible }) => {
       <div className="flex items-center gap-4">
         {/* <ToggleModeButton /> */}
         <Button as="button" variant="primary" className="hidden md:block ">
-          Download Serene
+          Join waitlist
         </Button>
       </div>
     </motion.div>
