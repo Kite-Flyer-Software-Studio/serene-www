@@ -84,7 +84,7 @@ export const Hero = () => {
           variant="primary"
           className="w-full sm:w-40 h-12 flex items-center justify-center"
         >
-          Join Waitlist!!
+          Join Waitlist
         </Button>
         {/* <div
           className="local-scroll wow fadeInUp wch-unset"

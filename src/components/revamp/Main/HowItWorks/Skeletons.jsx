@@ -8,26 +8,20 @@ import { cn } from '@/utils';
 import { TechCard } from './TechCard';
 import { DivideX } from '@/components/ui/divide-x';
 import { Scale } from './Scale';
-import {
-  AnthropicLogo,
-  ForkIcon,
-  MetaLogo,
-  OpenAILogo,
-  SlackLogo,
-  IntegrationsLogo,
-} from '@/components/ui/logos';
+import { IntegrationsLogo } from '@/components/ui/logos';
+import { MessageCircle, Coffee, Calendar, Heart } from 'lucide-react';
 import Image from 'next/image';
 
-export const DesignYourWorkflowSkeleton = () => {
+export const WeeklyQuery = () => {
   return (
     <div className="mt-12 flex flex-col items-center">
       <div className="relative">
         <TechCard
-          title="Slack"
-          subtitle="#standups"
-          logo={<SlackLogo />}
-          cta="Connected"
-          tone="default"
+          title="Weekly Vibe Check"
+          subtitle="Thursday at noon"
+          logo={<MessageCircle className="h-4 w-4" />}
+          cta="Ready to Share"
+          tone="success"
         />
         <LeftSVG className="absolute top-12 -left-32" />
         <RightSVG className="absolute top-12 -right-32" />
@@ -36,26 +30,26 @@ export const DesignYourWorkflowSkeleton = () => {
 
       <div className="mt-12 flex flex-row gap-4.5">
         <TechCard
-          title="Anthropic"
-          subtitle="Claude 4"
-          logo={<AnthropicLogo />}
-          cta="UI Generator"
-          tone="danger"
+          title="Your Interests"
+          subtitle="Coffee & deep talks"
+          logo={<Coffee className="h-4 w-4" />}
+          cta="Selected"
+          tone="success"
           delay={0.2}
         />
         <TechCard
-          title="Meta"
-          subtitle="Llama 2"
-          logo={<MetaLogo />}
-          cta="Text Generator"
+          title="Your Availability"
+          subtitle="Weekend coffee"
+          logo={<Calendar className="h-4 w-4" />}
+          cta="Available"
           tone="default"
           delay={0.4}
         />
         <TechCard
-          title="OpenAI"
-          subtitle="GPT-5"
-          logo={<OpenAILogo />}
-          cta="Code Generator"
+          title="Your Mood"
+          subtitle="Curious & open"
+          logo={<Heart className="h-4 w-4" />}
+          cta="Shared"
           tone="success"
           delay={0.6}
         />
@@ -64,8 +58,8 @@ export const DesignYourWorkflowSkeleton = () => {
   );
 };
 
-export const ConnectYourTooklsSkeleton = () => {
-  const text = `Write the first and second rule of it using Claude and ChatGPT.`;
+export const GetMatched = () => {
+  const text = `Analyzing your vibes and preferences to find three perfect matches with aligned interests.`;
   const [mounted, setMounted] = useState(false);
   const randomWidth = useMemo(() => Math.random() * 100, [mounted]);
 
@@ -85,12 +79,18 @@ export const ConnectYourTooklsSkeleton = () => {
       >
         <div className="absolute -top-4 -right-4 flex h-14 w-14 items-center justify-center rounded-lg bg-white shadow-xl">
           <Scale />
-          <OpenAILogo className="relative z-20 h-8 w-8" />
+          <Image
+            src="/assets/images/logo.svg"
+            alt="Serene Logo"
+            width={32}
+            height={32}
+            className="relative z-20 h-8 w-8"
+          />
         </div>
         <div className="mt-12 flex items-center gap-2">
           <IntegrationsLogo />
           <span className="text-charcoal-700 text-sm font-medium dark:text-neutral-200">
-            Tasks
+            Finding Matches
           </span>
         </div>
         <DivideX className="mt-2" />
@@ -172,35 +172,35 @@ export const ConnectYourTooklsSkeleton = () => {
         <div className="mt-12 flex items-center gap-2">
           <IntegrationsLogo className="dark:text-neutral-200" />
           <span className="text-charcoal-700 text-xs font-medium md:text-sm dark:text-neutral-200">
-            Integrations
+            Your Matches
           </span>
           <span className="text-charcoal-700 rounded-lg border border-gray-200 bg-gray-50 px-2 py-0.5 text-xs dark:border-neutral-600 dark:bg-neutral-800 dark:text-neutral-200">
-            200
+            3
           </span>
         </div>
         <DivideX className="mt-2" />
         <div className="mt-4 flex items-center justify-between gap-2">
           <div className="flex items-center gap-2">
-            <OpenAILogo className="h-4 w-4 shrink-0" />
+            <div className="h-4 w-4 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 shrink-0" />
             <span className="text-charcoal-700 text-xs font-medium md:text-sm dark:text-neutral-200">
-              ChatGPT
+              Alex - Coffee Enthusiast
             </span>
           </div>
 
-          <div className="rounded-sm border border-blue-500 bg-blue-50 px-2 py-0.5 text-xs text-blue-500">
-            Connected
+          <div className="rounded-sm border border-emerald-500 bg-emerald-50 px-2 py-0.5 text-xs text-emerald-500">
+            98% Match
           </div>
         </div>
         <div className="mt-4 flex items-center justify-between gap-2">
           <div className="flex items-center gap-2">
-            <AnthropicLogo className="h-4 w-4 shrink-0" />
+            <div className="h-4 w-4 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shrink-0" />
             <span className="text-charcoal-700 text-xs font-medium md:text-sm dark:text-neutral-200">
-              Claude 4 Opus
+              Jamie - Art Lover
             </span>
           </div>
 
-          <div className="rounded-sm border border-blue-500 bg-blue-50 px-2 py-0.5 text-xs text-blue-500">
-            Connected
+          <div className="rounded-sm border border-emerald-500 bg-emerald-50 px-2 py-0.5 text-xs text-emerald-500">
+            94% Match
           </div>
         </div>
         <div className="mt-2 flex flex-col">
@@ -229,77 +229,87 @@ export const ConnectYourTooklsSkeleton = () => {
   );
 };
 
-export const DeployAndScaleSkeleton = () => {
+export const MeetIRL = () => {
   const containerRef = useRef(null);
   const [containerHeight, setContainerHeight] = useState(0);
 
-  // Define deploy cards data for reusability
-  const deployCards = [
-    { title: 'deploy-dev-eu-324', subtitle: '2h ago', branch: 'master' },
+  // Define meeting cards data for reusability
+  const meetingCards = [
     {
-      title: 'deploy-prod-eu-128',
-      subtitle: '10m ago',
-      branch: 'main',
-      variant: 'success',
-    },
-    { title: 'deploy-dev-us-445', subtitle: '45m ago', branch: 'feature/auth' },
-    {
-      title: 'deploy-prod-ap-223',
-      subtitle: '1h ago',
-      branch: 'main',
+      title: 'Coffee with Alex',
+      subtitle: 'Today 3:00 PM',
+      branch: 'Serene Coffee',
       variant: 'success',
     },
     {
-      title: 'deploy-dev-eu-891',
-      subtitle: '2h ago',
-      branch: 'fix/cache',
-      variant: 'warning',
-    },
-    {
-      title: 'deploy-prod-us-337',
-      subtitle: '3h ago',
-      branch: 'main',
+      title: 'Wine with Jamie',
+      subtitle: 'Tomorrow 7:00 PM',
+      branch: 'Serene Wine Bar',
       variant: 'success',
     },
     {
-      title: 'deploy-dev-ap-556',
-      subtitle: '4h ago',
-      branch: 'feat/api',
-      variant: 'danger',
-    },
-    {
-      title: 'deploy-dev-eu-672',
-      subtitle: '5h ago',
-      branch: 'feat/search',
+      title: 'Coffee with Taylor',
+      subtitle: 'Sat 2:00 PM',
+      branch: 'Local Cafe',
       variant: 'default',
     },
     {
-      title: 'deploy-prod-ap-445',
-      subtitle: '6h ago',
-      branch: 'main',
+      title: 'Brunch with Sam',
+      subtitle: 'Sun 11:00 AM',
+      branch: 'Serene Coffee',
       variant: 'success',
     },
     {
-      title: 'deploy-dev-us-891',
-      subtitle: '7h ago',
-      branch: 'fix/perf',
+      title: 'Coffee with Jordan',
+      subtitle: 'Mon 4:00 PM',
+      branch: 'Serene Coffee',
       variant: 'warning',
     },
     {
-      title: 'deploy-prod-eu-223',
-      subtitle: '8h ago',
-      branch: 'main',
+      title: 'Wine with Riley',
+      subtitle: 'Tue 6:30 PM',
+      branch: 'Serene Wine Bar',
       variant: 'success',
     },
     {
-      title: 'deploy-dev-ap-337',
-      subtitle: '9h ago',
-      branch: 'feat/analytics',
+      title: 'Coffee with Casey',
+      subtitle: 'Wed 10:00 AM',
+      branch: 'Local Spot',
       variant: 'default',
+    },
+    {
+      title: 'Drinks with Morgan',
+      subtitle: 'Thu 5:00 PM',
+      branch: 'Serene Wine Bar',
+      variant: 'success',
+    },
+    {
+      title: 'Coffee with Avery',
+      subtitle: 'Fri 1:00 PM',
+      branch: 'Serene Coffee',
+      variant: 'success',
+    },
+    {
+      title: 'Lunch with Drew',
+      subtitle: 'Sat 12:30 PM',
+      branch: 'Local Bistro',
+      variant: 'default',
+    },
+    {
+      title: 'Coffee with Blake',
+      subtitle: 'Sun 3:30 PM',
+      branch: 'Serene Coffee',
+      variant: 'warning',
+    },
+    {
+      title: 'Wine with Quinn',
+      subtitle: 'Mon 7:00 PM',
+      branch: 'Serene Wine Bar',
+      variant: 'success',
     },
   ];
 
-  const extendedCards = [...deployCards, ...deployCards, ...deployCards];
+  const extendedCards = [...meetingCards, ...meetingCards, ...meetingCards];
 
   const cardHeight = 64;
   const gap = 4;
@@ -395,11 +405,11 @@ export const DeployAndScaleSkeleton = () => {
               ),
             }}
           >
-            <DeployCard
+            <MeetingCard
               variant={card.variant}
               title={card.title}
               subtitle={card.subtitle}
-              branch={card.branch}
+              location={card.branch}
             />
           </motion.div>
         ))}
@@ -408,7 +418,22 @@ export const DeployAndScaleSkeleton = () => {
   );
 };
 
-const DeployCard = ({ variant = 'default', title, subtitle, branch }) => {
+const MeetingCard = ({ variant = 'default', title, subtitle, location }) => {
+  const getIcon = () => {
+    if (title.includes('Coffee') || title.includes('Brunch')) {
+      return (
+        <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M2 21V19H20V21H2M20 8V5L18 5V3H4V5H2V8H4V13A4 4 0 0 0 8 17H14A4 4 0 0 0 18 13V8H20M16 5H6V13A2 2 0 0 0 8 15H14A2 2 0 0 0 16 13V5Z" />
+        </svg>
+      );
+    }
+    return (
+      <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.859 0-7 3.141-7 7v1h17z" />
+      </svg>
+    );
+  };
+
   return (
     <div className="mx-auto flex w-full max-w-sm items-center justify-between rounded-lg p-3">
       <div className="flex items-center gap-2">
@@ -417,19 +442,21 @@ const DeployCard = ({ variant = 'default', title, subtitle, branch }) => {
             'flex h-6 w-6 items-center justify-center rounded-md',
             variant === 'default' && 'bg-gray-200',
             variant === 'danger' && 'bg-red-200',
-            variant === 'success' && 'bg-green-200',
+            variant === 'success' && 'bg-emerald-200',
             variant === 'warning' && 'bg-yellow-200'
           )}
         >
-          <ForkIcon
+          <div
             className={cn(
               'h-4 w-4',
               variant === 'default' && 'text-gray-500',
               variant === 'danger' && 'text-red-500',
-              variant === 'success' && 'text-green-500',
+              variant === 'success' && 'text-emerald-500',
               variant === 'warning' && 'text-yellow-500'
             )}
-          />
+          >
+            {getIcon()}
+          </div>
         </div>
         <span className="text-charcoal-700 text-xs font-medium sm:text-sm">
           {title}
@@ -440,7 +467,9 @@ const DeployCard = ({ variant = 'default', title, subtitle, branch }) => {
           {subtitle}
         </span>
         <div className="size-1 rounded-full bg-gray-400"></div>
-        <span className="text-charcoal-700 text-xs font-normal">{branch}</span>
+        <span className="text-charcoal-700 text-xs font-normal">
+          {location}
+        </span>
       </div>
     </div>
   );

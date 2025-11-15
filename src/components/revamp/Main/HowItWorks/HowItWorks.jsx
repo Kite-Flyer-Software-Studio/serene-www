@@ -10,37 +10,34 @@ import { SubHeading } from '@/components/ui/sub-heading';
 import { SectionHeading } from '@/components/ui/section-heading';
 
 import { PixelatedCanvas } from './PixelatedCanvas';
-import {
-  ConnectYourTooklsSkeleton,
-  DeployAndScaleSkeleton,
-  DesignYourWorkflowSkeleton,
-} from './Skeletons';
+import { GetMatched, MeetIRL, WeeklyQuery } from './Skeletons';
+import { MessageCircle, Users, Coffee } from 'lucide-react';
 
 export const HowItWorks = () => {
   const tabs = [
     {
-      title: 'Step 1: Tell Serene who you want to meet (~1 min)',
+      title: 'Step 1: Tell Serene who you want to meet (30s)',
       description:
         'Every Thursday at noon, share your vibes with Serene through our playful question',
-      icon: FirstIcon,
-      id: 'workflow',
-      skeleton: <DesignYourWorkflowSkeleton />,
+      icon: MessageCircle,
+      id: 'query',
+      skeleton: <WeeklyQuery />,
     },
     {
       title: 'Step 2: Get Matched',
       description:
         'Serene finds you three matches with aligned vibes and schedules. You pick one to start chatting. Serene handles the logistics.',
-      icon: SecondIcon,
+      icon: Users,
       id: 'tools',
-      skeleton: <ConnectYourTooklsSkeleton />,
+      skeleton: <GetMatched />,
     },
     {
       title: 'Step 3: Meet IRL',
       description:
         'You show up at Serene Coffee & Wine and redeem a discount on your first drink. We provide the good vibes. You provide the conversation. If you prefer, Serene can also suggest a venue.',
-      icon: ThirdIcon,
+      icon: Coffee,
       id: 'deploy',
-      skeleton: <DeployAndScaleSkeleton />,
+      skeleton: <MeetIRL />,
     },
   ];
 
@@ -87,7 +84,7 @@ export const HowItWorks = () => {
                     activeTab.id !== tab.id && 'group-hover:text-brand'
                   )}
                 >
-                  <tab.icon className="shrink-0" /> {tab.title}
+                  <tab.icon className="h-4 w-4 shrink-0" /> {tab.title}
                 </div>
                 <p
                   className={cn(
@@ -123,7 +120,7 @@ export const HowItWorks = () => {
               className="group relative flex w-full flex-col items-start overflow-hidden px-4 py-4 md:px-12 md:py-8"
             >
               <div className="text-charcoal-700 relative z-20 flex items-center gap-2 font-medium dark:text-neutral-100">
-                <tab.icon className="shrink-0" /> {tab.title}
+                <tab.icon className="h-4 w-4 shrink-0" /> {tab.title}
               </div>
               <p className="relative z-20 mt-2 text-left text-sm text-gray-600 dark:text-neutral-300">
                 {tab.description}

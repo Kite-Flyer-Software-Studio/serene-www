@@ -510,7 +510,6 @@ export const OneMatchPerWeek = () => {
             />
           </div>
           <RightSideSVG />
-          {/* <IconBlock icon={<OpenAILogo className="size-6" />} /> */}
         </div>
       </motion.div>
     </>
