@@ -162,17 +162,29 @@ const MobileNav = ({ navItems, visible }) => {
       >
         <div className="flex flex-row justify-between items-center w-full">
           <Logo />
-          {open ? (
-            <IconX
-              className="text-black dark:text-white"
-              onClick={() => setOpen(!open)}
-            />
-          ) : (
-            <IconMenu2
-              className="text-black dark:text-white"
-              onClick={() => setOpen(!open)}
-            />
-          )}
+          <div className="flex items-center gap-4">
+            <Button
+              as={Link}
+              href={waitlistUrl}
+              rel="noopener nofollow"
+              target="_blank"
+              variant="primary"
+              className="text-xs px-3 py-1.5"
+            >
+              Join Waitlist
+            </Button>
+            {open ? (
+              <IconX
+                className="text-black dark:text-white"
+                onClick={() => setOpen(!open)}
+              />
+            ) : (
+              <IconMenu2
+                className="text-black dark:text-white"
+                onClick={() => setOpen(!open)}
+              />
+            )}
+          </div>
         </div>
 
         <AnimatePresence>
@@ -195,14 +207,14 @@ const MobileNav = ({ navItems, visible }) => {
                   <motion.span className="block">{navItem.name} </motion.span>
                 </Link>
               ))}
-              <Button
+              {/* <Button
                 as={Link}
                 href={waitlistUrl}
                 variant="primary"
                 className="block md:hidden w-full"
               >
                 Join Waitlist
-              </Button>
+              </Button> */}
             </motion.div>
           )}
         </AnimatePresence>
