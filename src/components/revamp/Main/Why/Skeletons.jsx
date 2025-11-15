@@ -9,9 +9,12 @@ import { DivideX } from '@/components/ui/divide-x';
 import { useTypewriter } from '@/hooks/useTypewriter';
 import {
   AttachmentIcon,
+  BrainIcon,
   CodeIcon,
   IntegrationsLogo,
+  MouseBoxIcon,
   PhoneIcon,
+  RealtimeSyncIcon,
   SendIcon,
   WindowIcon,
 } from './Icons';
@@ -409,13 +412,13 @@ const AssistantMessage = ({ content, isActive, onComplete }) => {
   );
 };
 
-export const NativeToolsIntegrationSkeleton = () => {
+export const OneMatchPerWeek = () => {
   return (
     <>
       <div className="relative mx-auto my-24 h-full w-full scale-[2] sm:scale-[1.5] md:scale-[1.2] lg:hidden">
         <Image
           src="/illustrations/native-tools-integration.svg"
-          alt="Native Tools Integration"
+          alt="One Match Per Week"
           width={1200}
           height={1200}
           className="dark:invert dark:filter"
@@ -423,27 +426,27 @@ export const NativeToolsIntegrationSkeleton = () => {
       </div>
       <motion.div className="relative mx-auto my-12 hidden h-full max-h-70 min-h-80 max-w-[67rem] grid-cols-2 p-4 lg:grid">
         <div className="flex items-center justify-between">
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-10 w-100">
             <TextIconBlock
-              icon={<WindowIcon />}
-              text="I want to meet a Finance Bro"
+              icon={<BrainIcon />}
+              text="I value deep conversations about life's meaning"
             >
               <TopSVG className="absolute top-2 -right-32" />
             </TextIconBlock>
             <TextIconBlock
-              icon={<CodeIcon />}
-              text="I want to meet someone who runs marathon"
+              icon={<RealtimeSyncIcon />}
+              text="I'm passionate about pushing my limits and growth"
             >
               <MiddleSVG className="absolute top-2 -right-32" />
             </TextIconBlock>
             <TextIconBlock
-              icon={<PhoneIcon />}
-              text="I want to meet a foodie who loves French Cuisine"
+              icon={<MouseBoxIcon />}
+              text="I love exploring cultures through authentic experiences"
             >
               <BottomSVG className="absolute -right-32 bottom-0" />
             </TextIconBlock>
           </div>
-          <div className="relative h-16 w-16 overflow-hidden rounded-md bg-gray-200 p-px shadow-xl dark:bg-neutral-700">
+          <div className="relative h-16 w-16 overflow-hidden rounded-md bg-gray-200 p-px shadow-xl dark:bg-neutral-700 -right-40">
             <div className="absolute inset-0 scale-[1.4] animate-spin rounded-full bg-conic [background-image:conic-gradient(at_center,transparent,var(--color-blue-500)_20%,transparent_30%)] [animation-duration:2s]"></div>
             <div className="absolute inset-0 scale-[1.4] animate-spin rounded-full [background-image:conic-gradient(at_center,transparent,var(--color-brand)_20%,transparent_30%)] [animation-delay:1s] [animation-duration:2s]"></div>
             <div className="relative z-20 flex h-full w-full items-center justify-center rounded-[5px] bg-white dark:bg-neutral-900">
@@ -632,7 +635,7 @@ const RightSideSVG = (props) => {
 const TopSVG = (props) => {
   return (
     <svg
-      width="250"
+      width="170"
       height="33"
       viewBox="0 0 312 33"
       fill="none"

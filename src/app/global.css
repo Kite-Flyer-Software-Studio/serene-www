@@ -226,3 +226,8 @@ body {
 .squircle {
   clip-path: url(#squircleClip);
 }
+
+/* Custom */
+.-right-40 {
+  right: -40px;
+}

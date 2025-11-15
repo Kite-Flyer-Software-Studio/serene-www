@@ -7,7 +7,7 @@ import { SubHeading } from '@/components/ui/sub-heading';
 import { Container } from '@/components/ui/container';
 import { SectionHeading } from '@/components/ui/section-heading';
 import { TitleBadge } from '@/components/ui/title-badge';
-import { Button } from '@/components/revamp/Button';
+// import { Button } from '@/components/revamp/Button';
 import { DivideX } from '@/components/ui/divide-x';
 import useMeasure from 'react-use-measure';
 

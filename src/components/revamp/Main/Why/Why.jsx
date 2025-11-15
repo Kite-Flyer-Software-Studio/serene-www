@@ -17,7 +17,7 @@ import {
 
 import {
   LLMModelSelectorSkeleton,
-  NativeToolsIntegrationSkeleton,
+  OneMatchPerWeek,
   TextToWorkflowBuilderSkeleton,
 } from './Skeletons';
 
@@ -71,7 +71,7 @@ export const Why = () => {
               want to meet. No overwhelm. We focus on one high-potential
               connection, encouraging you to be present and intentional.
             </CardDescription>
-            <NativeToolsIntegrationSkeleton />
+            <OneMatchPerWeek />
           </Card>
         </div>
         {/* <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
