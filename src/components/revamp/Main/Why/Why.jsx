@@ -6,14 +6,7 @@ import { SubHeading } from '@/components/ui/sub-heading';
 import { SectionHeading } from '@/components/ui/section-heading';
 
 import { Card, CardDescription, CardTitle } from './Card';
-import {
-  BrainIcon,
-  FingerprintIcon,
-  MouseBoxIcon,
-  NativeIcon,
-  RealtimeSyncIcon,
-  SDKIcon,
-} from './Icons';
+import { BrainIcon, MouseBoxIcon, NativeIcon } from './Icons';
 
 import {
   LLMModelSelectorSkeleton,
@@ -52,7 +45,7 @@ export const Why = () => {
               </CardTitle>
             </div>
             <CardDescription>
-              Your wingman in your pocket. Handles the "where and when,"
+              Your personal social assistant. Handles the "where and when,"
               suggests conversation starters based on your common interests, and
               removes all the awkward planning.
             </CardDescription>

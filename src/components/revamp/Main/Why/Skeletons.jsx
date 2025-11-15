@@ -203,20 +203,22 @@ export const TextToWorkflowBuilderSkeleton = () => {
   const initialChat = [
     {
       role: 'user',
-      content: 'Hello, how are you?',
+      content: "Hi Serene, I have a coffee meeting tomorrow but I'm nervous",
     },
     {
       role: 'assistant',
-      content: "I'm good, thank you! How can I help you today?",
+      content:
+        "I understand! Let me help you prepare. What's making you feel nervous about this meeting?",
     },
     {
       role: 'user',
       content:
-        'I want to create a workflow that will send an email to all my clients',
+        "I don't know what to talk about and I'm worried about awkward silences",
     },
     {
       role: 'assistant',
-      content: 'Nah, do it yourself.',
+      content:
+        'Here are some great conversation starters: Ask about their recent projects, travel experiences, or what inspired their career path. Remember, genuine curiosity goes a long way!',
     },
   ];
 
@@ -229,12 +231,12 @@ export const TextToWorkflowBuilderSkeleton = () => {
   const INITIAL_DELAY = 200;
   const MESSAGE_DELAY = 400;
   const RANDOM_MESSAGES = [
-    'Do you really think I was gonna answer?',
-    "I'm not a real assistant, I'm just a skeleton",
-    'Meri ek taang nakli hai, mai hockey ka bohot bada khiladi tha. Ek din Uday bhai ko meri kisi baat pe gussa aagaya aur mere hi hockey se meri taang ke do tukde kar diye. Lekin dil ke bohot ache hain, fauran mujhe hospital le gaye aur ye nakli taang lagwayi',
-    "Mimicking chat here, this isn't real.",
-    'Bro stop.',
-    'Main langotiya jeetu ka mara hua yaar bol rha hoon.',
+    'How are you feeling about your upcoming social plans? I can help you prepare!',
+    'Try asking about their favorite local spots or recent book recommendations - these usually spark great conversations.',
+    'Remember: active listening is just as important as asking good questions. Show genuine interest in their responses.',
+    'First meetings can feel overwhelming, but focusing on finding common ground helps create natural connection.',
+    "What's your energy level today? I can suggest conversation topics that match your mood.",
+    'Pro tip: Ask follow-up questions like "What made you choose that?" to keep conversations flowing naturally.',
   ];
 
   const handleSendMessage = () => {
@@ -333,7 +335,7 @@ export const TextToWorkflowBuilderSkeleton = () => {
                 onComplete={() => setCurrentMessageComplete(true)}
               />
             ) : (
-              <AssistantMessage
+              <SereneMessage
                 content={message.content}
                 isActive={index === visibleMessages - 1}
                 onComplete={() => setCurrentMessageComplete(true)}
@@ -368,18 +370,18 @@ const UserMessage = ({ content, isActive, onComplete }) => {
       </div>
       <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-blue-600 text-xs font-medium text-white">
         <Image
-          src="/avatar.webp"
+          src="https://images.unsplash.com/photo-1529232356377-57971f020a94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
           alt="user"
           width={32}
           height={32}
-          className="rounded-full"
+          className="h-8 w-8 rounded-full object-cover object-top"
         />
       </div>
     </div>
   );
 };
 
-const AssistantMessage = ({ content, isActive, onComplete }) => {
+const SereneMessage = ({ content, isActive, onComplete }) => {
   const { displayText, isComplete } = useTypewriter(
     isActive ? content : content,
     TYPING_SPEED
