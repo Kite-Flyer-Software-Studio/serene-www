@@ -59,7 +59,7 @@ export default function OnePageNav({ links, animateY = false }) {
                 link.text
               )}
               {link.new && (
-                <span class="position-absolute translate-middle badge rounded-pill bg-danger nav-badge">
+                <span className="position-absolute translate-middle badge rounded-pill bg-danger nav-badge">
                   New
                 </span>
               )}

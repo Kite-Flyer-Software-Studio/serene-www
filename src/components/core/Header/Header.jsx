@@ -4,7 +4,7 @@ import Nav from './Nav';
 import Image from 'next/image';
 import LanguageSelect from './LanguageSelect';
 import useDetectUserEventNav from '@/hooks/useDetectUserEventNav';
-import useTypeformWaitlistUrl from '@/hooks/useTypeformWaitlistUrl';
+import useWaitlistUrl from '@/hooks/useWaitlistUrl';
 import { useLocale, useTranslations } from 'next-intl';
 import { useMemo } from 'react';
 import { LUMA_REGULAR_CALENDAR, SIGN_UP_FORM } from '@/constants';

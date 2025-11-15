@@ -3,9 +3,10 @@ import { DivideX } from '@/components/ui/divide-x';
 import { Hero } from '@/components/revamp/Main/Hero/Hero';
 import { About } from '@/components/revamp/Main/About/About';
 import { HowItWorks } from '@/components/revamp/Main/HowItWorks/HowItWorks';
-import { Features } from '@/components/revamp/Main/Features/Features';
-import { CuratedGroupEvents } from '@/components/revamp/Main/CuratedGroupEvents/CuratedGroupEvents';
+import { Why } from '@/components/revamp/Main/Why/Why';
+import { Events } from '@/components/revamp/Main/Events/Events';
 import { Space } from '@/components/revamp/Main/Space/Space';
+import { FAQs } from '@/components/revamp/Main/FAQs/FAQs';
 import { Footer } from '@/components/revamp/Footer/Footer';
 
 export async function generateMetadata() {
@@ -31,11 +32,13 @@ export default function Home() {
       <DivideX />
       <HowItWorks />
       <DivideX />
-      <Features />
+      <Why />
       <DivideX />
-      <CuratedGroupEvents />
+      <Events />
       <DivideX />
       <Space />
+      <DivideX />
+      <FAQs />
       <DivideX />
       <Footer />
     </>

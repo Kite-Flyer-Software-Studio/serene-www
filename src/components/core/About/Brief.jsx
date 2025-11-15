@@ -1,11 +1,11 @@
-import useTypeformWaitlistUrl from '@/hooks/useTypeformWaitlistUrl';
+import useWaitlistUrl from '@/hooks/useWaitlistUrl';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Brief() {
   const t = useTranslations('About.brief');
-  const typeformWaitlistUrl = useTypeformWaitlistUrl();
+  const typeformWaitlistUrl = useWaitlistUrl();
 
   return (
     <div className="container mt-60 mb-60" id="brief">

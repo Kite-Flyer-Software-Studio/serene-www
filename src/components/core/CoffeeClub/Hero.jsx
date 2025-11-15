@@ -3,11 +3,11 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
-import useTypeformWaitlistUrl from '@/hooks/useTypeformWaitlistUrl';
+import useWaitlistUrl from '@/hooks/useWaitlistUrl';
 
 export default function Hero() {
   const t = useTranslations('CoffeeClub.hero');
-  const typeformWaitlistUrl = useTypeformWaitlistUrl();
+  const typeformWaitlistUrl = useWaitlistUrl();
   return (
     <>
       <div
@@ -82,7 +82,7 @@ export default function Hero() {
                       </span>
                     </a>
                   </div>
-                  <div class="badge rounded-pill coming-soon text-dark ms-1">
+                  <div className="badge rounded-pill coming-soon text-dark ms-1">
                     <span className="text-lowercase">first meet is free</span>
                   </div>
                 </div>

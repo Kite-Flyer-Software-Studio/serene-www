@@ -6,10 +6,10 @@ import TypeWriter from '@/components/core/TypeWriter';
 import React from 'react';
 import Image from 'next/image';
 
-import useTypeformWaitlistUrl from '@/hooks/useTypeformWaitlistUrl';
+import useWaitlistUrl from '@/hooks/useWaitlistUrl';
 
 export default function Possibilities() {
-  const typeformWaitlistUrl = useTypeformWaitlistUrl();
+  const typeformWaitlistUrl = useWaitlistUrl();
   const t = useTranslations('CoffeeClub.possibilities');
 
   const taglines = useMemo(

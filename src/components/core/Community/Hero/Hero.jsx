@@ -1,5 +1,5 @@
-import useTypeformWaitlistUrl from "@/hooks/useTypeformWaitlistUrl";
-import { useTranslations } from "next-intl";
+import useWaitlistUrl from '@/hooks/useWaitlistUrl';
+import { useTranslations } from 'next-intl';
 
 export default function Hero() {
   const t = useTranslations('Community.hero');

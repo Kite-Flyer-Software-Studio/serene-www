@@ -14,8 +14,7 @@ import { GTM_ID, META_PIXEL_ID } from '@/constants';
 import { getMessages } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 
-import 'tippy.js/dist/tippy.css';
-import FloatingMobileCTA from '@/components/core/FloatingMobileCTA';
+// import 'tippy.js/dist/tippy.css';
 import { ThemeProvider } from '@/contexts/ThemeProvider';
 
 export const viewport = {
@@ -100,10 +99,7 @@ export default async function RootLayout({ children, params: { locale } }) {
         </noscript>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <main>
-              {children}
-              {/* <FloatingMobileCTA /> */}
-            </main>
+            <main>{children}</main>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

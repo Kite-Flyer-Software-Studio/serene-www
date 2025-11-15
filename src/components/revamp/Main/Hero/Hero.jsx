@@ -4,18 +4,20 @@ import { useRef } from 'react';
 import { motion } from 'motion/react';
 import Image from 'next/image';
 import Balancer from 'react-wrap-balancer';
-// import Link from 'next/link';
+import Link from 'next/link';
 
 import { cn } from '@/utils';
 import { useMediaQuery } from '@/hooks/useMediaQuery';
-import { APP_STORE_URL } from '@/constants';
+import useWaitlistUrl from '@/hooks/useWaitlistUrl';
+// import { APP_STORE_URL } from '@/constants';
 
 import { TitleBadge } from '@/components/ui/title-badge';
-// import { Button } from '../../Button';
+import { Button } from '../../Button';
 import { IphoneMockup } from './IphoneMockUp';
 import { Personas } from './Personas';
 
 export const Hero = () => {
+  const waitlistUrl = useWaitlistUrl();
   const parentRef = useRef(null);
   return (
     <div
@@ -23,7 +25,7 @@ export const Hero = () => {
       className="relative flex max-w-7xl rounded-b-3xl my-2 md:my-20  mx-auto flex-col items-center justify-center pt-16 overflow-hidden px-4 md:px-8 bg-gradient-to-t from-[rgba(247,135,67,1)]  via-[rgba(255,244,239,1)] to-[rgba(255,255,255,1)]"
     >
       <TitleBadge text="For busy professionals in Hong Kong" />
-      <div class="mt-4">
+      <div className="mt-4">
         <Personas />
       </div>
       <div className="text-balance relative z-20 mx-auto mb-4 max-w-6xl text-center text-4xl font-semibold tracking-tight text-gray-700  md:text-7xl">
@@ -74,15 +76,17 @@ export const Hero = () => {
         transition={{ duration: 0.2, delay: 0.7 }}
         className="mb-8 mt-6 z-10 sm:mb-10 sm:mt-8 flex w-full flex-col items-center justify-center gap-4 px-4 sm:px-8 sm:flex-row md:mb-20"
       >
-        {/* <Button
+        <Button
           as={Link}
-          href="/login"
+          href={waitlistUrl}
+          rel="noopener nofollow"
+          target="_blank"
           variant="primary"
           className="w-full sm:w-40 h-12 flex items-center justify-center"
         >
-          Get Started
-        </Button> */}
-        <div
+          Get Early Access
+        </Button>
+        {/* <div
           className="local-scroll wow fadeInUp wch-unset"
           data-wow-delay="0.5s"
           data-wow-offset={0}
@@ -101,7 +105,7 @@ export const Hero = () => {
               className="appstore-button-2"
             />
           </a>
-        </div>
+        </div> */}
       </motion.div>
       <div className="pt-[2rem] w-full min-h-[21rem] relative">
         <motion.div
@@ -284,14 +288,14 @@ const MockScreen = () => {
             <div className="flex flex-col items-start mt-4 gap-1">
               <div className="flex -space-x-2">
                 <Image
-                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+                  src="https://images.unsplash.com/photo-1697667409270-8d6dfdc9f09a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
                   alt=""
                   className="w-8 h-8 rounded-full border-2 border-white"
                   height={32}
                   width={32}
                 />
                 <Image
-                  src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80"
+                  src="https://images.unsplash.com/photo-1574315538427-58c1e5353f18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
                   alt=""
                   className="w-8 h-8 rounded-full border-2 border-white"
                   height={32}

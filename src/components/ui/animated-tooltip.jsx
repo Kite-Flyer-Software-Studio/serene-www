@@ -34,7 +34,7 @@ export const AnimatedTooltip = ({ items }) => {
       x.set(event.nativeEvent.offsetX - halfWidth);
     });
   };
-  console.log('hoverindex', hoveredIndex);
+
   return (
     <>
       {items.map((item, idx) => (

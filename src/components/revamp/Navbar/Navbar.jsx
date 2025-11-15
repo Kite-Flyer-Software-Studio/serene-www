@@ -9,6 +9,8 @@ import {
 } from 'motion/react';
 import Link from 'next/link';
 import React, { useRef, useState } from 'react';
+
+import useWaitlistUrl from '@/hooks/useWaitlistUrl';
 import { Button } from '../Button';
 import { Logo } from '../Logo';
 // import { ToggleModeButton } from './ToggleModeButton';
@@ -25,7 +27,7 @@ export const Navbar = () => {
     },
     {
       name: 'Why',
-      link: '/#features',
+      link: '/#why',
     },
     {
       name: 'Events',
@@ -34,6 +36,10 @@ export const Navbar = () => {
     {
       name: 'Space',
       link: '/#space',
+    },
+    {
+      name: 'FAQs',
+      link: '/#faq',
     },
   ];
 
@@ -62,6 +68,7 @@ export const Navbar = () => {
 
 const DesktopNav = ({ navItems, visible }) => {
   const [hovered, setHovered] = useState(null);
+  const waitlistUrl = useWaitlistUrl();
 
   return (
     <motion.div
@@ -110,8 +117,15 @@ const DesktopNav = ({ navItems, visible }) => {
       </motion.div>
       <div className="flex items-center gap-4">
         {/* <ToggleModeButton /> */}
-        <Button as="button" variant="primary" className="hidden md:block ">
-          Join waitlist
+        <Button
+          as={Link}
+          href={waitlistUrl}
+          rel="noopener nofollow"
+          target="_blank"
+          variant="primary"
+          className="hidden md:block "
+        >
+          Join Waitlist
         </Button>
       </div>
     </motion.div>
@@ -119,6 +133,7 @@ const DesktopNav = ({ navItems, visible }) => {
 };
 
 const MobileNav = ({ navItems, visible }) => {
+  const waitlistUrl = useWaitlistUrl();
   const [open, setOpen] = useState(false);
 
   return (
@@ -181,12 +196,12 @@ const MobileNav = ({ navItems, visible }) => {
                 </Link>
               ))}
               <Button
-                as="button"
-                onClick={() => setOpen(false)}
+                as={Link}
+                href={waitlistUrl}
                 variant="primary"
                 className="block md:hidden w-full"
               >
-                Download Serene
+                Join Waitlist
               </Button>
             </motion.div>
           )}

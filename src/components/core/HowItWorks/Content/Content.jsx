@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
-import useTypeformWaitlistUrl from '@/hooks/useTypeformWaitlistUrl';
+import useWaitlistUrl from '@/hooks/useWaitlistUrl';
 
 export default function Content() {
   const t = useTranslations('HowItWorks');
-  const typeformWaitlistUrl = useTypeformWaitlistUrl();
+  const typeformWaitlistUrl = useWaitlistUrl();
 
   const stepsData = [
     {
@@ -114,7 +114,7 @@ export default function Content() {
                 className="btn btn-mod  btn-medium btn-circle white"
                 data-btn-animate="y"
                 style={{ backgroundColor: '#FF6D1F' }}
-                target='_blank'
+                target="_blank"
               >
                 <span className="btn-animate-y">
                   <span className="btn-animate-y-1">{t('Cta')}</span>
