@@ -59,7 +59,7 @@ export const HowItWorks = () => {
       <div className="flex flex-col items-center pt-16">
         <TitleBadge text="How Serene Works" />
         <SectionHeading className="mt-4">
-          Precision matching, effortless meetings
+          Precision matching, effortless connections
         </SectionHeading>
 
         <SubHeading as="p" className="mx-auto mt-6 max-w-lg">
