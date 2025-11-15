@@ -16,7 +16,7 @@ import { MessageCircle, Users, Coffee } from 'lucide-react';
 export const HowItWorks = () => {
   const tabs = [
     {
-      title: 'Step 1: Tell Serene who you want to meet (30s)',
+      title: 'Step 1: Tell Serene who you want to meet (~30s)',
       description:
         'Every Thursday at noon, share your vibes with Serene through our playful question',
       icon: MessageCircle,
