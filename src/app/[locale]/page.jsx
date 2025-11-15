@@ -1,39 +1,46 @@
-import Header from '@/components/core/Header/Header';
-import Footer from '@/components/core/Footer/Footer';
-import Hero from '@/components/core/Root/Hero/Hero';
-import Content from '@/components/core/Root/Content/Content';
+import { Navbar } from '@/components/revamp/Navbar/Navbar';
+import { DivideX } from '@/components/ui/divide-x';
+import { Hero } from '@/components/revamp/Main/Hero/Hero';
+import { About } from '@/components/revamp/Main/About/About';
+import { HowItWorks } from '@/components/revamp/Main/HowItWorks/HowItWorks';
+import { Why } from '@/components/revamp/Main/Why/Why';
+import { Events } from '@/components/revamp/Main/Events/Events';
+import { Space } from '@/components/revamp/Main/Space/Space';
+import { FAQs } from '@/components/revamp/Main/FAQs/FAQs';
+import { Footer } from '@/components/revamp/Footer/Footer';
 
 export async function generateMetadata() {
   return {
-    title: 'Serene',
-    description: 'Meet the perfect strangers over food and wine!',
+    title: 'Serene — Real IRL Connections',
+    description:
+      'Serene finds people who click. Weekly prompts keep convo lively. Try now — first three months free.',
     openGraph: {
-      title: 'Serene — Meet the perfect strangers over food and wine!',
-      description: "At Serene, we believe that great food, fine wine, and tailored restaurant menus can create a perfect storm of authentic connection and community – join us for an evening you'll never forget."
-    }
+      title: 'Serene — Real IRL Connections',
+      description:
+        'Serene finds people who click. Weekly prompts keep convo lively. Try now — first three months free.',
+    },
   };
 }
 
 export default function Home() {
   return (
-    <div className="theme-main">
-      <div className="page" id="top">
-        <nav className="main-nav transparent stick-fixed wow-menubar">
-          <Header />
-        </nav>
-        <main id="main">
-          <section
-            className="home-section parallax-mousemove-scene scrollSpysection"
-            id="home"
-          >
-            <Hero />
-          </section>
-          <Content />
-        </main>
-        <footer className="page-section footer pb-30">
-          <Footer />
-        </footer>
-      </div>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <DivideX />
+      <About />
+      <DivideX />
+      <HowItWorks />
+      <DivideX />
+      <Why />
+      <DivideX />
+      <Events />
+      <DivideX />
+      <Space />
+      <DivideX />
+      <FAQs />
+      <DivideX />
+      <Footer />
+    </>
   );
 }

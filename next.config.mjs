@@ -1,6 +1,6 @@
-import createNextIntlPlugin from 'next-intl/plugin'
+import createNextIntlPlugin from 'next-intl/plugin';
 
-const withNextIntl = createNextIntlPlugin()
+const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -9,14 +9,38 @@ const nextConfig = {
   //   locales: ['en', 'zh'],
   // },
   images: {
-    remotePatterns: [{
-      protocol: 'https',
-      hostname: 'images.lumacdn.com',
-      port: '',
-      pathname: '**'
-    }]
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.lumacdn.com',
+        port: '',
+        pathname: '**',
+      },
+      { hostname: 'assets.aceternity.com' },
+      { hostname: 'images.unsplash.com' },
+    ],
   },
-  webpack(config) {
+  webpack(config, { dev }) {
+    if (dev) {
+      // Optimize for development speed
+      config.optimization = {
+        ...config.optimization,
+        removeAvailableModules: false,
+        removeEmptyChunks: false,
+        splitChunks: false,
+      };
+
+      // Reduce file system operations
+      config.watchOptions = {
+        poll: false,
+        aggregateTimeout: 300,
+        ignored: [
+          '**/node_modules/**',
+          '**/.next/**',
+          '**/public/assets/**', // Ignore large asset folders
+        ],
+      };
+    }
     config.module.rules.push({
       test: /\.svg$/i,
       resourceQuery: /component/,
@@ -42,17 +66,17 @@ const nextConfig = {
           },
         },
       ],
-    })
+    });
 
     config.module.rules.push({
       test: /\.svg$/i,
       resourceQuery: /url/,
       issuer: /\.[jt]sx?$/,
       type: 'asset/resource',
-    })
+    });
 
-    return config
+    return config;
   },
-}
+};
 
-export default withNextIntl(nextConfig)
+export default withNextIntl(nextConfig);

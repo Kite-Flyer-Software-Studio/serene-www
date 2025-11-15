@@ -1,10 +1,10 @@
-'use client'
+'use client';
 
-import { useLayoutEffect } from "react";
-import { usePathname } from "next/navigation";
-import { parallaxMouseMovement, parallaxScroll } from "@/utlis/parallax";
-import { init_wow } from "@/utlis/initWowjs";
-import { headerChangeOnScroll } from "@/utlis/changeHeaderOnScroll";
+import { useLayoutEffect } from 'react';
+import { usePathname } from 'next/navigation';
+import { parallaxMouseMovement, parallaxScroll } from '@/utils/parallax';
+import { init_wow } from '@/utils/initWowjs';
+import { headerChangeOnScroll } from '@/utils/changeHeaderOnScroll';
 
 const useDetectUserEventNav = () => {
   const path = usePathname();
@@ -12,30 +12,30 @@ const useDetectUserEventNav = () => {
   useLayoutEffect(() => {
     init_wow();
     parallaxMouseMovement();
-    var mainNav = document.querySelector(".main-nav");
-    if (mainNav?.classList.contains("transparent")) {
-      mainNav.classList.add("js-transparent");
-    } else if (!mainNav?.classList?.contains("dark")) {
-      mainNav?.classList.add("js-no-transparent-white");
+    var mainNav = document.querySelector('.main-nav');
+    if (mainNav?.classList.contains('transparent')) {
+      mainNav.classList.add('js-transparent');
+    } else if (!mainNav?.classList?.contains('dark')) {
+      mainNav?.classList.add('js-no-transparent-white');
     }
 
-    window.addEventListener("scroll", headerChangeOnScroll);
+    window.addEventListener('scroll', headerChangeOnScroll);
     parallaxScroll();
     return () => {
-      window.removeEventListener("scroll", headerChangeOnScroll);
+      window.removeEventListener('scroll', headerChangeOnScroll);
     };
   }, [path]);
 
   useLayoutEffect(() => {
-    if (typeof window !== "undefined") {
+    if (typeof window !== 'undefined') {
       // Import the script only on the client side
-      import("bootstrap/dist/js/bootstrap.esm").then(() => {
+      import('bootstrap/dist/js/bootstrap.esm').then(() => {
         // Module is imported, you can access any exported functionality if
       });
     }
   }, []);
 
-  return true
-}
+  return true;
+};
 
-export default useDetectUserEventNav
+export default useDetectUserEventNav;

@@ -1,10 +1,10 @@
 import { useTranslations } from 'next-intl';
 
-import useTypeformWaitlistUrl from '@/hooks/useTypeformWaitlistUrl';
+import useWaitlistUrl from '@/hooks/useWaitlistUrl';
 
 export default function FloatingMobileCTA() {
   const t = useTranslations('Common');
-  const typeformWaitlistUrl = useTypeformWaitlistUrl();
+  const typeformWaitlistUrl = useWaitlistUrl();
 
   return (
     <a
