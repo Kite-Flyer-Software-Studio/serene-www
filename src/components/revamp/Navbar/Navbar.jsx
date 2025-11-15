@@ -117,16 +117,18 @@ const DesktopNav = ({ navItems, visible }) => {
       </motion.div>
       <div className="flex items-center gap-4">
         {/* <ToggleModeButton /> */}
-        <Button
-          as={Link}
-          href={waitlistUrl}
-          rel="noopener nofollow"
-          target="_blank"
-          variant="primary"
-          className="hidden md:block "
-        >
-          Join Waitlist
-        </Button>
+        {visible && (
+          <Button
+            as={Link}
+            href={waitlistUrl}
+            rel="noopener nofollow"
+            target="_blank"
+            variant="primary"
+            className="hidden md:block "
+          >
+            Join Waitlist
+          </Button>
+        )}
       </div>
     </motion.div>
   );
@@ -163,16 +165,18 @@ const MobileNav = ({ navItems, visible }) => {
         <div className="flex flex-row justify-between items-center w-full">
           <Logo />
           <div className="flex items-center gap-4">
-            <Button
-              as={Link}
-              href={waitlistUrl}
-              rel="noopener nofollow"
-              target="_blank"
-              variant="primary"
-              className="text-xs px-3 py-1.5"
-            >
-              Join Waitlist
-            </Button>
+            {visible && (
+              <Button
+                as={Link}
+                href={waitlistUrl}
+                rel="noopener nofollow"
+                target="_blank"
+                variant="primary"
+                className="text-xs px-3 py-1.5"
+              >
+                Join Waitlist
+              </Button>
+            )}
             {open ? (
               <IconX
                 className="text-black dark:text-white"
