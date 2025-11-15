@@ -93,7 +93,11 @@ export default async function RootLayout({ children, params: { locale } }) {
           />
         </noscript>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem={false}
+          >
             <main>{children}</main>
           </ThemeProvider>
         </NextIntlClientProvider>
