@@ -159,14 +159,14 @@ export const GetMatched = () => {
         transition={{ duration: 0.5, delay: 1 }}
         className="relative h-70 w-60 translate-x-10 rounded-2xl border-t border-gray-300 bg-white p-4 shadow-2xl md:translate-x-0 dark:border-neutral-700 dark:bg-neutral-900"
       >
-        <div className="absolute -top-4 -left-4 flex h-14 w-14 items-center justify-center rounded-lg bg-white shadow-xl dark:bg-neutral-800">
-          <Scale />
+        <div className="absolute -top-4 -left-4 flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-xl dark:bg-neutral-800">
+          {/* <Scale /> */}
           <Image
-            src="/assets/images/logo.svg"
+            src="https://images.unsplash.com/photo-1529232356377-57971f020a94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
             alt="Logo"
-            width={32}
-            height={32}
-            className="relative z-20 h-8 w-8"
+            width={56}
+            height={56}
+            className="relative z-20 h-14 w-14 object-cover object-top rounded-full"
           />
         </div>
         <div className="mt-12 flex items-center gap-2">
@@ -204,7 +204,7 @@ export const GetMatched = () => {
           </div>
         </div>
         <div className="mt-2 flex flex-col">
-          {[...Array(3)].map((_, index) => (
+          {[...Array(2)].map((_, index) => (
             <motion.div
               key={`width-bar-right-${index}`}
               initial={{

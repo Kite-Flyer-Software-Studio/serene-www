@@ -10,14 +10,13 @@ import { useTypewriter } from '@/hooks/useTypewriter';
 import {
   AttachmentIcon,
   BrainIcon,
-  CodeIcon,
   IntegrationsLogo,
   MouseBoxIcon,
-  PhoneIcon,
   RealtimeSyncIcon,
   SendIcon,
-  WindowIcon,
 } from './Icons';
+
+import OneMatchPerWeekImage from './images/one-match-per-week.png';
 
 import { IconBlock } from '@/components/ui/icon-block';
 
@@ -416,9 +415,9 @@ const SereneMessage = ({ content, isActive, onComplete }) => {
 export const OneMatchPerWeek = () => {
   return (
     <>
-      <div className="relative mx-auto my-24 h-full w-full scale-[2] sm:scale-[1.5] md:scale-[1.2] lg:hidden">
+      <div className="relative mx-auto my-24 h-full w-full scale-[0.8] sm:scale-[0.7] md:scale-[0.6] lg:hidden">
         <Image
-          src="/illustrations/native-tools-integration.svg"
+          src={OneMatchPerWeekImage}
           alt="One Match Per Week"
           width={1200}
           height={1200}
@@ -819,7 +818,7 @@ const TextIconBlock = ({ icon, text, children }) => {
   return (
     <div className="relative flex items-center gap-2">
       {icon}
-      <span className="text-charcoal-700 text-sm font-medium dark:text-neutral-200">
+      <span className="text-charcoal-700 text-xs font-medium dark:text-neutral-200">
         {text}
       </span>
       {children}
