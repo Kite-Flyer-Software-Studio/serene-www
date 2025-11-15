@@ -818,7 +818,7 @@ const TextIconBlock = ({ icon, text, children }) => {
   return (
     <div className="relative flex items-center gap-2">
       {icon}
-      <span className="text-charcoal-700 text-xs font-medium dark:text-neutral-200">
+      <span className="text-charcoal-700 text-sm font-medium dark:text-neutral-200">
         {text}
       </span>
       {children}
