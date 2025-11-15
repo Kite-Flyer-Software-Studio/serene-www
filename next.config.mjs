@@ -20,7 +20,27 @@ const nextConfig = {
       { hostname: 'images.unsplash.com' },
     ],
   },
-  webpack(config) {
+  webpack(config, { dev }) {
+    if (dev) {
+      // Optimize for development speed
+      config.optimization = {
+        ...config.optimization,
+        removeAvailableModules: false,
+        removeEmptyChunks: false,
+        splitChunks: false,
+      };
+
+      // Reduce file system operations
+      config.watchOptions = {
+        poll: false,
+        aggregateTimeout: 300,
+        ignored: [
+          '**/node_modules/**',
+          '**/.next/**',
+          '**/public/assets/**', // Ignore large asset folders
+        ],
+      };
+    }
     config.module.rules.push({
       test: /\.svg$/i,
       resourceQuery: /component/,

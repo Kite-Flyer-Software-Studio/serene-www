@@ -84,7 +84,7 @@ export const Hero = () => {
           variant="primary"
           className="w-full sm:w-40 h-12 flex items-center justify-center"
         >
-          Get Early Access
+          Join Waitlist!!
         </Button>
         {/* <div
           className="local-scroll wow fadeInUp wch-unset"
@@ -265,7 +265,7 @@ const MockScreen = () => {
         <div className="bg-[#FAF0E6] rounded-xl p-2 w-full">
           <div className="flex justify-between items-start">
             <h3 className="text-[#5D4037] text-md font-medium">
-              Coffee Chat with James
+              Coffee Meet with Rob
             </h3>
             <button className="text-gray-500">
               <svg
@@ -288,16 +288,16 @@ const MockScreen = () => {
             <div className="flex flex-col items-start mt-4 gap-1">
               <div className="flex -space-x-2">
                 <Image
-                  src="https://images.unsplash.com/photo-1697667409270-8d6dfdc9f09a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+                  src="https://images.unsplash.com/photo-1574315538427-58c1e5353f18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
                   alt=""
-                  className="w-8 h-8 rounded-full border-2 border-white"
+                  className="w-8 h-8 rounded-full border-2 border-white object-cover"
                   height={32}
                   width={32}
                 />
                 <Image
-                  src="https://images.unsplash.com/photo-1574315538427-58c1e5353f18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+                  src="https://images.unsplash.com/photo-1697667409270-8d6dfdc9f09a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
                   alt=""
-                  className="w-8 h-8 rounded-full border-2 border-white"
+                  className="w-8 h-8 rounded-full border-2 border-white object-cover"
                   height={32}
                   width={32}
                 />
@@ -343,15 +343,16 @@ const MockScreen = () => {
             <div className="flex flex-col items-start mt-4 gap-1">
               <div className="flex -space-x-2">
                 <Image
-                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+                  src="https://images.unsplash.com/photo-1574315538427-58c1e5353f18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
                   alt=""
-                  className="w-8 h-8 rounded-full border-2 border-white"
+                  className="w-8 h-8 rounded-full border-2 border-white object-cover"
                   height={32}
                   width={32}
                 />
                 <Image
-                  src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
-                  className="w-8 h-8 rounded-full border-2 border-white"
+                  src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+                  alt=""
+                  className="w-8 h-8 rounded-full border-2 border-white object-cover"
                   height={32}
                   width={32}
                 />

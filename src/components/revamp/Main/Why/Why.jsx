@@ -9,9 +9,9 @@ import { Card, CardDescription, CardTitle } from './Card';
 import { BrainIcon, MouseBoxIcon, NativeIcon } from './Icons';
 
 import {
-  LLMModelSelectorSkeleton,
+  IntentionalMatching,
   OneMatchPerWeek,
-  TextToWorkflowBuilderSkeleton,
+  SereneSocialConcierage,
 } from './Skeletons';
 
 export const Why = () => {
@@ -35,7 +35,7 @@ export const Why = () => {
               style. We believe in the power of a single, meaningful connection.
               Our one-match-per-week model encourages depth and presence.
             </CardDescription>
-            <LLMModelSelectorSkeleton />
+            <IntentionalMatching />
           </Card>
           <Card className="overflow-hidden mask-b-from-80%">
             <div className="flex items-center gap-2">
@@ -49,7 +49,7 @@ export const Why = () => {
               suggests conversation starters based on your common interests, and
               removes all the awkward planning.
             </CardDescription>
-            <TextToWorkflowBuilderSkeleton />
+            <SereneSocialConcierage />
           </Card>
         </div>
         <div className="w-full">

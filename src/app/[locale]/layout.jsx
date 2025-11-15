@@ -1,14 +1,9 @@
 import '../global.css';
-// import 'swiper/css';
-// import '../../../public/assets/css/styles.css';
-// import 'jarallax/dist/jarallax.min.css';
-// import 'swiper/css/effect-fade';
-// import 'photoswipe/dist/photoswipe.css';
 
 import { Inter } from 'next/font/google';
 
-import GoogleTagManager from '@/components/core/GoogleTagManager';
-import MetaPixel from '@/components/core/MetaPixel';
+import GoogleTagManager from '@/components/GoogleTagManager';
+import MetaPixel from '@/components/MetaPixel';
 import { cn } from '@/utils';
 import { GTM_ID, META_PIXEL_ID } from '@/constants';
 import { getMessages } from 'next-intl/server';

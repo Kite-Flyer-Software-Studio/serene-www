@@ -21,31 +21,28 @@ import {
 
 import { IconBlock } from '@/components/ui/icon-block';
 
-export const LLMModelSelectorSkeleton = () => {
+export const IntentionalMatching = () => {
   const models = [
     {
-      name: 'James',
-      // logo: AnthropicLogo,
-      status: 'Unavailable',
-      variant: 'danger',
+      name: 'Robert',
+      status: 'New Match',
+      variant: 'success',
       image:
-        'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
+        'https://images.unsplash.com/photo-1697667409270-8d6dfdc9f09a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
+    },
+    {
+      name: 'Tyler',
+      status: 'Active Chat',
+      variant: 'info',
+      image:
+        'https://images.unsplash.com/photo-1611403119860-57c4937ef987?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
     },
     {
       name: 'Jane',
-      // logo: OpenAILogo,
-      status: 'Connected',
-      variant: 'success',
-      image:
-        'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
-    },
-    {
-      name: 'Samuel',
-      // logo: MetaLogo,
-      status: 'Waiting',
+      status: 'Meeting Soon',
       variant: 'warning',
       image:
-        'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60',
+        'https://images.unsplash.com/photo-1534083220759-4c3c00112ea0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
     },
   ];
   return (
@@ -60,19 +57,19 @@ export const LLMModelSelectorSkeleton = () => {
         <div className="flex w-full items-center justify-between p-2">
           <div className="flex items-center gap-2 font-medium">
             <Image
-              src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80"
+              src="https://images.unsplash.com/photo-1529232356377-57971f020a94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGF2YXRhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60"
               alt="Logo"
               width={32}
               height={32}
-              className="rounded-full h-5 w-5"
+              className="rounded-full h-8 w-8 object-cover object-top"
             />
-            James
+            Emily
           </div>
-          <p className="font-mono text-gray-600">GPT 5</p>
+          <p className="font-mono text-gray-600 text-xs">Online</p>
         </div>
         <DivideX />
-        <div className="m-2 rounded-sm border border-blue-500 bg-blue-50 px-2 py-0.5 text-blue-500 dark:bg-blue-50/10">
-          Connected
+        <div className="m-2 rounded-sm border border-emerald-500 bg-emerald-50 px-2 py-0.5 text-emerald-500 text-xs dark:bg-emerald-50/10">
+          Matched Today
         </div>
       </motion.div>
       <div className="mb-4 flex gap-2">
@@ -83,10 +80,10 @@ export const LLMModelSelectorSkeleton = () => {
       <div className="mt-12 flex items-center gap-2">
         <IntegrationsLogo />
         <span className="text-charcoal-700 text-sm font-medium dark:text-neutral-200">
-          Your matches
+          Chats
         </span>
         <span className="text-charcoal-700 rounded-lg border border-gray-200 bg-gray-50 px-2 py-0.5 text-xs dark:border-neutral-600 dark:bg-neutral-800 dark:text-neutral-200">
-          5
+          3
         </span>
       </div>
       <DivideX className="mt-2" />
@@ -110,7 +107,7 @@ export const LLMModelSelectorSkeleton = () => {
                 alt="Logo"
                 width={32}
                 height={32}
-                className="rounded-full h-5 w-5 shrink-0"
+                className="rounded-full h-8 w-8 shrink-0 object-cover object-top"
               />
               <span className="text-charcoal-700 text-sm font-medium dark:text-neutral-200">
                 {model.name}
@@ -124,6 +121,8 @@ export const LLMModelSelectorSkeleton = () => {
                   'border-emerald-500 bg-emerald-50 text-emerald-500 dark:bg-emerald-50/10',
                 model.variant === 'warning' &&
                   'border-yellow-500 bg-yellow-50 text-yellow-500 dark:bg-yellow-50/10',
+                model.variant === 'info' &&
+                  'border-blue-500 bg-blue-50 text-blue-500 dark:bg-blue-50/10',
                 model.variant === 'danger' &&
                   'border-red-500 bg-red-50 text-red-500 dark:bg-red-50/10'
               )}
@@ -199,7 +198,7 @@ export const LLMModelSelectorSkeleton = () => {
 
 const TYPING_SPEED = 30;
 
-export const TextToWorkflowBuilderSkeleton = () => {
+export const SereneSocialConcierage = () => {
   const initialChat = [
     {
       role: 'user',
@@ -397,7 +396,7 @@ const SereneMessage = ({ content, isActive, onComplete }) => {
     <div className="flex gap-3 px-1">
       <div className="shadow-aceternity flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-xs font-medium text-white dark:bg-neutral-900">
         <Image
-          src="/assets/images/serene/logo.svg"
+          src="/assets/images/logo.svg"
           alt="Logo"
           width={32}
           height={32}
@@ -453,7 +452,7 @@ export const OneMatchPerWeek = () => {
             <div className="absolute inset-0 scale-[1.4] animate-spin rounded-full [background-image:conic-gradient(at_center,transparent,var(--color-brand)_20%,transparent_30%)] [animation-delay:1s] [animation-duration:2s]"></div>
             <div className="relative z-20 flex h-full w-full items-center justify-center rounded-[5px] bg-white dark:bg-neutral-900">
               <Image
-                src="/assets/images/serene/logo.svg"
+                src="/assets/images/logo.svg"
                 alt="Logo"
                 width={32}
                 height={32}
@@ -465,18 +464,18 @@ export const OneMatchPerWeek = () => {
         <div className="relative flex h-full w-full items-center justify-start">
           <RightSideSVG />
           <div className="relative flex flex-col items-center gap-2">
-            <span className="relative z-20 rounded-sm border border-blue-500 bg-blue-50 px-2 py-0.5 text-xs text-blue-500 dark:bg-blue-900 dark:text-white">
+            <span className="relative z-20 rounded-sm border border-emerald-500 bg-emerald-50 text-emerald-500 dark:bg-emerald-50/10 px-2 py-0.5 text-xs dark:text-white">
               Connected
             </span>
             <div className="absolute inset-x-0 -top-30 flex h-full flex-col items-center">
               <IconBlock
                 icon={
                   <Image
-                    src="https://images.unsplash.com/photo-1611403119860-57c4937ef987?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
-                    alt="Logo"
-                    width={48}
-                    height={48}
-                    className=""
+                    src="https://images.unsplash.com/photo-1534083220759-4c3c00112ea0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+                    alt="Girl 1"
+                    width={80}
+                    height={80}
+                    className="h-16 w-16 rounded-full object-cover"
                   />
                 }
               />
@@ -485,11 +484,11 @@ export const OneMatchPerWeek = () => {
               <IconBlock
                 icon={
                   <Image
-                    src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
-                    alt="Logo"
-                    width={48}
-                    height={48}
-                    className=""
+                    src="https://images.unsplash.com/photo-1611403119860-57c4937ef987?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+                    alt="Guy 2"
+                    width={80}
+                    height={80}
+                    className="h-16 w-16 rounded-full object-cover"
                   />
                 }
               />
@@ -501,11 +500,11 @@ export const OneMatchPerWeek = () => {
             <IconBlock
               icon={
                 <Image
-                  src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
-                  alt="Logo"
-                  width={48}
-                  height={48}
-                  className=""
+                  src="https://images.unsplash.com/photo-1697667409270-8d6dfdc9f09a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXZhdGFyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+                  alt="Guy 1"
+                  width={80}
+                  height={80}
+                  className="h-16 w-16 rounded-full object-cover"
                 />
               }
             />

@@ -162,7 +162,7 @@ export const ConnectYourTooklsSkeleton = () => {
         <div className="absolute -top-4 -left-4 flex h-14 w-14 items-center justify-center rounded-lg bg-white shadow-xl dark:bg-neutral-800">
           <Scale />
           <Image
-            src="/assets/images/serene/logo.svg"
+            src="/assets/images/logo.svg"
             alt="Logo"
             width={32}
             height={32}

@@ -8,6 +8,8 @@ import { SubHeading } from '@/components/ui/sub-heading';
 import { Heading } from '@/components/ui/heading';
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect';
 
+import CoffeeMeet from './images/nancy-daniel-2.jpeg';
+
 export const About = () => {
   return (
     <Container
@@ -46,7 +48,7 @@ export const About = () => {
             className="h-full rounded-2xl object-cover"
           /> */}
           <Image
-            src="/assets/images/serene/coffee/nancy-daniel-2.jpeg"
+            src={CoffeeMeet}
             alt="About Us"
             width={1000}
             height={1000}
