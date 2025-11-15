@@ -7,11 +7,11 @@ import { SectionHeading } from '@/components/ui/section-heading';
 import { SubHeading } from '@/components/ui/sub-heading';
 
 import EventOne from './images/event-1.jpg';
+import EventTwo from './images/event-2.png';
 import EventFive from './images/event-5.png';
 import EventSeven from './images/event-7.png';
 import EventEight from './images/event-8.jpg';
 import EventNine from './images/event-9.png';
-import EventTen from './images/event-10.png';
 
 export const Events = () => {
   const cards = data.map((card, index) => (
@@ -77,14 +77,13 @@ const DummyContent = () => {
 const data = [
   {
     category: 'Dining',
-    title:
-      'Serene Debut: Roast Goose & Fine Wine Evening at Kamcentre Roat Goose',
+    title: 'First Serene Dinner at Kamcentre Roat Goose',
     src: EventEight,
     content: <DummyContent />,
   },
   {
-    category: 'Celebration',
-    title: 'Anniversary Celebration: Junk Boat Gathering',
+    category: 'Social',
+    title: '1st Anniversary Celebration: Junk Boat Gathering',
     src: EventNine,
     content: <DummyContent />,
   },
@@ -95,21 +94,21 @@ const data = [
     content: <DummyContent />,
   },
   {
-    category: 'Gathering',
+    category: 'Social',
     title: 'Half-Year Social at Tomo Bar',
     src: EventOne,
     content: <DummyContent />,
   },
   {
-    category: 'Wellbeing',
-    title: 'Pilates & Wellness Social',
+    category: 'Wellness',
+    title: 'Pilates & Cold Brew Social',
     src: EventFive,
     content: <DummyContent />,
   },
   {
-    category: 'Social',
+    category: 'Wine Tasting',
     title: 'Summer Blanc x DJ: WHITE Burgundies Wine Tasting',
-    src: EventTen,
+    src: EventTwo,
     content: <DummyContent />,
   },
 ];

@@ -15,32 +15,38 @@ const faqs = [
   {
     question: 'What is Serene Experience?',
     answer:
-      'Serene Experience is a social platform designed for busy professionals who want authentic, relaxed, non-dating meetups in Hong Kong. We use proprietary AI and a weekly “Query” system to connect you with like-minded people for genuine in-real-life (IRL) connections.',
+      "Serene Experience is a social platform designed for busy professionals who want authentic, relaxed, non-dating meetups in Hong Kong. We use proprietary AI and a weekly 'Query' system to connect you with like-minded people for genuine in-real-life (IRL) connections.",
   },
   {
-    question: 'How does Serene’s AI matching work?',
+    question: "How does Serene's AI matching work?",
     answer:
-      'Our AI analyzes your weekly answers to the “Query” — a simple, thought-provoking prompt — to match you with someone local who shares your vibe and interests. It’s not about profiles or swipes; it’s about meaningful alignment and timing.',
+      "Our AI analyzes your weekly answers to the 'Query' — a simple, thought-provoking prompt — to match you with someone local who shares your vibe and interests. It's not about profiles or swipes; it's about meaningful alignment and timing.",
   },
   {
     question: 'Is this a dating app?',
     answer:
-      'No. Serene is focused on authentic social connections, not dating. It’s for professionals seeking meaningful friendships, social recharge, and relaxed 1-on-1 meetups in a calm, respectful setting.',
+      "No. Serene is focused on authentic social connections, not dating. It's for professionals seeking meaningful friendships, social recharge, and relaxed 1-on-1 meetups in a calm, respectful setting.",
+  },
+  {
+    question:
+      'Why do you focus on 1-on-1 connections first, then small group events?',
+    answer:
+      "We believe in depth over quantity. In large group settings, conversations often stay surface-level with limited meaningful interaction. Our 1-on-1 approach allows you to truly connect with individuals, understand their stories, and build genuine relationships. Once you're comfortable with people in our community through these intimate connections, participating in our small curated events becomes more natural and frictionless. We keep our group events small (typically 4-6 people) to maintain an intimate, cozy atmosphere where everyone can participate meaningfully rather than getting lost in the crowd.",
   },
   {
     question: 'Why do I have to join a waitlist?',
     answer:
-      'We are currently in a private beta phase to ensure high-quality, vetted members and an intentional community. The waitlist helps us carefully onboard people who align with Serene’s values for presence, genuineness, and kindness.',
+      "We are currently in a private beta phase to ensure high-quality, vetted members and an intentional community. The waitlist helps us carefully onboard people who align with Serene's values for presence, genuineness, and kindness.",
   },
   {
     question: 'What happens after I join the waitlist?',
     answer:
-      'Our team reviews each application and notifies you once you’re vetted and ready to access Serene’s weekly Query and matching. This process ensures everyone on the platform contributes to a trusted, welcoming environment.',
+      "Our team reviews each application and notifies you once you're vetted and ready to access Serene's weekly Query and matching. This process ensures everyone on the platform contributes to a trusted, welcoming environment.",
   },
   {
     question: 'What is Serene Coffee & Wine?',
     answer:
-      'Serene Coffee & Wine is our physical space in Sheung Wan where matched members can meet and enjoy curated drinks in a warm, relaxed atmosphere. It’s the offline heart of Serene’s community and social gatherings.',
+      "Serene Coffee & Wine is our physical space in Sheung Wan where matched members can meet and enjoy curated drinks in a warm, relaxed atmosphere. It's the offline heart of Serene's community and social gatherings.",
   },
   {
     question: 'How is my privacy protected?',
@@ -100,8 +106,8 @@ export const FAQs = () => {
       </SectionHeading>
 
       <SubHeading as="p" className="mx-auto mt-6 max-w-lg px-2">
-        Find all your doubts and questions in one place. Still couldn't find
-        what you're looking for?
+        Find all your doubts and questions in one place. Still couldn{"'"}t find
+        what you{"'"}re looking for?
       </SubHeading>
       <div className="mt-8 mb-12 flex w-full flex-col justify-center gap-4 px-4 sm:flex-row"></div>
       <DivideX />
