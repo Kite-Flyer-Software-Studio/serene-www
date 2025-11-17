@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Balancer from 'react-wrap-balancer';
 import Link from 'next/link';
 
-import { cn } from '@/utils';
+import { cn, trackEvent } from '@/utils';
 import { useMediaQuery } from '@/hooks/useMediaQuery';
 import useWaitlistUrl from '@/hooks/useWaitlistUrl';
 // import { APP_STORE_URL } from '@/constants';
@@ -83,6 +83,13 @@ export const Hero = () => {
           target="_blank"
           variant="primary"
           className="w-full sm:w-40 h-12 flex items-center justify-center"
+          onClick={() => {
+            trackEvent('button_click', {
+              button_text: 'Join Waitlist',
+              button_location: 'Hero',
+              button_url: waitlistUrl,
+            });
+          }}
         >
           Join Waitlist
         </Button>

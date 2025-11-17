@@ -1,6 +1,6 @@
 export const LUMA_REGULAR_CALENDAR = 'https://lu.ma/serene-regular';
 
-export const GTM_ID = `GTM-PLF2BT79`;
+export const GTM_ID = `GTM-WC8PNCNX`;
 
 export const META_PIXEL_ID = `2432729933589759`;
 

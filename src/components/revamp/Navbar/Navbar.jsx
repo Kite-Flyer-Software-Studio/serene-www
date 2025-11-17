@@ -1,5 +1,5 @@
 'use client';
-import { cn } from '@/utils';
+import { cn, trackEvent } from '@/utils';
 import { IconMenu2, IconX } from '@tabler/icons-react';
 import {
   motion,
@@ -125,6 +125,14 @@ const DesktopNav = ({ navItems, visible }) => {
             target="_blank"
             variant="primary"
             className="hidden md:block "
+            onClick={() => {
+              trackEvent('button_click', {
+                button_text: 'Join Waitlist',
+                button_location: 'Navbar',
+                button_type: 'Desktop',
+                button_url: waitlistUrl,
+              });
+            }}
           >
             Join Waitlist
           </Button>
@@ -173,6 +181,14 @@ const MobileNav = ({ navItems, visible }) => {
                 target="_blank"
                 variant="primary"
                 className="text-xs px-3 py-1.5"
+                onClick={() => {
+                  trackEvent('button_click', {
+                    button_text: 'Join Waitlist',
+                    button_location: 'Navbar',
+                    button_type: 'Mobile',
+                    button_url: waitlistUrl,
+                  });
+                }}
               >
                 Join Waitlist
               </Button>
