@@ -1,4 +1,4 @@
-import '../global.css';
+import './global.css';
 
 import { Inter } from 'next/font/google';
 
@@ -10,7 +10,6 @@ import { getMessages } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
 
-// import 'tippy.js/dist/tippy.css';
 import { ThemeProvider } from '@/contexts/ThemeProvider';
 
 export const viewport = {
