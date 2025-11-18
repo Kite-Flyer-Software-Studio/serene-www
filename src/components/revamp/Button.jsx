@@ -2,14 +2,13 @@
 import React from 'react';
 import { cn } from '@/utils';
 
-export const Button = ({
+export const Button = React.forwardRef(({
   href,
-  as: Tag = 'a',
   children,
   className,
   variant = 'primary', // primary | secondary | dark | gradient
   ...props
-}) => {
+}, ref) => {
   const baseStyles =
     'px-4 py-2 rounded-md bg-black button text-white text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center';
 
@@ -23,12 +22,15 @@ export const Button = ({
   };
 
   return (
-    <Tag
-      href={href || undefined}
+    <a
+      ref={ref}
+      href={href}
       className={cn(baseStyles, variantStyles[variant], className)}
       {...props}
     >
       {children}
-    </Tag>
+    </a>
   );
-};
+});
+
+Button.displayName = 'Button';

@@ -19,27 +19,27 @@ export const Navbar = () => {
   const navItems = [
     {
       name: 'About',
-      link: '/#about',
+      link: '#about',
     },
     {
       name: 'How',
-      link: '/#how-it-works',
+      link: '#how-it-works',
     },
     {
       name: 'Why',
-      link: '/#why',
+      link: '#why',
     },
     {
       name: 'Events',
-      link: '/#curated-group-events',
+      link: '#curated-group-events',
     },
     {
       name: 'Space',
-      link: '/#space',
+      link: '#space',
     },
     {
       name: 'FAQs',
-      link: '/#faq',
+      link: '#faq',
     },
   ];
 
@@ -68,7 +68,7 @@ export const Navbar = () => {
 
 const DesktopNav = ({ navItems, visible }) => {
   const [hovered, setHovered] = useState(null);
-  const waitlistUrl = useWaitlistUrl();
+  const waitlistUrl = useWaitlistUrl('navbar');
 
   return (
     <motion.div
@@ -119,7 +119,6 @@ const DesktopNav = ({ navItems, visible }) => {
         {/* <ToggleModeButton /> */}
         {visible && (
           <Button
-            as={Link}
             href={waitlistUrl}
             rel="noopener nofollow"
             target="_blank"
@@ -143,7 +142,7 @@ const DesktopNav = ({ navItems, visible }) => {
 };
 
 const MobileNav = ({ navItems, visible }) => {
-  const waitlistUrl = useWaitlistUrl();
+  const waitlistUrl = useWaitlistUrl('mobile_navbar');
   const [open, setOpen] = useState(false);
 
   return (
@@ -175,7 +174,6 @@ const MobileNav = ({ navItems, visible }) => {
           <div className="flex items-center gap-4">
             {visible && (
               <Button
-                as={Link}
                 href={waitlistUrl}
                 rel="noopener nofollow"
                 target="_blank"

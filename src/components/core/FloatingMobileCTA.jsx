@@ -4,11 +4,11 @@ import useWaitlistUrl from '@/hooks/useWaitlistUrl';
 
 export default function FloatingMobileCTA() {
   const t = useTranslations('Common');
-  const typeformWaitlistUrl = useWaitlistUrl();
+  const typeformWaitlistUrl = useWaitlistUrl('floating_cta');
 
   return (
     <a
-      href={`${typeformWaitlistUrl}?utm_content=floating-cta`}
+      href={typeformWaitlistUrl}
       className="btn btn-mod btn-large btn-circle floating-mobile-cta"
       data-btn-animate="y"
       style={{ backgroundColor: '#000' }}

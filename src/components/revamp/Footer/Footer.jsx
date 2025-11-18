@@ -7,7 +7,7 @@ import { SubHeading } from '@/components/ui/sub-heading';
 import useWaitlistUrl from '@/hooks/useWaitlistUrl';
 
 export const Footer = () => {
-  const waitlistUrl = useWaitlistUrl();
+  const waitlistUrl = useWaitlistUrl('footer');
   const legal = [
     {
       title: 'Privacy Policy',
@@ -72,12 +72,11 @@ export const Footer = () => {
             </Link>
           </div>
           <Button
-            as={Link}
             href={waitlistUrl}
             variant="primary"
             className="mt-4 mb-8 lg:mb-0"
           >
-            Join Serene Free
+            Join Waitlist
           </Button>
         </div>
         <div className="col-span-1 mb-4 flex flex-col items-start md:col-span-1 md:mb-0 lg:col-span-2"></div>

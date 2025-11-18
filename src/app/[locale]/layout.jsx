@@ -8,6 +8,7 @@ import { cn } from '@/utils';
 import { GTM_ID, META_PIXEL_ID } from '@/constants';
 import { getMessages } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
+import { routing } from '@/i18n/routing';
 
 // import 'tippy.js/dist/tippy.css';
 import { ThemeProvider } from '@/contexts/ThemeProvider';
@@ -24,9 +25,13 @@ const IFRAME_STYLE = {
 
 const inter = Inter({ subsets: ['latin'] });
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 export async function generateMetadata() {
   return {
-    metadataBase: 'https://sereneexperience.com',
+    metadataBase: new URL('https://sereneexperience.com'),
     keywords: 'Food • Friends • Wine',
     author: 'Serene',
     icons: {
@@ -40,11 +45,12 @@ export async function generateMetadata() {
   };
 }
 
-export default async function RootLayout({ children, params: { locale } }) {
+export default async function RootLayout({ children, params }) {
+  const { locale } = await params;
   const messages = await getMessages();
 
   return (
-    <html lang="en" className="no-mobile no-touch ">
+    <html lang="en" className="no-mobile no-touch">
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"

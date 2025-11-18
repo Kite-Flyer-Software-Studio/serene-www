@@ -8,6 +8,11 @@ import { Events } from '@/components/revamp/Main/Events/Events';
 import { Space } from '@/components/revamp/Main/Space/Space';
 import { FAQs } from '@/components/revamp/Main/FAQs/FAQs';
 import { Footer } from '@/components/revamp/Footer/Footer';
+import { routing } from '@/i18n/routing';
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 export async function generateMetadata() {
   return {

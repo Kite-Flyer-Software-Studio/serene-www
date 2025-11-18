@@ -17,7 +17,7 @@ import { IphoneMockup } from './IphoneMockUp';
 import { Personas } from './Personas';
 
 export const Hero = () => {
-  const waitlistUrl = useWaitlistUrl();
+  const waitlistUrl = useWaitlistUrl('hero');
   const parentRef = useRef(null);
   return (
     <div
@@ -77,7 +77,6 @@ export const Hero = () => {
         className="mb-8 mt-6 z-10 sm:mb-10 sm:mt-8 flex w-full flex-col items-center justify-center gap-4 px-4 sm:px-8 sm:flex-row md:mb-20"
       >
         <Button
-          as={Link}
           href={waitlistUrl}
           rel="noopener nofollow"
           target="_blank"
