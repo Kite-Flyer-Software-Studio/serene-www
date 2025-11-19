@@ -18,6 +18,7 @@ const nextConfig = {
       },
       { hostname: 'assets.aceternity.com' },
       { hostname: 'images.unsplash.com' },
+      { hostname: 'i.pravatar.cc' },
     ],
   },
   webpack(config, { dev }) {

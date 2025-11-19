@@ -7,9 +7,10 @@ const dummyBlogs = [
     description:
       'Learn how to create meaningful connections through Serene. Discover our unique approach to building real IRL friendships.',
     date: '2024-01-15',
-    image: '/assets/images/blog/getting-started.jpg',
+    image:
+      'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=2832&auto=format&fit=crop',
     authorName: 'Serene Team',
-    authorSrc: '/assets/images/blog/author-1.jpg',
+    authorSrc: 'https://i.pravatar.cc/150?img=1',
     content: `
 # Getting Started with Serene
 
@@ -42,9 +43,10 @@ Start your journey today and discover the power of genuine connections!
     description:
       'Explore how to have deeper, more meaningful conversations that lead to lasting friendships. Tips and strategies for building genuine connections.',
     date: '2024-01-22',
-    image: '/assets/images/blog/conversations.jpg',
+    image:
+      'https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2940&auto=format&fit=crop',
     authorName: 'Sarah Chen',
-    authorSrc: '/assets/images/blog/author-2.jpg',
+    authorSrc: 'https://i.pravatar.cc/150?img=2',
     content: `
 # The Art of Meaningful Conversations
 
@@ -73,9 +75,10 @@ Be genuine in your responses. Authenticity creates deeper connections than surfa
     description:
       'In an increasingly digital world, learn why in-person connections matter more than ever and how Serene helps bridge the gap.',
     date: '2024-01-29',
-    image: '/assets/images/blog/digital-world.jpg',
+    image:
+      'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2942&auto=format&fit=crop',
     authorName: 'Michael Park',
-    authorSrc: '/assets/images/blog/author-3.jpg',
+    authorSrc: 'https://i.pravatar.cc/150?img=3',
     content: `
 # Building IRL Friendships in a Digital World
 
@@ -102,9 +105,10 @@ Serene bridges the gap by facilitating real-world meetups at carefully selected 
     description:
       'Discover how our weekly conversation prompts help break the ice and lead to deeper, more engaging discussions with your matches.',
     date: '2024-02-05',
-    image: '/assets/images/blog/prompts.jpg',
+    image:
+      'https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=2940&auto=format&fit=crop',
     authorName: 'Emma Wilson',
-    authorSrc: '/assets/images/blog/author-4.jpg',
+    authorSrc: 'https://i.pravatar.cc/150?img=4',
     content: `
 # Weekly Prompts That Spark Connection
 
@@ -135,9 +139,10 @@ Use prompts as conversation starters, not scripts. Let the conversation flow nat
     description:
       'Learn about our carefully curated partner locations where you can meet your matches in comfortable, welcoming environments.',
     date: '2024-02-12',
-    image: '/assets/images/blog/locations.jpg',
+    image:
+      'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop',
     authorName: 'David Kim',
-    authorSrc: '/assets/images/blog/author-5.jpg',
+    authorSrc: 'https://i.pravatar.cc/150?img=5',
     content: `
 # Partner Locations for Perfect Meetups
 
@@ -166,9 +171,10 @@ Consider the vibe you're looking for - whether it's a casual coffee chat or a mo
     description:
       'Read inspiring stories from members who have built lasting friendships through Serene. Real connections, real friendships, real stories.',
     date: '2024-02-19',
-    image: '/assets/images/blog/success-stories.jpg',
+    image:
+      'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2938&auto=format&fit=crop',
     authorName: 'Serene Team',
-    authorSrc: '/assets/images/blog/author-1.jpg',
+    authorSrc: 'https://i.pravatar.cc/150?img=1',
     content: `
 # Success Stories from Serene Community
 
