@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { Metadata } from 'next';
 
 import { getBlogs } from '@/lib/blogs';
 import { Link } from '@/i18n/routing';
@@ -9,6 +8,7 @@ import { Heading } from '@/components/ui/heading';
 import { SubHeading } from '@/components/ui/sub-heading';
 import { TitleBadge } from '@/components/ui/title-badge';
 import { DivideX } from '@/components/ui/divide-x';
+import { ClientDate } from '@/components/ClientDate';
 
 export const metadata = {
   title: 'All blogs | Serene',
@@ -92,12 +92,7 @@ const RowLayout = ({ blog }) => {
         </p>
       </div>
       <div className="text-charcoal-700 mt-4 flex flex-col text-sm md:mt-0 md:text-sm dark:text-neutral-100">
-        {new Date(blog.date || '').toLocaleDateString('en-us', {
-          weekday: 'long',
-          year: 'numeric',
-          month: 'short',
-          day: 'numeric',
-        })}
+        <ClientDate date={blog.date} />
         <div className="mt-2 flex items-center gap-1 md:justify-end">
           <Image
             src={blog.authorSrc}

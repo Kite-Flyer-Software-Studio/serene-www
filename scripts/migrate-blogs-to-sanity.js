@@ -1,8 +1,21 @@
-import { client } from './sanity/client';
-import { urlForImage } from './sanity/image';
-import { toPlainText } from '@portabletext/react';
+/**
+ * Migration script to import dummy blog data into Sanity CMS
+ *
+ * Before running this script:
+ * 1. Make sure you have set up your Sanity project and obtained the project ID
+ * 2. Create a .env.local file with:
+ *    - NEXT_PUBLIC_SANITY_PROJECT_ID
+ *    - NEXT_PUBLIC_SANITY_DATASET
+ *    - SANITY_API_WRITE_TOKEN (create at https://sanity.io/manage -> API -> Tokens)
+ *
+ * Run with: npm run migrate-blogs
+ */
 
-// Dummy blog data - kept for migration purposes
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '../.env.local') });
+const { createClient } = require('@sanity/client');
+
+// Dummy blog data
 const dummyBlogs = [
   {
     slug: 'getting-started-with-serene',
@@ -206,129 +219,262 @@ Join Serene and start writing your own success story today!
   },
 ];
 
-export const getBlogs = async () => {
-  try {
-    const query = `*[_type == "blog"] | order(date desc) {
-      _id,
-      title,
-      "slug": slug.current,
-      description,
-      "image": image.asset->url,
-      date,
-      "authorName": author.name,
-      "authorSrc": author.image.asset->url,
-      publishedAt
-    }`;
+// Convert simple markdown content to Portable Text blocks
+function markdownToPortableText(markdown) {
+  const lines = markdown.trim().split('\n');
+  const blocks = [];
+  let currentBlock = null;
+  let listItems = [];
 
-    const blogs = await client.fetch(query);
+  const flushList = () => {
+    if (listItems.length > 0) {
+      blocks.push({
+        _type: 'block',
+        style: 'normal',
+        children: [{ _type: 'span', text: listItems.join('\n') }],
+        listItem: 'bullet',
+        level: 1,
+      });
+      listItems = [];
+    }
+  };
 
-    // Return blogs, or fallback to dummy data if Sanity is not configured
-    if (blogs && blogs.length > 0) {
-      return blogs;
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+
+    if (line === '') {
+      flushList();
+      currentBlock = null;
+      continue;
     }
 
-    // Fallback to dummy data
-    return dummyBlogs.map(({ content, ...blog }) => blog);
-  } catch (error) {
-    console.warn('Sanity fetch failed, using dummy data:', error.message);
-    // Fallback to dummy data on error
-    return dummyBlogs.map(({ content, ...blog }) => blog);
+    // Headers
+    if (line.startsWith('# ')) {
+      flushList();
+      blocks.push({
+        _type: 'block',
+        style: 'h1',
+        children: [{ _type: 'span', text: line.substring(2) }],
+      });
+    } else if (line.startsWith('## ')) {
+      flushList();
+      blocks.push({
+        _type: 'block',
+        style: 'h2',
+        children: [{ _type: 'span', text: line.substring(3) }],
+      });
+    } else if (line.startsWith('### ')) {
+      flushList();
+      blocks.push({
+        _type: 'block',
+        style: 'h3',
+        children: [{ _type: 'span', text: line.substring(4) }],
+      });
+    }
+    // List items
+    else if (line.startsWith('- ') || line.startsWith('* ')) {
+      const text = line.substring(2);
+      // Check if list item has bold formatting
+      const boldMatch = text.match(/\*\*(.+?)\*\*:\s*(.*)/);
+      if (boldMatch) {
+        blocks.push({
+          _type: 'block',
+          style: 'normal',
+          children: [
+            { _type: 'span', text: boldMatch[1], marks: ['strong'] },
+            { _type: 'span', text: ': ' + boldMatch[2] },
+          ],
+          listItem: 'bullet',
+          level: 1,
+        });
+      } else {
+        blocks.push({
+          _type: 'block',
+          style: 'normal',
+          children: [{ _type: 'span', text }],
+          listItem: 'bullet',
+          level: 1,
+        });
+      }
+    }
+    // Regular paragraphs
+    else {
+      flushList();
+      blocks.push({
+        _type: 'block',
+        style: 'normal',
+        children: [{ _type: 'span', text: line }],
+      });
+    }
   }
-};
 
-export const getSingleBlog = async (slug) => {
+  flushList();
+  return blocks;
+}
+
+async function uploadImageFromUrl(client, imageUrl, filename) {
   try {
-    const query = `*[_type == "blog" && slug.current == $slug][0] {
-      _id,
-      title,
-      "slug": slug.current,
-      description,
-      "image": image.asset->url,
-      date,
-      "authorName": author.name,
-      "authorSrc": author.image.asset->url,
-      content,
-      publishedAt
-    }`;
+    // Fetch the image from URL
+    const response = await fetch(imageUrl);
+    const buffer = await response.arrayBuffer();
+    const contentType = response.headers.get('content-type') || 'image/jpeg';
 
-    const blog = await client.fetch(query, { slug });
+    // Upload to Sanity
+    const asset = await client.assets.upload('image', Buffer.from(buffer), {
+      filename: filename,
+      contentType: contentType,
+    });
 
-    if (blog) {
-      // Return blog with content as portable text blocks
-      const { content, ...frontmatter } = blog;
-      return {
-        content, // This will be portable text blocks
-        frontmatter,
-      };
-    }
+    return asset._id;
+  } catch (error) {
+    console.warn(`    ⚠️  Failed to upload image: ${error.message}`);
+    return null;
+  }
+}
 
-    // Fallback to dummy data
-    const dummyBlog = dummyBlogs.find((b) => b.slug === slug);
-    if (!dummyBlog) {
-      return null;
-    }
+async function migrateBlog(blog, client) {
+  const {
+    slug,
+    title,
+    description,
+    date,
+    image,
+    authorName,
+    authorSrc,
+    content,
+  } = blog;
 
-    const { content, ...frontmatter } = dummyBlog;
-    return {
-      content,
-      frontmatter,
+  // Upload featured image
+  console.log(`    Uploading featured image...`);
+  const imageAssetId = await uploadImageFromUrl(
+    client,
+    image,
+    `${slug}-featured.jpg`
+  );
+
+  // Upload author image
+  console.log(`    Uploading author image...`);
+  const authorImageAssetId = await uploadImageFromUrl(
+    client,
+    authorSrc,
+    `${slug}-author.jpg`
+  );
+
+  const document = {
+    _type: 'blog',
+    title,
+    slug: {
+      _type: 'slug',
+      current: slug,
+    },
+    description,
+    date,
+    content: markdownToPortableText(content),
+    publishedAt: date,
+  };
+
+  // Add images only if upload succeeded
+  if (imageAssetId) {
+    document.image = {
+      _type: 'image',
+      asset: {
+        _type: 'reference',
+        _ref: imageAssetId,
+      },
     };
-  } catch (error) {
-    console.warn('Sanity fetch failed, using dummy data:', error.message);
-    // Fallback to dummy data on error
-    const dummyBlog = dummyBlogs.find((b) => b.slug === slug);
-    if (!dummyBlog) {
-      return null;
-    }
+  }
 
-    const { content, ...frontmatter } = dummyBlog;
-    return {
-      content,
-      frontmatter,
+  if (authorImageAssetId) {
+    document.author = {
+      name: authorName,
+      image: {
+        _type: 'image',
+        asset: {
+          _type: 'reference',
+          _ref: authorImageAssetId,
+        },
+      },
+    };
+  } else {
+    // Fallback: just add author name without image
+    document.author = {
+      name: authorName,
     };
   }
-};
 
-export const getBlogFrontMatterBySlug = async (slug) => {
-  try {
-    const query = `*[_type == "blog" && slug.current == $slug][0] {
-      _id,
-      title,
-      "slug": slug.current,
-      description,
-      "image": image.asset->url,
-      date,
-      "authorName": author.name,
-      "authorSrc": author.image.asset->url,
-      publishedAt
-    }`;
+  return document;
+}
 
-    const blog = await client.fetch(query, { slug });
+async function main() {
+  console.log('Starting blog migration to Sanity...\n');
 
-    if (blog) {
-      return blog;
-    }
+  // Debug: Show loaded environment variables (masked)
+  console.log('Environment check:');
+  console.log(
+    `  Project ID: ${process.env.NEXT_PUBLIC_SANITY_PROJECT_ID ? '✓ Set' : '✗ Missing'}`
+  );
+  console.log(
+    `  Dataset: ${process.env.NEXT_PUBLIC_SANITY_DATASET || 'production'}`
+  );
+  console.log(
+    `  Write Token: ${process.env.SANITY_API_WRITE_TOKEN ? '✓ Set' : '✗ Missing'}\n`
+  );
 
-    // Fallback to dummy data
-    const dummyBlog = dummyBlogs.find((b) => b.slug === slug);
-    if (!dummyBlog) {
-      return null;
-    }
-
-    const { content, ...frontmatter } = dummyBlog;
-    return frontmatter;
-  } catch (error) {
-    console.warn('Sanity fetch failed, using dummy data:', error.message);
-    // Fallback to dummy data on error
-    const dummyBlog = dummyBlogs.find((b) => b.slug === slug);
-    if (!dummyBlog) {
-      return null;
-    }
-
-    const { content, ...frontmatter } = dummyBlog;
-    return frontmatter;
+  if (!process.env.NEXT_PUBLIC_SANITY_PROJECT_ID) {
+    console.error('❌ Error: NEXT_PUBLIC_SANITY_PROJECT_ID is not set');
+    console.error(
+      'Please create a .env.local file with your Sanity configuration'
+    );
+    process.exit(1);
   }
-};
 
-// Export dummy blogs for migration script
-export { dummyBlogs };
+  if (!process.env.SANITY_API_WRITE_TOKEN) {
+    console.error('❌ Error: SANITY_API_WRITE_TOKEN is not set');
+    console.error('Create a write token at: https://sanity.io/manage');
+    process.exit(1);
+  }
+
+  // Create Sanity client after verifying environment variables
+  const client = createClient({
+    projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+    dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
+    useCdn: false,
+    apiVersion: '2024-11-19',
+    token: process.env.SANITY_API_WRITE_TOKEN,
+  });
+
+  console.log(`Migrating ${dummyBlogs.length} blog posts...\n`);
+
+  for (const blog of dummyBlogs) {
+    try {
+      console.log(`Migrating: "${blog.title}"...`);
+
+      // Check if blog already exists
+      const existing = await client.fetch(
+        `*[_type == "blog" && slug.current == $slug][0]`,
+        { slug: blog.slug }
+      );
+
+      if (existing) {
+        console.log(`  ⚠️  Blog already exists, skipping...`);
+      } else {
+        const document = await migrateBlog(blog, client);
+        const result = await client.create(document);
+        console.log(`  ✅ Successfully created (ID: ${result._id})`);
+      }
+    } catch (error) {
+      console.error(`  ❌ Error migrating "${blog.title}":`, error.message);
+      if (error.response?.body) {
+        console.error(`     Details:`, error.response.body);
+      }
+    }
+  }
+
+  console.log('\n✨ Migration complete!');
+  console.log('\nNext steps:');
+  console.log('1. Visit http://localhost:8000/studio to view your content');
+  console.log('2. Review and edit the content as needed');
+  console.log('3. Images have been uploaded to Sanity automatically!');
+}
+
+main().catch(console.error);
