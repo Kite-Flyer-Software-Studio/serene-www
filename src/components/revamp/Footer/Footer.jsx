@@ -5,6 +5,10 @@ import { Container } from '@/components/ui/container';
 import { Logo } from '../Logo';
 import { SubHeading } from '@/components/ui/sub-heading';
 import useWaitlistUrl from '@/hooks/useWaitlistUrl';
+import {
+  IconBrandWhatsapp,
+  IconMail
+} from '@tabler/icons-react';
 
 export const Footer = () => {
   const waitlistUrl = useWaitlistUrl('footer');
@@ -53,20 +57,21 @@ export const Footer = () => {
           <SubHeading as="p" className="mt-4 max-w-lg text-left">
             Just one click from connection.
           </SubHeading>
-          <div className="mt-4">
-            <strong>T.</strong>
+          <div className="mt-2 flex flex-row gap-1 items-center">
+            <IconBrandWhatsapp className="h-5 w-5 text-gray-500" />
             <Link
               href="https://wa.me/85292098254"
-              className="text-footer-link my-2 text-sm font-medium"
+              className="text-footer-link text-sm font-medium"
             >
-              +825 9209 8254
+              
+              <span>+825 9209 8254</span>
             </Link>
           </div>
-          <div className="mt-2">
-            <strong>E.</strong>
+          <div className="flex flex-row gap-1 mt-2 items-center">
+            <IconMail className="h-5 w-5 text-gray-500" />
             <Link
               href="mailto:contact@sereneexperience.com"
-              className="text-footer-link my-2 text-sm font-medium"
+              className="text-footer-link text-sm font-medium"
             >
               contact@sereneexperience.com
             </Link>
