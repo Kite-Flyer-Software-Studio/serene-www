@@ -1,3 +1,5 @@
+export const BASE_URL = 'https://sereneexperience.com';
+
 export const LUMA_REGULAR_CALENDAR = 'https://lu.ma/serene-regular';
 
 export const GTM_ID = `GTM-WC8PNCNX`;

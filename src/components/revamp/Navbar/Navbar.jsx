@@ -8,40 +8,76 @@ import {
   useMotionValueEvent,
 } from 'motion/react';
 import Link from 'next/link';
-import React, { useRef, useState } from 'react';
+import React, { useMemo, useRef, useState } from 'react';
 
 import useWaitlistUrl from '@/hooks/useWaitlistUrl';
 import { Button } from '../Button';
 import { Logo } from '../Logo';
+import { Link as I18nLink, usePathname } from '@/i18n/routing';
+import { useLocale } from 'next-intl';
+import { getBaseUrl } from '@/utils';
 // import { ToggleModeButton } from './ToggleModeButton';
 
 export const Navbar = () => {
-  const navItems = [
-    {
-      name: 'About',
-      link: '#about',
-    },
-    {
-      name: 'How',
-      link: '#how-it-works',
-    },
-    {
-      name: 'Why',
-      link: '#why',
-    },
-    {
-      name: 'Events',
-      link: '#curated-group-events',
-    },
-    {
-      name: 'Space',
-      link: '#space',
-    },
-    {
-      name: 'FAQs',
-      link: '#faq',
-    },
-  ];
+  const pathname = usePathname();
+  const locale = useLocale();
+  const isMainPage = pathname === '/' || pathname === '';
+  const baseUrl = getBaseUrl();
+
+  const navItems = useMemo(() => {
+    const baseItems = [
+      {
+        name: 'About',
+        link: '#about',
+        isHash: true,
+      },
+      {
+        name: 'How',
+        link: '#how-it-works',
+        isHash: true,
+      },
+      {
+        name: 'Why',
+        link: '#why',
+        isHash: true,
+      },
+      {
+        name: 'Events',
+        link: '#curated-group-events',
+        isHash: true,
+      },
+      {
+        name: 'Space',
+        link: '#space',
+        isHash: true,
+      },
+      {
+        name: 'FAQs',
+        link: '#faq',
+        isHash: true,
+      },
+      {
+        name: 'Blog',
+        link: `${baseUrl}/${locale}/blog`,
+        isHash: false,
+      },
+    ];
+
+    // If not on main page, convert hash links to full URLs pointing to main page
+    if (!isMainPage) {
+      return baseItems.map((item) => {
+        if (item.isHash) {
+          return {
+            ...item,
+            link: `/${item.link}`, // Convert #about to /#about for navigation
+          };
+        }
+        return item;
+      });
+    }
+
+    return baseItems;
+  }, [isMainPage, locale, baseUrl]);
 
   const ref = useRef(null);
   const { scrollY } = useScroll({
@@ -60,13 +96,21 @@ export const Navbar = () => {
 
   return (
     <motion.div ref={ref} className="w-full fixed top-0 inset-x-0 z-50">
-      <DesktopNav visible={visible} navItems={navItems} />
-      <MobileNav visible={visible} navItems={navItems} />
+      <DesktopNav
+        visible={visible}
+        navItems={navItems}
+        isMainPage={isMainPage}
+      />
+      <MobileNav
+        visible={visible}
+        navItems={navItems}
+        isMainPage={isMainPage}
+      />
     </motion.div>
   );
 };
 
-const DesktopNav = ({ navItems, visible }) => {
+const DesktopNav = ({ navItems, visible, isMainPage }) => {
   const [hovered, setHovered] = useState(null);
   const waitlistUrl = useWaitlistUrl('navbar');
 
@@ -89,7 +133,7 @@ const DesktopNav = ({ navItems, visible }) => {
         damping: 50,
       }}
       style={{
-        minWidth: '800px',
+        minWidth: '900px',
       }}
       className={cn(
         'hidden lg:flex flex-row  self-start bg-transparent dark:bg-transparent items-center justify-between py-2 max-w-7xl mx-auto px-4 rounded-full relative z-[60] w-full',
@@ -98,26 +142,35 @@ const DesktopNav = ({ navItems, visible }) => {
     >
       <Logo />
       <motion.div className="lg:flex flex-row flex-1 absolute inset-0 hidden items-center justify-center space-x-2 lg:space-x-2 text-sm text-zinc-600 font-medium hover:text-zinc-800 transition duration-200">
-        {navItems.map((navItem, idx) => (
-          <Link
-            onMouseEnter={() => setHovered(idx)}
-            className="text-neutral-600 dark:text-neutral-300 relative px-4 py-2"
-            key={`link=${idx}`}
-            href={navItem.link}
-          >
-            {hovered === idx && (
-              <motion.div
-                layoutId="hovered"
-                className="w-full h-full absolute inset-0 bg-gray-100 dark:bg-neutral-800 rounded-full"
-              />
-            )}
-            <span className="relative z-20">{navItem.name}</span>
-          </Link>
-        ))}
+        {navItems.map((navItem, idx) => {
+          // Use I18nLink for route links (like Blog) and hash links when not on main page
+          // Use Link for hash links on main page (for smooth scrolling)
+          const LinkComponent = navItem.isHash
+            ? isMainPage
+              ? Link
+              : I18nLink
+            : I18nLink;
+          return (
+            <LinkComponent
+              onMouseEnter={() => setHovered(idx)}
+              className="text-neutral-600 dark:text-neutral-300 relative px-4 py-2"
+              key={`link=${idx}`}
+              href={navItem.link}
+            >
+              {hovered === idx && (
+                <motion.div
+                  layoutId="hovered"
+                  className="w-full h-full absolute inset-0 bg-gray-100 dark:bg-neutral-800 rounded-full"
+                />
+              )}
+              <span className="relative z-20">{navItem.name}</span>
+            </LinkComponent>
+          );
+        })}
       </motion.div>
       <div className="flex items-center gap-4">
         {/* <ToggleModeButton /> */}
-        {visible && (
+        {(visible || !isMainPage) && (
           <Button
             href={waitlistUrl}
             rel="noopener nofollow"
@@ -141,7 +194,7 @@ const DesktopNav = ({ navItems, visible }) => {
   );
 };
 
-const MobileNav = ({ navItems, visible }) => {
+const MobileNav = ({ navItems, visible, isMainPage }) => {
   const waitlistUrl = useWaitlistUrl('mobile_navbar');
   const [open, setOpen] = useState(false);
 
@@ -172,7 +225,7 @@ const MobileNav = ({ navItems, visible }) => {
         <div className="flex flex-row justify-between items-center w-full">
           <Logo />
           <div className="flex items-center gap-4">
-            {visible && (
+            {(visible || !isMainPage) && (
               <Button
                 href={waitlistUrl}
                 rel="noopener nofollow"
@@ -215,16 +268,25 @@ const MobileNav = ({ navItems, visible }) => {
               exit={{ opacity: 0 }}
               className="flex rounded-lg absolute top-16 bg-white dark:bg-neutral-950 inset-x-0 z-50 flex-col items-start justify-start gap-4 w-full px-4 py-8 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
             >
-              {navItems.map((navItem, idx) => (
-                <Link
-                  key={`link=${idx}`}
-                  href={navItem.link}
-                  onClick={() => setOpen(false)}
-                  className="relative text-neutral-600 dark:text-neutral-300"
-                >
-                  <motion.span className="block">{navItem.name} </motion.span>
-                </Link>
-              ))}
+              {navItems.map((navItem, idx) => {
+                // Use I18nLink for route links (like Blog) and hash links when not on main page
+                // Use Link for hash links on main page (for smooth scrolling)
+                const LinkComponent = navItem.isHash
+                  ? isMainPage
+                    ? Link
+                    : I18nLink
+                  : I18nLink;
+                return (
+                  <LinkComponent
+                    key={`link=${idx}`}
+                    href={navItem.link}
+                    onClick={() => setOpen(false)}
+                    className="relative text-neutral-600 dark:text-neutral-300"
+                  >
+                    <motion.span className="block">{navItem.name} </motion.span>
+                  </LinkComponent>
+                );
+              })}
               {/* <Button
                 as={Link}
                 href={waitlistUrl}
