@@ -8,3 +8,5 @@ export const client = createClient({
   token: process.env.SANITY_API_READ_TOKEN, // Optional, only if you want to fetch drafts
 });
 
+
+
