@@ -49,7 +49,7 @@ export default async function RootLayout({ children, params }) {
   const messages = await getMessages();
 
   return (
-    <html lang="en" className="no-mobile no-touch">
+    <html lang="en" className="no-mobile no-touch system">
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"

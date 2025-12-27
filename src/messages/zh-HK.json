@@ -76,6 +76,17 @@
     "Step 5 Description": "我哋好期待你識到新朋友！晚宴活動有小遊戲、破冰環節、美酒佳餚，全情投入吧！記得用菲林相機影低美好回憶！",
     "Step 6 Description": "你嘅意見對我哋非常重要，請花少少時間分享感受，令下次體驗更好！"
   },
+  "DeleteAccount": {
+    "Title1": "我哋唔捨得你走。",
+    "Title2": "再見！",
+    "deleteConfirm": "你確定要刪除帳戶嗎？",
+    "sendOtp": "發送OTP",
+    "deleteAccount": "刪除帳戶",
+    "otpError": "發送OTP失敗。請檢查電郵是否正確。",
+    "deleteAccountError": "刪除帳戶失敗。請檢查電郵和OTP是否正確。",
+    "emailPlaceholder": "電郵",
+    "otpPlaceholder": "OTP"
+  },
   "Wines": {
     "Title1": "美酒一覽",
     "Title2": "我哋細心嚴選每瓶美酒，確保Serene客人都可享受最佳食物配酒體驗。"

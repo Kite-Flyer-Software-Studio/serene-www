@@ -78,7 +78,14 @@
   },
   "DeleteAccount": {
     "Title1": "We are sorry to see you go.",
-    "Title2": "Tell us why you're leaving!"
+    "Title2": "See you again!",
+    "deleteConfirm": "Are you sure you want to delete your account?",
+    "sendOtp": "Send OTP",
+    "deleteAccount": "Delete Account",
+    "otpError": "Fail to send OTP. Please whether the email is correct.",
+    "deleteAccountError": "Fail to delete account. Please check whether the email and OTP is correct.",
+    "emailPlaceholder": "Email",
+    "otpPlaceholder": "OTP"
   },
   "Wines": {
     "Title1": "Our wine list",
