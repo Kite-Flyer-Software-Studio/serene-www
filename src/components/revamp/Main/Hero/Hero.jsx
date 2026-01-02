@@ -4,7 +4,7 @@ import { useRef } from 'react';
 import { motion } from 'motion/react';
 import Image from 'next/image';
 import Balancer from 'react-wrap-balancer';
-import Link from 'next/link';
+import { APP_STORE_URL, PLAY_STORE_URL } from '@/constants';
 
 import { cn, trackEvent } from '@/utils';
 import { useMediaQuery } from '@/hooks/useMediaQuery';
@@ -74,7 +74,7 @@ export const Hero = () => {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.2, delay: 0.7 }}
-        className="mb-8 mt-6 z-10 sm:mb-10 sm:mt-8 flex w-full flex-col items-center justify-center gap-4 px-4 sm:px-8 sm:flex-row md:mb-20"
+        className="mb-8 mt-6 z-10 sm:mb-10 sm:mt-8 flex w-full flex-col items-center justify-center gap-4 px-4 sm:px-8 sm:flex-col md:mb-20"
       >
         <Button
           href={waitlistUrl}
@@ -92,6 +92,14 @@ export const Hero = () => {
         >
           Join Waitlist
         </Button>
+        <div className="w-full h-12 flex items-center justify-center gap-3">
+          <a href={APP_STORE_URL} target="_blank" style={{ display: 'inline-block' }}>
+            <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1750118400" alt="Download on the App Store" style={{ width: 'auto', height: '41px', verticalAlign: 'middle', objectFit: 'contain' }} />
+          </a>
+          <a href={PLAY_STORE_URL} target="_blank" style={{ display: 'inline-block' }}>
+            <img src="/assets/images/playstore.png" alt="Download on the Play Store" style={{ width: 'auto', height: '41px', verticalAlign: 'middle', objectFit: 'contain' }} />
+          </a>
+        </div>
         {/* <div
           className="local-scroll wow fadeInUp wch-unset"
           data-wow-delay="0.5s"
@@ -112,6 +120,8 @@ export const Hero = () => {
             />
           </a>
         </div> */}
+      </motion.div>
+      <motion.div>
       </motion.div>
       <div className="pt-[2rem] w-full min-h-[21rem] relative">
         <motion.div

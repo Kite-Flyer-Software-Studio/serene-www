@@ -9,6 +9,7 @@ import {
   IconBrandWhatsapp,
   IconMail
 } from '@tabler/icons-react';
+import { APP_STORE_URL, PLAY_STORE_URL } from '@/constants';
 
 export const Footer = () => {
   const waitlistUrl = useWaitlistUrl('footer');
@@ -79,10 +80,18 @@ export const Footer = () => {
           <Button
             href={waitlistUrl}
             variant="primary"
-            className="mt-4 mb-8 lg:mb-0"
+            className="mt-4 mb-2"
           >
             Join Waitlist
           </Button>
+           <div className="w-full h-12 flex items-center justify-start gap-3">
+          <a href={APP_STORE_URL} target="_blank" style={{ display: 'inline-block' }}>
+            <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1750118400" alt="Download on the App Store" style={{ width: 'auto', height: '41px', verticalAlign: 'middle', objectFit: 'contain' }} />
+          </a>
+          <a href={PLAY_STORE_URL} target="_blank" style={{ display: 'inline-block' }}>
+            <img src="/assets/images/playstore.png" alt="Download on the Play Store" style={{ width: 'auto', height: '41px', verticalAlign: 'middle', objectFit: 'contain' }} />
+          </a>
+        </div>
         </div>
         <div className="col-span-1 mb-4 flex flex-col items-start md:col-span-1 md:mb-0 lg:col-span-2"></div>
         <div className="col-span-1 mb-4 flex flex-col gap-2 md:col-span-1 md:mb-0 items-center">
@@ -129,6 +138,7 @@ export const Footer = () => {
               href={item.href}
               key={item.title}
               className="text-footer-link my-2 text-sm font-medium"
+              target="_blank"
             >
               {item.title}
             </Link>
