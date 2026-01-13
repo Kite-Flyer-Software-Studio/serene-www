@@ -84,20 +84,46 @@ export const Hero = () => {
           className="w-full sm:w-40 h-12 flex items-center justify-center"
           onClick={() => {
             trackEvent('button_click', {
-              button_text: 'Join Waitlist',
+              button_text: 'Join Serene',
               button_location: 'Hero',
               button_url: waitlistUrl,
             });
           }}
         >
-          Join Waitlist
+          Join Serene
         </Button>
         <div className="w-full h-12 flex items-center justify-center gap-3">
-          <a href={APP_STORE_URL} target="_blank" style={{ display: 'inline-block' }}>
-            <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1750118400" alt="Download on the App Store" style={{ width: 'auto', height: '41px', verticalAlign: 'middle', objectFit: 'contain' }} />
+          <a
+            href={APP_STORE_URL}
+            target="_blank"
+            style={{ display: 'inline-block' }}
+          >
+            <img
+              src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1750118400"
+              alt="Download on the App Store"
+              style={{
+                width: 'auto',
+                height: '41px',
+                verticalAlign: 'middle',
+                objectFit: 'contain',
+              }}
+            />
           </a>
-          <a href={PLAY_STORE_URL} target="_blank" style={{ display: 'inline-block' }}>
-            <img src="/assets/images/playstore.png" alt="Download on the Play Store" style={{ width: 'auto', height: '41px', verticalAlign: 'middle', objectFit: 'contain' }} />
+          <a
+            href={PLAY_STORE_URL}
+            target="_blank"
+            style={{ display: 'inline-block' }}
+          >
+            <img
+              src="/assets/images/playstore.png"
+              alt="Download on the Play Store"
+              style={{
+                width: 'auto',
+                height: '41px',
+                verticalAlign: 'middle',
+                objectFit: 'contain',
+              }}
+            />
           </a>
         </div>
         {/* <div
@@ -121,8 +147,7 @@ export const Hero = () => {
           </a>
         </div> */}
       </motion.div>
-      <motion.div>
-      </motion.div>
+      <motion.div></motion.div>
       <div className="pt-[2rem] w-full min-h-[21rem] relative">
         <motion.div
           initial={{ y: 100, opacity: 0 }}

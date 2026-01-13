@@ -5,10 +5,7 @@ import { Container } from '@/components/ui/container';
 import { Logo } from '../Logo';
 import { SubHeading } from '@/components/ui/sub-heading';
 import useWaitlistUrl from '@/hooks/useWaitlistUrl';
-import {
-  IconBrandWhatsapp,
-  IconMail
-} from '@tabler/icons-react';
+import { IconBrandWhatsapp, IconMail } from '@tabler/icons-react';
 import { APP_STORE_URL, PLAY_STORE_URL } from '@/constants';
 
 export const Footer = () => {
@@ -64,7 +61,6 @@ export const Footer = () => {
               href="https://wa.me/85292098254"
               className="text-footer-link text-sm font-medium"
             >
-              
               <span>+825 9209 8254</span>
             </Link>
           </div>
@@ -77,21 +73,43 @@ export const Footer = () => {
               contact@sereneexperience.com
             </Link>
           </div>
-          <Button
-            href={waitlistUrl}
-            variant="primary"
-            className="mt-4 mb-2"
-          >
-            Join Waitlist
+          <Button href={waitlistUrl} variant="primary" className="mt-4 mb-2">
+            Join Serene
           </Button>
-           <div className="w-full h-12 flex items-center justify-start gap-3">
-          <a href={APP_STORE_URL} target="_blank" style={{ display: 'inline-block' }}>
-            <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1750118400" alt="Download on the App Store" style={{ width: 'auto', height: '41px', verticalAlign: 'middle', objectFit: 'contain' }} />
-          </a>
-          <a href={PLAY_STORE_URL} target="_blank" style={{ display: 'inline-block' }}>
-            <img src="/assets/images/playstore.png" alt="Download on the Play Store" style={{ width: 'auto', height: '41px', verticalAlign: 'middle', objectFit: 'contain' }} />
-          </a>
-        </div>
+          <div className="w-full h-12 flex items-center justify-start gap-3">
+            <a
+              href={APP_STORE_URL}
+              target="_blank"
+              style={{ display: 'inline-block' }}
+            >
+              <img
+                src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1750118400"
+                alt="Download on the App Store"
+                style={{
+                  width: 'auto',
+                  height: '41px',
+                  verticalAlign: 'middle',
+                  objectFit: 'contain',
+                }}
+              />
+            </a>
+            <a
+              href={PLAY_STORE_URL}
+              target="_blank"
+              style={{ display: 'inline-block' }}
+            >
+              <img
+                src="/assets/images/playstore.png"
+                alt="Download on the Play Store"
+                style={{
+                  width: 'auto',
+                  height: '41px',
+                  verticalAlign: 'middle',
+                  objectFit: 'contain',
+                }}
+              />
+            </a>
+          </div>
         </div>
         <div className="col-span-1 mb-4 flex flex-col items-start md:col-span-1 md:mb-0 lg:col-span-2"></div>
         <div className="col-span-1 mb-4 flex flex-col gap-2 md:col-span-1 md:mb-0 items-center">

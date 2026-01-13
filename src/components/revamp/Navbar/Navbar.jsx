@@ -126,14 +126,14 @@ const DesktopNav = ({ navItems, visible }) => {
             className="hidden md:block "
             onClick={() => {
               trackEvent('button_click', {
-                button_text: 'Join Waitlist',
+                button_text: 'Join Serene',
                 button_location: 'Navbar',
                 button_type: 'Desktop',
                 button_url: waitlistUrl,
               });
             }}
           >
-            Join Waitlist
+            Join Serene
           </Button>
         )}
       </div>
@@ -181,14 +181,14 @@ const MobileNav = ({ navItems, visible }) => {
                 className="text-xs px-3 py-1.5"
                 onClick={() => {
                   trackEvent('button_click', {
-                    button_text: 'Join Waitlist',
+                    button_text: 'Join Serene',
                     button_location: 'Navbar',
                     button_type: 'Mobile',
                     button_url: waitlistUrl,
                   });
                 }}
               >
-                Join Waitlist
+                Join Serene
               </Button>
             )}
             {open ? (
@@ -231,7 +231,7 @@ const MobileNav = ({ navItems, visible }) => {
                 variant="primary"
                 className="block md:hidden w-full"
               >
-                Join Waitlist
+                Join Serene
               </Button> */}
             </motion.div>
           )}
