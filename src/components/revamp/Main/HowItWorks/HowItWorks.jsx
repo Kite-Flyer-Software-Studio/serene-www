@@ -17,8 +17,7 @@ export const HowItWorks = () => {
   const tabs = [
     {
       title: 'Step 1: Tell Serene who you want to meet (~30s)',
-      description:
-        'Every Thursday at noon, share your vibes with Serene through our playful question',
+      description: 'Every Wednesday, share your vibes with Serene',
       icon: MessageCircle,
       id: 'query',
       skeleton: <WeeklyQuery />,
@@ -26,7 +25,7 @@ export const HowItWorks = () => {
     {
       title: 'Step 2: Get Matched',
       description:
-        'Serene finds you three matches with aligned vibes and schedules. You pick one to start chatting. Serene handles the logistics.',
+        'Serene finds you three matches with aligned vibes, and you pick one to start chatting. Chat room ends by the end of the coming Sunday',
       icon: Users,
       id: 'tools',
       skeleton: <GetMatched />,
